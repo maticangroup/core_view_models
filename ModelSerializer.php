@@ -11,15 +11,14 @@ namespace App\FormModels;
 
 class ModelSerializer
 {
-
     /**
-     * ModelSerializer constructor.
      * @param $json
      * @param $class
+     * @return mixed
      */
-    public function __construct($json, $class)
+    public static function parse($json, $class)
     {
-        $properties = json_encode($json);
+        $properties = (array)json_decode(json_encode($json));
         $classInstance = new $class();
         foreach ($properties as $property => $value) {
             $setterName = "set" . $property;
