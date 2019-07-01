@@ -16,54 +16,29 @@ use Matican\Core\DataTypes\NationalCode;
 
 class PersonModel
 {
-    /**
-     * @param integer
-     */
     private $id;
 
-    /**
-     * @param string
-     */
+
     private $humanName;
 
-    /**
-     * @param string
-     */
+
     private $humanFamily;
 
-    /**
-     * @param Email
-     */
+
     private $email;
 
-    /**
-     * @param NationalCode
-     */
     private $national_code;
 
-    /**
-     * @param Mobile
-     */
     private $mobile;
 
-    /**
-     * @var string
-     */
+
     private $birthDateYear = "";
-    /**
-     * @var string
-     */
+
     private $birthDateMonth = "";
-    /**
-     * @var string
-     */
+
     private $birthDateDay = "";
-    /**
-     * @var boolean
-     */
+
     private $sendSMS = false;
-
-
 
     /**
      * @return mixed
