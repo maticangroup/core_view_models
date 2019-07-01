@@ -120,33 +120,33 @@ class LocationModel
     }
 
     /**
-     * @return ZipCode
+     * @return string
      */
-    public function getPostalCode(): ZipCode
+    public function getPostalCode(): string
     {
         return $this->postalCode;
     }
 
     /**
-     * @param ZipCode $postalCode
+     * @param string $postalCode
      */
-    public function setPostalCode(ZipCode $postalCode): void
+    public function setPostalCode(string $postalCode): void
     {
         $this->postalCode = $postalCode;
     }
 
     /**
-     * @return Text
+     * @return string
      */
-    public function getAddress(): Text
+    public function getAddress(): string
     {
         return $this->address;
     }
 
     /**
-     * @param Text $address
+     * @param string $address
      */
-    public function setAddress(Text $address): void
+    public function setAddress(string $address): void
     {
         $this->address = $address;
     }
@@ -214,7 +214,6 @@ class LocationModel
     {
         $this->contactPersonId = $contactPersonId;
     }
-
 
 
 
