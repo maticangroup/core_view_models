@@ -11,5 +11,227 @@ namespace App\FormModels\Repository;
 
 class CompanyModel
 {
+    private $companyID;
+    private $companyName;
+    private $companyZipCode;
+    private $companyRegistrationCode;
+    private $companyEconomicCode;
+    private $companyEmail;
+    private $companyMainPhone;
+    private $companyMainAddress;
+    private $companyMainAddressContactPersonID;
+    private $companyMainAddressContactPersonName;
+    private $companyPhones;
+    private $companyAddresses;
+    private $companyEmployees;
+
+    /**
+     * @return mixed
+     */
+    public function getCompanyID()
+    {
+        return $this->companyID;
+    }
+
+    /**
+     * @param mixed $companyID
+     */
+    public function setCompanyID($companyID): void
+    {
+        $this->companyID = $companyID;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCompanyName()
+    {
+        return $this->companyName;
+    }
+
+    /**
+     * @param mixed $companyName
+     */
+    public function setCompanyName($companyName): void
+    {
+        $this->companyName = $companyName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCompanyZipCode()
+    {
+        return $this->companyZipCode;
+    }
+
+    /**
+     * @param mixed $companyZipCode
+     */
+    public function setCompanyZipCode($companyZipCode): void
+    {
+        $this->companyZipCode = $companyZipCode;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCompanyRegistrationCode()
+    {
+        return $this->companyRegistrationCode;
+    }
+
+    /**
+     * @param mixed $companyRegistrationCode
+     */
+    public function setCompanyRegistrationCode($companyRegistrationCode): void
+    {
+        $this->companyRegistrationCode = $companyRegistrationCode;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCompanyEconomicCode()
+    {
+        return $this->companyEconomicCode;
+    }
+
+    /**
+     * @param mixed $companyEconomicCode
+     */
+    public function setCompanyEconomicCode($companyEconomicCode): void
+    {
+        $this->companyEconomicCode = $companyEconomicCode;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCompanyEmail()
+    {
+        return $this->companyEmail;
+    }
+
+    /**
+     * @param mixed $companyEmail
+     */
+    public function setCompanyEmail($companyEmail): void
+    {
+        $this->companyEmail = $companyEmail;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCompanyMainPhone()
+    {
+        return $this->companyMainPhone;
+    }
+
+    /**
+     * @param mixed $companyMainPhone
+     */
+    public function setCompanyMainPhone($companyMainPhone): void
+    {
+        $this->companyMainPhone = $companyMainPhone;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCompanyMainAddress()
+    {
+        return $this->companyMainAddress;
+    }
+
+    /**
+     * @param mixed $companyMainAddress
+     */
+    public function setCompanyMainAddress($companyMainAddress): void
+    {
+        $this->companyMainAddress = $companyMainAddress;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCompanyMainAddressContactPersonID()
+    {
+        return $this->companyMainAddressContactPersonID;
+    }
+
+    /**
+     * @param mixed $companyMainAddressContactPersonID
+     */
+    public function setCompanyMainAddressContactPersonID($companyMainAddressContactPersonID): void
+    {
+        $this->companyMainAddressContactPersonID = $companyMainAddressContactPersonID;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCompanyMainAddressContactPersonName()
+    {
+        return $this->companyMainAddressContactPersonName;
+    }
+
+    /**
+     * @param mixed $companyMainAddressContactPersonName
+     */
+    public function setCompanyMainAddressContactPersonName($companyMainAddressContactPersonName): void
+    {
+        $this->companyMainAddressContactPersonName = $companyMainAddressContactPersonName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCompanyPhones()
+    {
+        return $this->companyPhones;
+    }
+
+    /**
+     * @param mixed $companyPhones
+     */
+    public function setCompanyPhones($companyPhones): void
+    {
+        $this->companyPhones = $companyPhones;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCompanyAddresses()
+    {
+        return $this->companyAddresses;
+    }
+
+    /**
+     * @param mixed $companyAddresses
+     */
+    public function setCompanyAddresses($companyAddresses): void
+    {
+        $this->companyAddresses = $companyAddresses;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCompanyEmployees()
+    {
+        return $this->companyEmployees;
+    }
+
+    /**
+     * @param mixed $companyEmployees
+     */
+    public function setCompanyEmployees($companyEmployees): void
+    {
+        $this->companyEmployees = $companyEmployees;
+    }
+
 
 }
