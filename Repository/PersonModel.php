@@ -38,6 +38,8 @@ class PersonModel
 
     private $birthDateDay = "";
 
+    private $mainAddressString = "";
+
     private $sendSMS = false;
 
     /**
@@ -198,6 +200,22 @@ class PersonModel
     public function setSendSMS(bool $sendSMS): void
     {
         $this->sendSMS = $sendSMS;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMainAddressString(): string
+    {
+        return $this->mainAddressString;
+    }
+
+    /**
+     * @param string $mainAddressString
+     */
+    public function setMainAddressString(string $mainAddressString): void
+    {
+        $this->mainAddressString = $mainAddressString;
     }
 
 
