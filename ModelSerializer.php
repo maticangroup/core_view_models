@@ -19,11 +19,15 @@ class ModelSerializer
     public static function parse($json, $class)
     {
         $properties = (array)json_decode(json_encode($json));
-        $classInstance = new $class();
-        foreach ($properties as $property => $value) {
-            $setterName = "set" . $property;
-            $classInstance->{$setterName}($value);
+        if (class_exists($class)) {
+            $classInstance = new $class();
+            foreach ($properties as $property => $value) {
+                $setterName = "set" . $property;
+                if (method_exists($classInstance, $setterName)) {
+                    $classInstance->{$setterName}($value);
+                }
+            }
+            return $classInstance;
         }
-        return $classInstance;
     }
 }

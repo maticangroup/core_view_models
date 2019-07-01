@@ -31,11 +31,11 @@ class LocationModel
      */
     private $districtId;
     /**
-     * @var ZipCode
+     * @var string
      */
     private $postalCode;
     /**
-     * @var Text
+     * @var string
      */
     private $address;
     /**
