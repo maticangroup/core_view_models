@@ -12,6 +12,7 @@ namespace App\FormModels\Repository;
 class CompanyAddEmployeeModel
 {
     private $employeeID;
+    private $companyID;
 
     /**
      * @return mixed
@@ -27,6 +28,22 @@ class CompanyAddEmployeeModel
     public function setEmployeeID($employeeID): void
     {
         $this->employeeID = $employeeID;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCompanyID()
+    {
+        return $this->companyID;
+    }
+
+    /**
+     * @param mixed $companyID
+     */
+    public function setCompanyID($companyID): void
+    {
+        $this->companyID = $companyID;
     }
 
 
