@@ -11,8 +11,25 @@ namespace App\FormModels\Repository;
 
 class PhoneModel
 {
+    private $id;
     private $phone;
     private $companyID;
+
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param mixed $id
+     */
+    public function setId($id): void
+    {
+        $this->id = $id;
+    }
 
     /**
      * @return mixed
