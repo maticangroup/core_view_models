@@ -42,6 +42,9 @@ class PersonModel
 
     private $sendSMS = false;
 
+    private $groups;
+    private $companies;
+
     /**
      * @return mixed
      */
@@ -216,6 +219,38 @@ class PersonModel
     public function setMainAddressString(string $mainAddressString): void
     {
         $this->mainAddressString = $mainAddressString;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getGroups()
+    {
+        return $this->groups;
+    }
+
+    /**
+     * @param mixed $groups
+     */
+    public function setGroups($groups): void
+    {
+        $this->groups = $groups;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCompanies()
+    {
+        return $this->companies;
+    }
+
+    /**
+     * @param mixed $companies
+     */
+    public function setCompanies($companies): void
+    {
+        $this->companies = $companies;
     }
 
 
