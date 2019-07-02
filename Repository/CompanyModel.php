@@ -13,7 +13,7 @@ class CompanyModel
 {
     private $companyID;
     private $companyName;
-    private $companyZipCode;
+    private $companyNationalCode;
     private $companyRegistrationCode;
     private $companyEconomicCode;
     private $companyEmail;
@@ -60,17 +60,17 @@ class CompanyModel
     /**
      * @return mixed
      */
-    public function getCompanyZipCode()
+    public function getCompanyNationalCode()
     {
-        return $this->companyZipCode;
+        return $this->companyNationalCode;
     }
 
     /**
-     * @param mixed $companyZipCode
+     * @param mixed $companyNationalCode
      */
-    public function setCompanyZipCode($companyZipCode): void
+    public function setCompanyNationalCode($companyNationalCode): void
     {
-        $this->companyZipCode = $companyZipCode;
+        $this->companyNationalCode = $companyNationalCode;
     }
 
     /**
@@ -232,6 +232,7 @@ class CompanyModel
     {
         $this->companyEmployees = $companyEmployees;
     }
+
 
 
 }
