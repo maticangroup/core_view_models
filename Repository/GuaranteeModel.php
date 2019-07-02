@@ -14,8 +14,10 @@ class GuaranteeModel
     private $guaranteeID;
     private $guaranteeName;
     private $guaranteePrice;
-    private $guaranteeProvider;
-    private $guaranteeDuration;
+    private $guaranteeProviderId;
+    private $guaranteeProviderName;
+    private $guaranteeDurationId;
+    private $guaranteeDurationName;
     private $guaranteeStatus;
 
     /**
@@ -69,34 +71,67 @@ class GuaranteeModel
     /**
      * @return mixed
      */
-    public function getGuaranteeProvider()
+    public function getGuaranteeProviderId()
     {
-        return $this->guaranteeProvider;
+        return $this->guaranteeProviderId;
     }
 
     /**
-     * @param mixed $guaranteeProvider
+     * @param mixed $guaranteeProviderId
      */
-    public function setGuaranteeProvider($guaranteeProvider): void
+    public function setGuaranteeProviderId($guaranteeProviderId): void
     {
-        $this->guaranteeProvider = $guaranteeProvider;
+        $this->guaranteeProviderId = $guaranteeProviderId;
     }
 
     /**
      * @return mixed
      */
-    public function getGuaranteeDuration()
+    public function getGuaranteeProviderName()
     {
-        return $this->guaranteeDuration;
+        return $this->guaranteeProviderName;
     }
 
     /**
-     * @param mixed $guaranteeDuration
+     * @param mixed $guaranteeProviderName
      */
-    public function setGuaranteeDuration($guaranteeDuration): void
+    public function setGuaranteeProviderName($guaranteeProviderName): void
     {
-        $this->guaranteeDuration = $guaranteeDuration;
+        $this->guaranteeProviderName = $guaranteeProviderName;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getGuaranteeDurationId()
+    {
+        return $this->guaranteeDurationId;
+    }
+
+    /**
+     * @param mixed $guaranteeDurationId
+     */
+    public function setGuaranteeDurationId($guaranteeDurationId): void
+    {
+        $this->guaranteeDurationId = $guaranteeDurationId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getGuaranteeDurationName()
+    {
+        return $this->guaranteeDurationName;
+    }
+
+    /**
+     * @param mixed $guaranteeDurationName
+     */
+    public function setGuaranteeDurationName($guaranteeDurationName): void
+    {
+        $this->guaranteeDurationName = $guaranteeDurationName;
+    }
+
 
     /**
      * @return mixed
