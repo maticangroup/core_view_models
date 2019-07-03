@@ -14,6 +14,9 @@ class SpecGroupModel
     private $specGroupID;
     private $specGroupName;
     private $specGroupDisplayOrder;
+    /**
+     * @var SpecKeyModel
+     */
     private $specGroupSpecKeys;
     private $itemCategoryId;
 
