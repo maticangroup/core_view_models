@@ -18,6 +18,7 @@ class SizeModel
     private $sizeDepth;
     private $sizeOrder;
     private $sizeStatus;
+    private $itemCategoryId;
 
     /**
      * @return mixed
@@ -131,5 +132,20 @@ class SizeModel
         $this->sizeStatus = $sizeStatus;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getItemCategoryId()
+    {
+        return $this->itemCategoryId;
+    }
+
+    /**
+     * @param mixed $itemCategoryId
+     */
+    public function setItemCategoryId($itemCategoryId): void
+    {
+        $this->itemCategoryId = $itemCategoryId;
+    }
 
 }

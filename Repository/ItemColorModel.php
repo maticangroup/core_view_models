@@ -11,25 +11,26 @@ namespace App\FormModels\Repository;
 
 class ItemColorModel
 {
-    private $ItemColorID;
-    private $ItemColorName;
-    private $ItemColorHex;
-    private $ItemColorStatus;
+    private $itemColorID;
+    private $itemColorName;
+    private $itemColorHex;
+    private $itemColorStatus;
+    private $itemId;
 
     /**
      * @return mixed
      */
     public function getItemColorID()
     {
-        return $this->ItemColorID;
+        return $this->itemColorID;
     }
 
     /**
-     * @param mixed $ItemColorID
+     * @param mixed $itemColorID
      */
-    public function setItemColorID($ItemColorID): void
+    public function setItemColorID($itemColorID): void
     {
-        $this->ItemColorID = $ItemColorID;
+        $this->itemColorID = $itemColorID;
     }
 
     /**
@@ -37,15 +38,15 @@ class ItemColorModel
      */
     public function getItemColorName()
     {
-        return $this->ItemColorName;
+        return $this->itemColorName;
     }
 
     /**
-     * @param mixed $ItemColorName
+     * @param mixed $itemColorName
      */
-    public function setItemColorName($ItemColorName): void
+    public function setItemColorName($itemColorName): void
     {
-        $this->ItemColorName = $ItemColorName;
+        $this->itemColorName = $itemColorName;
     }
 
     /**
@@ -53,15 +54,15 @@ class ItemColorModel
      */
     public function getItemColorHex()
     {
-        return $this->ItemColorHex;
+        return $this->itemColorHex;
     }
 
     /**
-     * @param mixed $ItemColorHex
+     * @param mixed $itemColorHex
      */
-    public function setItemColorHex($ItemColorHex): void
+    public function setItemColorHex($itemColorHex): void
     {
-        $this->ItemColorHex = $ItemColorHex;
+        $this->itemColorHex = $itemColorHex;
     }
 
     /**
@@ -69,14 +70,30 @@ class ItemColorModel
      */
     public function getItemColorStatus()
     {
-        return $this->ItemColorStatus;
+        return $this->itemColorStatus;
     }
 
     /**
-     * @param mixed $ItemColorStatus
+     * @param mixed $itemColorStatus
      */
-    public function setItemColorStatus($ItemColorStatus): void
+    public function setItemColorStatus($itemColorStatus): void
     {
-        $this->ItemColorStatus = $ItemColorStatus;
+        $this->itemColorStatus = $itemColorStatus;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getItemId()
+    {
+        return $this->itemId;
+    }
+
+    /**
+     * @param mixed $itemId
+     */
+    public function setItemId($itemId): void
+    {
+        $this->itemId = $itemId;
     }
 }

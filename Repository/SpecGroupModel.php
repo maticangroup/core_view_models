@@ -15,6 +15,7 @@ class SpecGroupModel
     private $specGroupName;
     private $specGroupDisplayOrder;
     private $specGroupSpecKeys;
+    private $itemCategoryId;
 
     /**
      * @return mixed
@@ -79,6 +80,24 @@ class SpecGroupModel
     {
         $this->specGroupSpecKeys = $specGroupSpecKeys;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getItemCategoryId()
+    {
+        return $this->itemCategoryId;
+    }
+
+    /**
+     * @param mixed $itemCategoryId
+     */
+    public function setItemCategoryId($itemCategoryId): void
+    {
+        $this->itemCategoryId = $itemCategoryId;
+    }
+
+
 
 
 }

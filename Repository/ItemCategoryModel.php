@@ -13,8 +13,10 @@ class ItemCategoryModel
 {
     private $itemCategoryID;
     private $itemCategoryName;
-    private $itemCategoryImage;
-    private $itemCategoryIsChildOf;
+    private $itemCategoryImageUrl;
+    private $itemCategoryImageAlt;
+    private $itemCategoryParentId;
+    private $itemCategoryParentName;
     private $itemCategorySize;
     private $itemCategoryDescription;
     private $itemSpecGroups;
@@ -54,33 +56,65 @@ class ItemCategoryModel
     /**
      * @return mixed
      */
-    public function getItemCategoryImage()
+    public function getItemCategoryImageUrl()
     {
-        return $this->itemCategoryImage;
+        return $this->itemCategoryImageUrl;
     }
 
     /**
-     * @param mixed $itemCategoryImage
+     * @param mixed $itemCategoryImageUrl
      */
-    public function setItemCategoryImage($itemCategoryImage): void
+    public function setItemCategoryImageUrl($itemCategoryImageUrl): void
     {
-        $this->itemCategoryImage = $itemCategoryImage;
+        $this->itemCategoryImageUrl = $itemCategoryImageUrl;
     }
 
     /**
      * @return mixed
      */
-    public function getItemCategoryIsChildOf()
+    public function getItemCategoryImageAlt()
     {
-        return $this->itemCategoryIsChildOf;
+        return $this->itemCategoryImageAlt;
     }
 
     /**
-     * @param mixed $itemCategoryIsChildOf
+     * @param mixed $itemCategoryImageAlt
      */
-    public function setItemCategoryIsChildOf($itemCategoryIsChildOf): void
+    public function setItemCategoryImageAlt($itemCategoryImageAlt): void
     {
-        $this->itemCategoryIsChildOf = $itemCategoryIsChildOf;
+        $this->itemCategoryImageAlt = $itemCategoryImageAlt;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getItemCategoryParentId()
+    {
+        return $this->itemCategoryParentId;
+    }
+
+    /**
+     * @param mixed $itemCategoryParentId
+     */
+    public function setItemCategoryParentId($itemCategoryParentId): void
+    {
+        $this->itemCategoryParentId = $itemCategoryParentId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getItemCategoryParentName()
+    {
+        return $this->itemCategoryParentName;
+    }
+
+    /**
+     * @param mixed $itemCategoryParentName
+     */
+    public function setItemCategoryParentName($itemCategoryParentName): void
+    {
+        $this->itemCategoryParentName = $itemCategoryParentName;
     }
 
     /**

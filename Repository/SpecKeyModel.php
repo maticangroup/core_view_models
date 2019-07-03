@@ -14,10 +14,11 @@ class SpecKeyModel
     private $specKeyID;
     private $specKeyName;
     private $specKeyDefaultValue;
-    private $specKeySpecGoupID;
-    private $specKeySpecGoupName;
+    private $specKeySpecGroupID;
+    private $specKeySpecGroupName;
     private $specKeyDisplayOrder;
-    private $specKeyIsSpecial;
+    private $specKeyIsSpecial = false;
+    private $includeItemCategory = false;
 
     /**
      * @return mixed
@@ -70,33 +71,33 @@ class SpecKeyModel
     /**
      * @return mixed
      */
-    public function getSpecKeySpecGoupID()
+    public function getSpecKeySpecGroupID()
     {
-        return $this->specKeySpecGoupID;
+        return $this->specKeySpecGroupID;
     }
 
     /**
-     * @param mixed $specKeySpecGoupID
+     * @param mixed $specKeySpecGroupID
      */
-    public function setSpecKeySpecGoupID($specKeySpecGoupID): void
+    public function setSpecKeySpecGroupID($specKeySpecGroupID): void
     {
-        $this->specKeySpecGoupID = $specKeySpecGoupID;
+        $this->specKeySpecGroupID = $specKeySpecGroupID;
     }
 
     /**
      * @return mixed
      */
-    public function getSpecKeySpecGoupName()
+    public function getSpecKeySpecGroupName()
     {
-        return $this->specKeySpecGoupName;
+        return $this->specKeySpecGroupName;
     }
 
     /**
-     * @param mixed $specKeySpecGoupName
+     * @param mixed $specKeySpecGroupName
      */
-    public function setSpecKeySpecGoupName($specKeySpecGoupName): void
+    public function setSpecKeySpecGroupName($specKeySpecGroupName): void
     {
-        $this->specKeySpecGoupName = $specKeySpecGoupName;
+        $this->specKeySpecGroupName = $specKeySpecGroupName;
     }
 
     /**
@@ -131,5 +132,20 @@ class SpecKeyModel
         $this->specKeyIsSpecial = $specKeyIsSpecial;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getIncludeItemCategory()
+    {
+        return $this->includeItemCategory;
+    }
+
+    /**
+     * @param mixed $includeItemCategory
+     */
+    public function setIncludeItemCategory($includeItemCategory): void
+    {
+        $this->includeItemCategory = $includeItemCategory;
+    }
 
 }
