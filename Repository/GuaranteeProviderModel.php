@@ -14,6 +14,7 @@ class GuaranteeProviderModel
     private $guaranteeProviderID;
     private $guaranteeProviderName;
     private $guaranteeProviderStatus;
+    private $guaranteeId;
 
     /**
      * @return mixed
@@ -62,4 +63,21 @@ class GuaranteeProviderModel
     {
         $this->guaranteeProviderStatus = $guaranteeProviderStatus;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getGuaranteeId()
+    {
+        return $this->guaranteeId;
+    }
+
+    /**
+     * @param mixed $guaranteeId
+     */
+    public function setGuaranteeId($guaranteeId): void
+    {
+        $this->guaranteeId = $guaranteeId;
+    }
+
 }
