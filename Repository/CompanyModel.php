@@ -24,6 +24,7 @@ class CompanyModel
     private $companyPhones;
     private $companyAddresses;
     private $companyEmployees;
+    private $brandId;
 
     /**
      * @return mixed
@@ -233,6 +234,20 @@ class CompanyModel
         $this->companyEmployees = $companyEmployees;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getBrandId()
+    {
+        return $this->brandId;
+    }
 
+    /**
+     * @param mixed $brandId
+     */
+    public function setBrandId($brandId): void
+    {
+        $this->brandId = $brandId;
+    }
 
 }
