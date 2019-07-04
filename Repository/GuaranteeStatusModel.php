@@ -14,6 +14,7 @@ class GuaranteeStatusModel
     private $guaranteeStatusId;
     private $guaranteeStatusName;
     private $guaranteeStatusMachineName;
+    private $guaranteeStatusColor;
     private $guaranteeId;
 
     /**
@@ -63,6 +64,23 @@ class GuaranteeStatusModel
     {
         $this->guaranteeStatusMachineName = $guaranteeStatusMachineName;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getGuaranteeStatusColor()
+    {
+        return $this->guaranteeStatusColor;
+    }
+
+    /**
+     * @param mixed $guaranteeStatusColor
+     */
+    public function setGuaranteeStatusColor($guaranteeStatusColor): void
+    {
+        $this->guaranteeStatusColor = $guaranteeStatusColor;
+    }
+
 
     /**
      * @return mixed
