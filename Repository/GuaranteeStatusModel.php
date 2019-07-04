@@ -3,18 +3,18 @@
  * Created by PhpStorm.
  * User: Amirhossein
  * Date: 7/4/2019
- * Time: 11:18 AM
+ * Time: 11:21 AM
  */
 
 namespace App\FormModels\Repository;
 
 
-class ItemColorStatusModel
+class GuaranteeStatusModel
 {
     private $id;
     private $name;
     private $machineName;
-    private $colorId;
+    private $guaranteeId;
 
     /**
      * @return mixed
@@ -64,19 +64,22 @@ class ItemColorStatusModel
         $this->machineName = $machineName;
     }
 
+
     /**
      * @return mixed
      */
-    public function getColorId()
+    public function getGuaranteeId()
     {
-        return $this->colorId;
+        return $this->guaranteeId;
     }
 
     /**
-     * @param mixed $colorId
+     * @param mixed $guaranteeId
      */
-    public function setColorId($colorId): void
+    public function setGuaranteeId($guaranteeId): void
     {
-        $this->colorId = $colorId;
+        $this->guaranteeId = $guaranteeId;
     }
+
+
 }
