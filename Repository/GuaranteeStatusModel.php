@@ -11,59 +11,58 @@ namespace App\FormModels\Repository;
 
 class GuaranteeStatusModel
 {
-    private $id;
-    private $name;
-    private $machineName;
+    private $guaranteeStatusId;
+    private $guaranteeStatusName;
+    private $guaranteeStatusMachineName;
     private $guaranteeId;
 
     /**
      * @return mixed
      */
-    public function getId()
+    public function getGuaranteeStatusId()
     {
-        return $this->id;
+        return $this->guaranteeStatusId;
     }
 
     /**
-     * @param mixed $id
+     * @param mixed $guaranteeStatusId
      */
-    public function setId($id): void
+    public function setGuaranteeStatusId($guaranteeStatusId): void
     {
-        $this->id = $id;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getName()
-    {
-        return $this->name;
-    }
-
-    /**
-     * @param mixed $name
-     */
-    public function setName($name): void
-    {
-        $this->name = $name;
+        $this->guaranteeStatusId = $guaranteeStatusId;
     }
 
     /**
      * @return mixed
      */
-    public function getMachineName()
+    public function getGuaranteeStatusName()
     {
-        return $this->machineName;
+        return $this->guaranteeStatusName;
     }
 
     /**
-     * @param mixed $machineName
+     * @param mixed $guaranteeStatusName
      */
-    public function setMachineName($machineName): void
+    public function setGuaranteeStatusName($guaranteeStatusName): void
     {
-        $this->machineName = $machineName;
+        $this->guaranteeStatusName = $guaranteeStatusName;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getGuaranteeStatusMachineName()
+    {
+        return $this->guaranteeStatusMachineName;
+    }
+
+    /**
+     * @param mixed $guaranteeStatusMachineName
+     */
+    public function setGuaranteeStatusMachineName($guaranteeStatusMachineName): void
+    {
+        $this->guaranteeStatusMachineName = $guaranteeStatusMachineName;
+    }
 
     /**
      * @return mixed
