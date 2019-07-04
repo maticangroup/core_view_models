@@ -14,6 +14,7 @@ class ItemColorStatusModel
     private $id;
     private $name;
     private $machineName;
+    private $statusColor;
     private $colorId;
 
     /**
@@ -62,6 +63,22 @@ class ItemColorStatusModel
     public function setMachineName($machineName): void
     {
         $this->machineName = $machineName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getStatusColor()
+    {
+        return $this->statusColor;
+    }
+
+    /**
+     * @param mixed $statusColor
+     */
+    public function setStatusColor($statusColor): void
+    {
+        $this->statusColor = $statusColor;
     }
 
     /**
