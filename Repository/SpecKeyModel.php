@@ -18,7 +18,6 @@ class SpecKeyModel
     private $specKeySpecGroupName;
     private $specKeyDisplayOrder;
     private $specKeyIsSpecial = false;
-    private $includeItemCategory = false;
 
     /**
      * @return mixed
@@ -130,22 +129,6 @@ class SpecKeyModel
     public function setSpecKeyIsSpecial($specKeyIsSpecial): void
     {
         $this->specKeyIsSpecial = $specKeyIsSpecial;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getIncludeItemCategory()
-    {
-        return $this->includeItemCategory;
-    }
-
-    /**
-     * @param mixed $includeItemCategory
-     */
-    public function setIncludeItemCategory($includeItemCategory): void
-    {
-        $this->includeItemCategory = $includeItemCategory;
     }
 
 }
