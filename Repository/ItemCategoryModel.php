@@ -17,7 +17,7 @@ class ItemCategoryModel
     private $itemCategoryImageAlt;
     private $itemCategoryParentId;
     private $itemCategoryParentName;
-    private $itemCategorySize;
+    private $itemCategorySizeId;
     private $itemCategoryDescription;
     private $itemSpecGroups;
     private $itemCategoryHasChild;
@@ -122,17 +122,17 @@ class ItemCategoryModel
     /**
      * @return mixed
      */
-    public function getItemCategorySize()
+    public function getItemCategorySizeId()
     {
-        return $this->itemCategorySize;
+        return $this->itemCategorySizeId;
     }
 
     /**
-     * @param mixed $itemCategorySize
+     * @param mixed $itemCategorySizeId
      */
-    public function setItemCategorySize($itemCategorySize): void
+    public function setItemCategorySizeId($itemCategorySizeId): void
     {
-        $this->itemCategorySize = $itemCategorySize;
+        $this->itemCategorySizeId = $itemCategorySizeId;
     }
 
     /**
