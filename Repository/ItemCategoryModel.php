@@ -22,6 +22,7 @@ class ItemCategoryModel
     private $itemSpecGroups;
     private $itemCategoryHasChild;
     private $itemCategoryChildren;
+    private $itemCategorySpecKeysIds;
 
     /**
      * @return mixed
@@ -197,6 +198,22 @@ class ItemCategoryModel
     public function setItemCategoryChildren($itemCategoryChildren): void
     {
         $this->itemCategoryChildren = $itemCategoryChildren;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getItemCategorySpecKeysIds()
+    {
+        return $this->itemCategorySpecKeysIds;
+    }
+
+    /**
+     * @param mixed $itemCategorySpecKeysIds
+     */
+    public function setItemCategorySpecKeysIds($itemCategorySpecKeysIds): void
+    {
+        $this->itemCategorySpecKeysIds = $itemCategorySpecKeysIds;
     }
 
 }
