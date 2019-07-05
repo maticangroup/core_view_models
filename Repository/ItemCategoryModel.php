@@ -20,6 +20,8 @@ class ItemCategoryModel
     private $itemCategorySize;
     private $itemCategoryDescription;
     private $itemSpecGroups;
+    private $itemCategoryHasChild;
+    private $itemCategoryChildren;
 
     /**
      * @return mixed
@@ -163,6 +165,38 @@ class ItemCategoryModel
     public function setItemSpecGroups($itemSpecGroups): void
     {
         $this->itemSpecGroups = $itemSpecGroups;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getItemCategoryHasChild()
+    {
+        return $this->itemCategoryHasChild;
+    }
+
+    /**
+     * @param mixed $itemCategoryHasChild
+     */
+    public function setItemCategoryHasChild($itemCategoryHasChild): void
+    {
+        $this->itemCategoryHasChild = $itemCategoryHasChild;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getItemCategoryChildren()
+    {
+        return $this->itemCategoryChildren;
+    }
+
+    /**
+     * @param mixed $itemCategoryChildren
+     */
+    public function setItemCategoryChildren($itemCategoryChildren): void
+    {
+        $this->itemCategoryChildren = $itemCategoryChildren;
     }
 
 }
