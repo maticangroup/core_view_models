@@ -13,16 +13,19 @@ class ItemModel
 {
     private $itemID;
     private $itemName;
-    private $itemBrand;
-    private $itemType;
-    private $itemCategories;
-    private $itemSpecGroups;
+    private $itemBrandId;
+    private $itemTypeId;
+    private $itemCategoriesIds;
+    private $itemSpecGroupsKeys;
     private $itemFlexibleContent;
     private $itemBarcodes;
     private $itemColors;
     private $itemGuarantees;
     private $itemSuppliers;
     private $itemImages;
+    private $itemStatusId;
+    private $itemCreatedDate;
+    private $itemUpdatedDate;
 
     /**
      * @return mixed
@@ -59,65 +62,65 @@ class ItemModel
     /**
      * @return mixed
      */
-    public function getItemBrand()
+    public function getItemBrandId()
     {
-        return $this->itemBrand;
+        return $this->itemBrandId;
     }
 
     /**
-     * @param mixed $itemBrand
+     * @param mixed $itemBrandId
      */
-    public function setItemBrand($itemBrand): void
+    public function setItemBrandId($itemBrandId): void
     {
-        $this->itemBrand = $itemBrand;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getItemType()
-    {
-        return $this->itemType;
-    }
-
-    /**
-     * @param mixed $itemType
-     */
-    public function setItemType($itemType): void
-    {
-        $this->itemType = $itemType;
+        $this->itemBrandId = $itemBrandId;
     }
 
     /**
      * @return mixed
      */
-    public function getItemCategories()
+    public function getItemTypeId()
     {
-        return $this->itemCategories;
+        return $this->itemTypeId;
     }
 
     /**
-     * @param mixed $itemCategories
+     * @param mixed $itemTypeId
      */
-    public function setItemCategories($itemCategories): void
+    public function setItemTypeId($itemTypeId): void
     {
-        $this->itemCategories = $itemCategories;
+        $this->itemTypeId = $itemTypeId;
     }
 
     /**
      * @return mixed
      */
-    public function getItemSpecGroups()
+    public function getItemCategoriesIds()
     {
-        return $this->itemSpecGroups;
+        return $this->itemCategoriesIds;
     }
 
     /**
-     * @param mixed $itemSpecGroups
+     * @param mixed $itemCategoriesIds
      */
-    public function setItemSpecGroups($itemSpecGroups): void
+    public function setItemCategoriesIds($itemCategoriesIds): void
     {
-        $this->itemSpecGroups = $itemSpecGroups;
+        $this->itemCategoriesIds = $itemCategoriesIds;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getItemSpecGroupsKeys()
+    {
+        return $this->itemSpecGroupsKeys;
+    }
+
+    /**
+     * @param mixed $itemSpecGroupsKeys
+     */
+    public function setItemSpecGroupsKeys($itemSpecGroupsKeys): void
+    {
+        $this->itemSpecGroupsKeys = $itemSpecGroupsKeys;
     }
 
     /**
@@ -215,4 +218,53 @@ class ItemModel
     {
         $this->itemImages = $itemImages;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getItemStatusId()
+    {
+        return $this->itemStatusId;
+    }
+
+    /**
+     * @param mixed $itemStatusId
+     */
+    public function setItemStatusId($itemStatusId): void
+    {
+        $this->itemStatusId = $itemStatusId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getItemCreatedDate()
+    {
+        return $this->itemCreatedDate;
+    }
+
+    /**
+     * @param mixed $itemCreatedDate
+     */
+    public function setItemCreatedDate($itemCreatedDate): void
+    {
+        $this->itemCreatedDate = $itemCreatedDate;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getItemUpdatedDate()
+    {
+        return $this->itemUpdatedDate;
+    }
+
+    /**
+     * @param mixed $itemUpdatedDate
+     */
+    public function setItemUpdatedDate($itemUpdatedDate): void
+    {
+        $this->itemUpdatedDate = $itemUpdatedDate;
+    }
+
 }
