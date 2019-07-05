@@ -14,6 +14,7 @@ class ItemModel
     private $itemID;
     private $itemName;
     private $itemBrandId;
+    private $itemBrandName;
     private $itemTypeId;
     private $itemCategoriesIds;
     private $itemSpecGroupsKeys;
@@ -73,6 +74,22 @@ class ItemModel
     public function setItemBrandId($itemBrandId): void
     {
         $this->itemBrandId = $itemBrandId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getItemBrandName()
+    {
+        return $this->itemBrandName;
+    }
+
+    /**
+     * @param mixed $itemBrandName
+     */
+    public function setItemBrandName($itemBrandName): void
+    {
+        $this->itemBrandName = $itemBrandName;
     }
 
     /**
