@@ -19,6 +19,7 @@ class GuaranteeModel
     private $guaranteeDurationId;
     private $guaranteeDurationName;
     private $guaranteeStatus;
+    private $itemId;
 
     /**
      * @return mixed
@@ -149,5 +150,20 @@ class GuaranteeModel
         $this->guaranteeStatus = $guaranteeStatus;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getItemId()
+    {
+        return $this->itemId;
+    }
+
+    /**
+     * @param mixed $itemId
+     */
+    public function setItemId($itemId): void
+    {
+        $this->itemId = $itemId;
+    }
 
 }
