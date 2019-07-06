@@ -28,6 +28,7 @@ class ItemModel
     private $itemCreatedDate;
     private $itemUpdatedDate;
 
+
     /**
      * @return mixed
      */
