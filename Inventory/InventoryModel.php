@@ -20,8 +20,7 @@ class InventoryModel
     private $inventoryMainPhone;
     private $inventoryPhones;
     private $inventoryLocation;
-    private $inventoryProducts;
-    private $inventoryItems;
+    private $inventoryItemProducts;
     private $inventoryDeeds;
     private $inventoryStatus;
 
@@ -172,33 +171,17 @@ class InventoryModel
     /**
      * @return mixed
      */
-    public function getInventoryProducts()
+    public function getInventoryItemProducts()
     {
-        return $this->inventoryProducts;
+        return $this->inventoryItemProducts;
     }
 
     /**
-     * @param mixed $inventoryProducts
+     * @param mixed $inventoryItemProducts
      */
-    public function setInventoryProducts($inventoryProducts): void
+    public function setInventoryItemProducts($inventoryItemProducts): void
     {
-        $this->inventoryProducts = $inventoryProducts;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getInventoryItems()
-    {
-        return $this->inventoryItems;
-    }
-
-    /**
-     * @param mixed $inventoryItems
-     */
-    public function setInventoryItems($inventoryItems): void
-    {
-        $this->inventoryItems = $inventoryItems;
+        $this->inventoryItemProducts = $inventoryItemProducts;
     }
 
     /**
