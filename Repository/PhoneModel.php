@@ -14,6 +14,7 @@ class PhoneModel
     private $id;
     private $phone;
     private $companyID;
+    private $inventoryID;
 
     /**
      * @return mixed
@@ -61,6 +62,22 @@ class PhoneModel
     public function setCompanyID($companyID): void
     {
         $this->companyID = $companyID;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInventoryID()
+    {
+        return $this->inventoryID;
+    }
+
+    /**
+     * @param mixed $inventoryID
+     */
+    public function setInventoryID($inventoryID): void
+    {
+        $this->inventoryID = $inventoryID;
     }
 
 
