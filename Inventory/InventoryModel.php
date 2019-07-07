@@ -12,6 +12,7 @@ namespace App\FormModels\Inventory;
 class InventoryModel
 {
     private $inventoryId;
+    private $inventoryName;
     private $inventoryKeeperId;
     private $inventoryKeeperName;
     private $inventoryPhones;
@@ -34,6 +35,22 @@ class InventoryModel
     public function setInventoryId($inventoryId): void
     {
         $this->inventoryId = $inventoryId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInventoryName()
+    {
+        return $this->inventoryName;
+    }
+
+    /**
+     * @param mixed $inventoryName
+     */
+    public function setInventoryName($inventoryName): void
+    {
+        $this->inventoryName = $inventoryName;
     }
 
     /**
