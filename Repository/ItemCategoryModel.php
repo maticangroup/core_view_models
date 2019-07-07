@@ -23,6 +23,7 @@ class ItemCategoryModel
     private $itemCategoryHasChild;
     private $itemCategoryChildren;
     private $itemCategorySpecKeysIds;
+    private $itemCategoryIsChecked;
 
     /**
      * @return mixed
@@ -214,6 +215,22 @@ class ItemCategoryModel
     public function setItemCategorySpecKeysIds($itemCategorySpecKeysIds): void
     {
         $this->itemCategorySpecKeysIds = $itemCategorySpecKeysIds;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getItemCategoryIsChecked()
+    {
+        return $this->itemCategoryIsChecked;
+    }
+
+    /**
+     * @param mixed $itemCategoryIsChecked
+     */
+    public function setItemCategoryIsChecked($itemCategoryIsChecked): void
+    {
+        $this->itemCategoryIsChecked = $itemCategoryIsChecked;
     }
 
 }
