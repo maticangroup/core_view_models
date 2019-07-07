@@ -16,6 +16,7 @@ class InventoryModel
     private $inventoryKeeperId;
     private $inventoryKeeperName;
     private $inventoryAddress;
+    private $inventoryMainPhone;
     private $inventoryPhones;
     private $inventoryLocation;
     private $inventoryProducts;
@@ -100,6 +101,22 @@ class InventoryModel
     public function setInventoryAddress($inventoryAddress): void
     {
         $this->inventoryAddress = $inventoryAddress;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInventoryMainPhone()
+    {
+        return $this->inventoryMainPhone;
+    }
+
+    /**
+     * @param mixed $inventoryMainPhone
+     */
+    public function setInventoryMainPhone($inventoryMainPhone): void
+    {
+        $this->inventoryMainPhone = $inventoryMainPhone;
     }
 
     /**
