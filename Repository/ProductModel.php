@@ -23,9 +23,9 @@ class ProductModel
     private $productTypeId;
     private $productTypeName;
     private $productTypeMachineName;
-    private $productTypeColorName;
-    private $productTypeColorHex;
-    private $productTypeColorId;
+    private $productColorName;
+    private $productColorHex;
+    private $productColorId;
     private $productItemId;
     private $productItemName;
 
@@ -224,49 +224,49 @@ class ProductModel
     /**
      * @return mixed
      */
-    public function getProductTypeColorName()
+    public function getProductColorName()
     {
-        return $this->productTypeColorName;
+        return $this->productColorName;
     }
 
     /**
-     * @param mixed $productTypeColorName
+     * @param mixed $productColorName
      */
-    public function setProductTypeColorName($productTypeColorName): void
+    public function setProductColorName($productColorName): void
     {
-        $this->productTypeColorName = $productTypeColorName;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getProductTypeColorHex()
-    {
-        return $this->productTypeColorHex;
-    }
-
-    /**
-     * @param mixed $productTypeColorHex
-     */
-    public function setProductTypeColorHex($productTypeColorHex): void
-    {
-        $this->productTypeColorHex = $productTypeColorHex;
+        $this->productColorName = $productColorName;
     }
 
     /**
      * @return mixed
      */
-    public function getProductTypeColorId()
+    public function getProductColorHex()
     {
-        return $this->productTypeColorId;
+        return $this->productColorHex;
     }
 
     /**
-     * @param mixed $productTypeColorId
+     * @param mixed $productColorHex
      */
-    public function setProductTypeColorId($productTypeColorId): void
+    public function setProductColorHex($productColorHex): void
     {
-        $this->productTypeColorId = $productTypeColorId;
+        $this->productColorHex = $productColorHex;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProductColorId()
+    {
+        return $this->productColorId;
+    }
+
+    /**
+     * @param mixed $productColorId
+     */
+    public function setProductColorId($productColorId): void
+    {
+        $this->productColorId = $productColorId;
     }
 
     /**
