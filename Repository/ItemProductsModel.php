@@ -20,6 +20,8 @@ class ItemProductsModel
     private $itemProductsItemType;
     private $itemProductsItemColors;
     private $itemProductsItemCategories;
+    private $itemProductsInventoryId;
+    private $itemProductsShelveId;
 
     /**
      * @return mixed
@@ -147,6 +149,38 @@ class ItemProductsModel
     public function setItemProductsItemCategories($itemProductsItemCategories): void
     {
         $this->itemProductsItemCategories = $itemProductsItemCategories;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getItemProductsInventoryId()
+    {
+        return $this->itemProductsInventoryId;
+    }
+
+    /**
+     * @param mixed $itemProductsInventoryId
+     */
+    public function setItemProductsInventoryId($itemProductsInventoryId): void
+    {
+        $this->itemProductsInventoryId = $itemProductsInventoryId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getItemProductsShelveId()
+    {
+        return $this->itemProductsShelveId;
+    }
+
+    /**
+     * @param mixed $itemProductsShelveId
+     */
+    public function setItemProductsShelveId($itemProductsShelveId): void
+    {
+        $this->itemProductsShelveId = $itemProductsShelveId;
     }
 
 
