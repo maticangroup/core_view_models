@@ -12,6 +12,7 @@ namespace App\FormModels\Inventory;
 class InventoryDeedModel
 {
     private $inventoryDeedId;
+    private $inventoryDeedName;
     private $inventoryDeedSerial;
     private $inventoryDeedFromId;
     private $inventoryDeedFromName;
@@ -32,6 +33,22 @@ class InventoryDeedModel
     public function setInventoryDeedId($inventoryDeedId): void
     {
         $this->inventoryDeedId = $inventoryDeedId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInventoryDeedName()
+    {
+        return $this->inventoryDeedName;
+    }
+
+    /**
+     * @param mixed $inventoryDeedName
+     */
+    public function setInventoryDeedName($inventoryDeedName): void
+    {
+        $this->inventoryDeedName = $inventoryDeedName;
     }
 
     /**
