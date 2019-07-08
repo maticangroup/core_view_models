@@ -11,9 +11,7 @@ namespace App\FormModels\Repository;
 
 class ItemProductsModel
 {
-    /**
-     * @var $itemModel ItemModel
-     */
+
     private $itemModel;
     private $itemProducts;
     private $itemProductsProductsCount;
@@ -21,19 +19,20 @@ class ItemProductsModel
     private $itemProductsMaxProductPrice;
     private $itemProductsItemType;
     private $itemProductsItemColors;
+    private $itemProductsItemCategories;
 
     /**
-     * @return ItemModel
+     * @return mixed
      */
-    public function getItemModel(): ItemModel
+    public function getItemModel()
     {
         return $this->itemModel;
     }
 
     /**
-     * @param ItemModel $itemModel
+     * @param mixed $itemModel
      */
-    public function setItemModel(ItemModel $itemModel): void
+    public function setItemModel($itemModel): void
     {
         $this->itemModel = $itemModel;
     }
@@ -132,6 +131,22 @@ class ItemProductsModel
     public function setItemProductsItemColors($itemProductsItemColors): void
     {
         $this->itemProductsItemColors = $itemProductsItemColors;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getItemProductsItemCategories()
+    {
+        return $this->itemProductsItemCategories;
+    }
+
+    /**
+     * @param mixed $itemProductsItemCategories
+     */
+    public function setItemProductsItemCategories($itemProductsItemCategories): void
+    {
+        $this->itemProductsItemCategories = $itemProductsItemCategories;
     }
 
 
