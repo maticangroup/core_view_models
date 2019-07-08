@@ -15,14 +15,21 @@ class InventoryDeedModel
     private $inventoryDeedName;
     private $inventoryDeedSerial;
     private $inventoryDeedFromId;
-    private $inventoryDeedFromName;
-    private $inventoryDeedToId;
-    private $inventoryDeedToName;
+    private $inventoryDeedFromShelveName;
+    private $inventoryDeedFromShelveId;
+    private $inventoryDeedToShelveId;
+    private $inventoryDeedToShelveName;
+    private $inventoryDeedFromInventoryName;
+    private $inventoryDeedFromInventoryId;
+    private $inventoryDeedToInventoryId;
+    private $inventoryDeedToInventoryName;
+    private $inventoryDeedFromQueueId;
+    private $inventoryDeedFromQueueName;
+    private $inventoryDeedToQueueId;
+    private $inventoryDeedToQueueName;
     private $inventoryDeedDescription;
     private $inventoryDeedCreateDate;
     private $inventoryDeedStatus;
-    private $inventoryDeedFromQueue;
-    private $inventoryDeedToQueue;
     private $inventoryDeedProducts;
     private $inventoryDeedConfirmDate;
     private $inventoryDeedCreatePerson;
@@ -95,49 +102,193 @@ class InventoryDeedModel
     /**
      * @return mixed
      */
-    public function getInventoryDeedFromName()
+    public function getInventoryDeedFromShelveName()
     {
-        return $this->inventoryDeedFromName;
+        return $this->inventoryDeedFromShelveName;
     }
 
     /**
-     * @param mixed $inventoryDeedFromName
+     * @param mixed $inventoryDeedFromShelveName
      */
-    public function setInventoryDeedFromName($inventoryDeedFromName): void
+    public function setInventoryDeedFromShelveName($inventoryDeedFromShelveName): void
     {
-        $this->inventoryDeedFromName = $inventoryDeedFromName;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getInventoryDeedToId()
-    {
-        return $this->inventoryDeedToId;
-    }
-
-    /**
-     * @param mixed $inventoryDeedToId
-     */
-    public function setInventoryDeedToId($inventoryDeedToId): void
-    {
-        $this->inventoryDeedToId = $inventoryDeedToId;
+        $this->inventoryDeedFromShelveName = $inventoryDeedFromShelveName;
     }
 
     /**
      * @return mixed
      */
-    public function getInventoryDeedToName()
+    public function getInventoryDeedFromShelveId()
     {
-        return $this->inventoryDeedToName;
+        return $this->inventoryDeedFromShelveId;
     }
 
     /**
-     * @param mixed $inventoryDeedToName
+     * @param mixed $inventoryDeedFromShelveId
      */
-    public function setInventoryDeedToName($inventoryDeedToName): void
+    public function setInventoryDeedFromShelveId($inventoryDeedFromShelveId): void
     {
-        $this->inventoryDeedToName = $inventoryDeedToName;
+        $this->inventoryDeedFromShelveId = $inventoryDeedFromShelveId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInventoryDeedToShelveId()
+    {
+        return $this->inventoryDeedToShelveId;
+    }
+
+    /**
+     * @param mixed $inventoryDeedToShelveId
+     */
+    public function setInventoryDeedToShelveId($inventoryDeedToShelveId): void
+    {
+        $this->inventoryDeedToShelveId = $inventoryDeedToShelveId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInventoryDeedToShelveName()
+    {
+        return $this->inventoryDeedToShelveName;
+    }
+
+    /**
+     * @param mixed $inventoryDeedToShelveName
+     */
+    public function setInventoryDeedToShelveName($inventoryDeedToShelveName): void
+    {
+        $this->inventoryDeedToShelveName = $inventoryDeedToShelveName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInventoryDeedFromInventoryName()
+    {
+        return $this->inventoryDeedFromInventoryName;
+    }
+
+    /**
+     * @param mixed $inventoryDeedFromInventoryName
+     */
+    public function setInventoryDeedFromInventoryName($inventoryDeedFromInventoryName): void
+    {
+        $this->inventoryDeedFromInventoryName = $inventoryDeedFromInventoryName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInventoryDeedFromInventoryId()
+    {
+        return $this->inventoryDeedFromInventoryId;
+    }
+
+    /**
+     * @param mixed $inventoryDeedFromInventoryId
+     */
+    public function setInventoryDeedFromInventoryId($inventoryDeedFromInventoryId): void
+    {
+        $this->inventoryDeedFromInventoryId = $inventoryDeedFromInventoryId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInventoryDeedToInventoryId()
+    {
+        return $this->inventoryDeedToInventoryId;
+    }
+
+    /**
+     * @param mixed $inventoryDeedToInventoryId
+     */
+    public function setInventoryDeedToInventoryId($inventoryDeedToInventoryId): void
+    {
+        $this->inventoryDeedToInventoryId = $inventoryDeedToInventoryId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInventoryDeedToInventoryName()
+    {
+        return $this->inventoryDeedToInventoryName;
+    }
+
+    /**
+     * @param mixed $inventoryDeedToInventoryName
+     */
+    public function setInventoryDeedToInventoryName($inventoryDeedToInventoryName): void
+    {
+        $this->inventoryDeedToInventoryName = $inventoryDeedToInventoryName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInventoryDeedFromQueueId()
+    {
+        return $this->inventoryDeedFromQueueId;
+    }
+
+    /**
+     * @param mixed $inventoryDeedFromQueueId
+     */
+    public function setInventoryDeedFromQueueId($inventoryDeedFromQueueId): void
+    {
+        $this->inventoryDeedFromQueueId = $inventoryDeedFromQueueId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInventoryDeedFromQueueName()
+    {
+        return $this->inventoryDeedFromQueueName;
+    }
+
+    /**
+     * @param mixed $inventoryDeedFromQueueName
+     */
+    public function setInventoryDeedFromQueueName($inventoryDeedFromQueueName): void
+    {
+        $this->inventoryDeedFromQueueName = $inventoryDeedFromQueueName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInventoryDeedToQueueId()
+    {
+        return $this->inventoryDeedToQueueId;
+    }
+
+    /**
+     * @param mixed $inventoryDeedToQueueId
+     */
+    public function setInventoryDeedToQueueId($inventoryDeedToQueueId): void
+    {
+        $this->inventoryDeedToQueueId = $inventoryDeedToQueueId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInventoryDeedToQueueName()
+    {
+        return $this->inventoryDeedToQueueName;
+    }
+
+    /**
+     * @param mixed $inventoryDeedToQueueName
+     */
+    public function setInventoryDeedToQueueName($inventoryDeedToQueueName): void
+    {
+        $this->inventoryDeedToQueueName = $inventoryDeedToQueueName;
     }
 
     /**
@@ -186,38 +337,6 @@ class InventoryDeedModel
     public function setInventoryDeedStatus($inventoryDeedStatus): void
     {
         $this->inventoryDeedStatus = $inventoryDeedStatus;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getInventoryDeedFromQueue()
-    {
-        return $this->inventoryDeedFromQueue;
-    }
-
-    /**
-     * @param mixed $inventoryDeedFromQueue
-     */
-    public function setInventoryDeedFromQueue($inventoryDeedFromQueue): void
-    {
-        $this->inventoryDeedFromQueue = $inventoryDeedFromQueue;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getInventoryDeedToQueue()
-    {
-        return $this->inventoryDeedToQueue;
-    }
-
-    /**
-     * @param mixed $inventoryDeedToQueue
-     */
-    public function setInventoryDeedToQueue($inventoryDeedToQueue): void
-    {
-        $this->inventoryDeedToQueue = $inventoryDeedToQueue;
     }
 
     /**

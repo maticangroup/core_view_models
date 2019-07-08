@@ -11,6 +11,7 @@ namespace App\FormModels\Repository;
 
 class ProductModel
 {
+    private $productId;
     private $productGuaranteeId;
     private $productGuaranteeName;
     private $productSupplierId;
@@ -29,6 +30,22 @@ class ProductModel
     private $productItemId;
     private $productItemName;
     private $productDeedId;
+
+    /**
+     * @return mixed
+     */
+    public function getProductId()
+    {
+        return $this->productId;
+    }
+
+    /**
+     * @param mixed $productId
+     */
+    public function setProductId($productId): void
+    {
+        $this->productId = $productId;
+    }
 
     /**
      * @return mixed
