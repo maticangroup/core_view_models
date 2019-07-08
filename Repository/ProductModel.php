@@ -19,6 +19,7 @@ class ProductModel
     private $productCurrentPrice;
     private $productDiscountPrice;
     private $productBasePrice;
+    private $productTotalPrice;
     private $productSerial;
     private $productQuantity;
     private $productTypeId;
@@ -157,6 +158,22 @@ class ProductModel
     public function setProductBasePrice($productBasePrice): void
     {
         $this->productBasePrice = $productBasePrice;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProductTotalPrice()
+    {
+        return $this->productTotalPrice;
+    }
+
+    /**
+     * @param mixed $productTotalPrice
+     */
+    public function setProductTotalPrice($productTotalPrice): void
+    {
+        $this->productTotalPrice = $productTotalPrice;
     }
 
     /**

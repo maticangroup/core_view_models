@@ -17,6 +17,7 @@ class ItemModel
     private $itemBrandName;
     private $itemTypeId;
     private $itemTypeName;
+    private $itemTypeMachineName;
     private $itemCategoriesIds;
     private $itemSpecGroupsKeys;
     private $itemFlexibleContent;
@@ -125,6 +126,22 @@ class ItemModel
     public function setItemTypeName($itemTypeName): void
     {
         $this->itemTypeName = $itemTypeName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getItemTypeMachineName()
+    {
+        return $this->itemTypeMachineName;
+    }
+
+    /**
+     * @param mixed $itemTypeMachineName
+     */
+    public function setItemTypeMachineName($itemTypeMachineName): void
+    {
+        $this->itemTypeMachineName = $itemTypeMachineName;
     }
 
     /**
