@@ -28,6 +28,7 @@ class ItemModel
     private $itemStatusId;
     private $itemCreatedDate;
     private $itemUpdatedDate;
+    private $itemDeedId;
 
 
     /**
@@ -300,6 +301,22 @@ class ItemModel
     public function setItemUpdatedDate($itemUpdatedDate): void
     {
         $this->itemUpdatedDate = $itemUpdatedDate;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getItemDeedId()
+    {
+        return $this->itemDeedId;
+    }
+
+    /**
+     * @param mixed $itemDeedId
+     */
+    public function setItemDeedId($itemDeedId): void
+    {
+        $this->itemDeedId = $itemDeedId;
     }
 
 }
