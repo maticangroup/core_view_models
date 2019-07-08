@@ -18,6 +18,15 @@ class InventoryDeedModel
     private $inventoryDeedFromName;
     private $inventoryDeedToId;
     private $inventoryDeedToName;
+    private $inventoryDeedDescription;
+    private $inventoryDeedCreateDate;
+    private $inventoryDeedStatus;
+    private $inventoryDeedFromQueue;
+    private $inventoryDeedToQueue;
+    private $inventoryDeedProducts;
+    private $inventoryDeedConfirmDate;
+    private $inventoryDeedCreatePerson;
+    private $inventoryDeedConfirmPerson;
 
     /**
      * @return mixed

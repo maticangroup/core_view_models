@@ -28,6 +28,7 @@ class ProductModel
     private $productColorId;
     private $productItemId;
     private $productItemName;
+    private $productDeedId;
 
     /**
      * @return mixed
@@ -299,5 +300,21 @@ class ProductModel
     public function setProductItemName($productItemName): void
     {
         $this->productItemName = $productItemName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProductDeedId()
+    {
+        return $this->productDeedId;
+    }
+
+    /**
+     * @param mixed $productDeedId
+     */
+    public function setProductDeedId($productDeedId): void
+    {
+        $this->productDeedId = $productDeedId;
     }
 }
