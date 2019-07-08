@@ -20,7 +20,7 @@ class ShelveModel
     private $shelveMainPhone;
     private $shelvePhones;
     private $shelveLocation;
-    private $shelveProducts;
+    private $shelveItemProducts;
     private $shelveDeeds;
     private $shelveStatus;
 
@@ -171,17 +171,17 @@ class ShelveModel
     /**
      * @return mixed
      */
-    public function getShelveProducts()
+    public function getShelveItemProducts()
     {
-        return $this->shelveProducts;
+        return $this->shelveItemProducts;
     }
 
     /**
-     * @param mixed $shelveProducts
+     * @param mixed $shelveItemProducts
      */
-    public function setShelveProducts($shelveProducts): void
+    public function setShelveItemProducts($shelveItemProducts): void
     {
-        $this->shelveProducts = $shelveProducts;
+        $this->shelveItemProducts = $shelveItemProducts;
     }
 
     /**
