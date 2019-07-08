@@ -35,6 +35,7 @@ class InventoryDeedModel
     private $inventoryDeedCreatePerson;
     private $inventoryDeedConfirmPerson;
     private $inventoryDeedTotalPrice;
+    private $inventoryDeedTotalCount;
 
     /**
      * @return mixed
@@ -418,5 +419,21 @@ class InventoryDeedModel
     public function setInventoryDeedTotalPrice($inventoryDeedTotalPrice): void
     {
         $this->inventoryDeedTotalPrice = $inventoryDeedTotalPrice;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInventoryDeedTotalCount()
+    {
+        return $this->inventoryDeedTotalCount;
+    }
+
+    /**
+     * @param mixed $inventoryDeedTotalCount
+     */
+    public function setInventoryDeedTotalCount($inventoryDeedTotalCount): void
+    {
+        $this->inventoryDeedTotalCount = $inventoryDeedTotalCount;
     }
 }
