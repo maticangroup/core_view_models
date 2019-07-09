@@ -13,6 +13,7 @@ class OfferGroupModel
 {
     private $offerGroupId;
     private $offerGroupName;
+    private $offerGroupSerial;
     private $offerGroupStatus;
     private $offerGroupProductsCount;
     private $offerGroupProducts;
@@ -47,6 +48,22 @@ class OfferGroupModel
     public function setOfferGroupName($offerGroupName): void
     {
         $this->offerGroupName = $offerGroupName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getOfferGroupSerial()
+    {
+        return $this->offerGroupSerial;
+    }
+
+    /**
+     * @param mixed $offerGroupSerial
+     */
+    public function setOfferGroupSerial($offerGroupSerial): void
+    {
+        $this->offerGroupSerial = $offerGroupSerial;
     }
 
     /**
