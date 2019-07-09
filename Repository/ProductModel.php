@@ -39,6 +39,7 @@ class ProductModel
     private $productCurrentInventoryName;
     private $productCurrentQueueId;
     private $productCurrentQueueName;
+    private $productIsDisabled;
 
     /**
      * @return mixed
@@ -486,5 +487,21 @@ class ProductModel
     public function setProductCurrentQueueName($productCurrentQueueName): void
     {
         $this->productCurrentQueueName = $productCurrentQueueName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProductIsDisabled()
+    {
+        return $this->productIsDisabled;
+    }
+
+    /**
+     * @param mixed $productIsDisabled
+     */
+    public function setProductIsDisabled($productIsDisabled): void
+    {
+        $this->productIsDisabled = $productIsDisabled;
     }
 }
