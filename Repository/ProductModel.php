@@ -31,6 +31,14 @@ class ProductModel
     private $productItemId;
     private $productItemName;
     private $productDeedId;
+    private $productPricingDeedId;
+    private $productPricingDeedExpiryDate;
+    private $productCurrentShelveId;
+    private $productCurrentShelveName;
+    private $productCurrentInventoryId;
+    private $productCurrentInventoryName;
+    private $productCurrentQueueId;
+    private $productCurrentQueueName;
 
     /**
      * @return mixed
@@ -350,5 +358,133 @@ class ProductModel
     public function setProductDeedId($productDeedId): void
     {
         $this->productDeedId = $productDeedId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProductPricingDeedId()
+    {
+        return $this->productPricingDeedId;
+    }
+
+    /**
+     * @param mixed $productPricingDeedId
+     */
+    public function setProductPricingDeedId($productPricingDeedId): void
+    {
+        $this->productPricingDeedId = $productPricingDeedId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProductPricingDeedExpiryDate()
+    {
+        return $this->productPricingDeedExpiryDate;
+    }
+
+    /**
+     * @param mixed $productPricingDeedExpiryDate
+     */
+    public function setProductPricingDeedExpiryDate($productPricingDeedExpiryDate): void
+    {
+        $this->productPricingDeedExpiryDate = $productPricingDeedExpiryDate;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProductCurrentShelveId()
+    {
+        return $this->productCurrentShelveId;
+    }
+
+    /**
+     * @param mixed $productCurrentShelveId
+     */
+    public function setProductCurrentShelveId($productCurrentShelveId): void
+    {
+        $this->productCurrentShelveId = $productCurrentShelveId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProductCurrentShelveName()
+    {
+        return $this->productCurrentShelveName;
+    }
+
+    /**
+     * @param mixed $productCurrentShelveName
+     */
+    public function setProductCurrentShelveName($productCurrentShelveName): void
+    {
+        $this->productCurrentShelveName = $productCurrentShelveName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProductCurrentInventoryId()
+    {
+        return $this->productCurrentInventoryId;
+    }
+
+    /**
+     * @param mixed $productCurrentInventoryId
+     */
+    public function setProductCurrentInventoryId($productCurrentInventoryId): void
+    {
+        $this->productCurrentInventoryId = $productCurrentInventoryId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProductCurrentInventoryName()
+    {
+        return $this->productCurrentInventoryName;
+    }
+
+    /**
+     * @param mixed $productCurrentInventoryName
+     */
+    public function setProductCurrentInventoryName($productCurrentInventoryName): void
+    {
+        $this->productCurrentInventoryName = $productCurrentInventoryName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProductCurrentQueueId()
+    {
+        return $this->productCurrentQueueId;
+    }
+
+    /**
+     * @param mixed $productCurrentQueueId
+     */
+    public function setProductCurrentQueueId($productCurrentQueueId): void
+    {
+        $this->productCurrentQueueId = $productCurrentQueueId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProductCurrentQueueName()
+    {
+        return $this->productCurrentQueueName;
+    }
+
+    /**
+     * @param mixed $productCurrentQueueName
+     */
+    public function setProductCurrentQueueName($productCurrentQueueName): void
+    {
+        $this->productCurrentQueueName = $productCurrentQueueName;
     }
 }
