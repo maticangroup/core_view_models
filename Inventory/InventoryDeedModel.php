@@ -36,6 +36,7 @@ class InventoryDeedModel
     private $inventoryDeedConfirmPerson;
     private $inventoryDeedTotalPrice;
     private $inventoryDeedTotalCount;
+    private $inventoryDeedIsTransfer = true;
 
     /**
      * @return mixed
@@ -435,5 +436,21 @@ class InventoryDeedModel
     public function setInventoryDeedTotalCount($inventoryDeedTotalCount): void
     {
         $this->inventoryDeedTotalCount = $inventoryDeedTotalCount;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isInventoryDeedIsTransfer(): bool
+    {
+        return $this->inventoryDeedIsTransfer;
+    }
+
+    /**
+     * @param bool $inventoryDeedIsTransfer
+     */
+    public function setInventoryDeedIsTransfer(bool $inventoryDeedIsTransfer): void
+    {
+        $this->inventoryDeedIsTransfer = $inventoryDeedIsTransfer;
     }
 }

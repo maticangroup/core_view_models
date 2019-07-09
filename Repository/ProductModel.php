@@ -39,7 +39,7 @@ class ProductModel
     private $productCurrentInventoryName;
     private $productCurrentQueueId;
     private $productCurrentQueueName;
-    private $productIsDisabled;
+    private $productIsDisabled = false;
 
     /**
      * @return mixed
