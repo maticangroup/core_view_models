@@ -17,6 +17,8 @@ class OfferGroupModel
     private $offerGroupStatus;
     private $offerGroupProductsCount;
     private $offerGroupProducts;
+    private $offerGroupCreatePerson;
+    private $offerGroupCreateDate;
 
     /**
      * @return mixed
@@ -112,5 +114,37 @@ class OfferGroupModel
     public function setOfferGroupProducts($offerGroupProducts): void
     {
         $this->offerGroupProducts = $offerGroupProducts;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getOfferGroupCreatePerson()
+    {
+        return $this->offerGroupCreatePerson;
+    }
+
+    /**
+     * @param mixed $offerGroupCreatePerson
+     */
+    public function setOfferGroupCreatePerson($offerGroupCreatePerson): void
+    {
+        $this->offerGroupCreatePerson = $offerGroupCreatePerson;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getOfferGroupCreateDate()
+    {
+        return $this->offerGroupCreateDate;
+    }
+
+    /**
+     * @param mixed $offerGroupCreateDate
+     */
+    public function setOfferGroupCreateDate($offerGroupCreateDate): void
+    {
+        $this->offerGroupCreateDate = $offerGroupCreateDate;
     }
 }
