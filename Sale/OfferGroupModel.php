@@ -16,4 +16,84 @@ class OfferGroupModel
     private $offerGroupStatus;
     private $offerGroupProductsCount;
     private $offerGroupProducts;
+
+    /**
+     * @return mixed
+     */
+    public function getOfferGroupId()
+    {
+        return $this->offerGroupId;
+    }
+
+    /**
+     * @param mixed $offerGroupId
+     */
+    public function setOfferGroupId($offerGroupId): void
+    {
+        $this->offerGroupId = $offerGroupId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getOfferGroupName()
+    {
+        return $this->offerGroupName;
+    }
+
+    /**
+     * @param mixed $offerGroupName
+     */
+    public function setOfferGroupName($offerGroupName): void
+    {
+        $this->offerGroupName = $offerGroupName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getOfferGroupStatus()
+    {
+        return $this->offerGroupStatus;
+    }
+
+    /**
+     * @param mixed $offerGroupStatus
+     */
+    public function setOfferGroupStatus($offerGroupStatus): void
+    {
+        $this->offerGroupStatus = $offerGroupStatus;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getOfferGroupProductsCount()
+    {
+        return $this->offerGroupProductsCount;
+    }
+
+    /**
+     * @param mixed $offerGroupProductsCount
+     */
+    public function setOfferGroupProductsCount($offerGroupProductsCount): void
+    {
+        $this->offerGroupProductsCount = $offerGroupProductsCount;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getOfferGroupProducts()
+    {
+        return $this->offerGroupProducts;
+    }
+
+    /**
+     * @param mixed $offerGroupProducts
+     */
+    public function setOfferGroupProducts($offerGroupProducts): void
+    {
+        $this->offerGroupProducts = $offerGroupProducts;
+    }
 }
