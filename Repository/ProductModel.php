@@ -40,6 +40,7 @@ class ProductModel
     private $productCurrentQueueId;
     private $productCurrentQueueName;
     private $productIsDisabled = false;
+    private $productCurrentPlace;
 
     /**
      * @return mixed
@@ -503,5 +504,21 @@ class ProductModel
     public function setProductIsDisabled($productIsDisabled): void
     {
         $this->productIsDisabled = $productIsDisabled;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProductCurrentPlace()
+    {
+        return $this->productCurrentPlace;
+    }
+
+    /**
+     * @param mixed $productCurrentPlace
+     */
+    public function setProductCurrentPlace($productCurrentPlace): void
+    {
+        $this->productCurrentPlace = $productCurrentPlace;
     }
 }
