@@ -441,7 +441,7 @@ class InventoryDeedModel
     /**
      * @return bool
      */
-    public function isInventoryDeedIsTransfer(): bool
+    public function getInventoryDeedIsTransfer(): bool
     {
         return $this->inventoryDeedIsTransfer;
     }
