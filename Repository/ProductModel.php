@@ -41,6 +41,7 @@ class ProductModel
     private $productCurrentQueueName;
     private $productIsDisabled = false;
     private $productCurrentPlace;
+    private $productOfferGroupId;
 
     /**
      * @return mixed
@@ -520,5 +521,21 @@ class ProductModel
     public function setProductCurrentPlace($productCurrentPlace): void
     {
         $this->productCurrentPlace = $productCurrentPlace;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProductOfferGroupId()
+    {
+        return $this->productOfferGroupId;
+    }
+
+    /**
+     * @param mixed $productOfferGroupId
+     */
+    public function setProductOfferGroupId($productOfferGroupId): void
+    {
+        $this->productOfferGroupId = $productOfferGroupId;
     }
 }
