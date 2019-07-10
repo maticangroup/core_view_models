@@ -33,6 +33,7 @@ class ProductModel
     private $productDeedId;
     private $productPricingDeedId;
     private $productPricingDeedExpiryDate;
+    private $productPricingDeedName;
     private $productCurrentShelveId;
     private $productCurrentShelveName;
     private $productCurrentInventoryId;
@@ -393,6 +394,22 @@ class ProductModel
     public function setProductPricingDeedExpiryDate($productPricingDeedExpiryDate): void
     {
         $this->productPricingDeedExpiryDate = $productPricingDeedExpiryDate;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProductPricingDeedName()
+    {
+        return $this->productPricingDeedName;
+    }
+
+    /**
+     * @param mixed $productPricingDeedName
+     */
+    public function setProductPricingDeedName($productPricingDeedName): void
+    {
+        $this->productPricingDeedName = $productPricingDeedName;
     }
 
     /**
