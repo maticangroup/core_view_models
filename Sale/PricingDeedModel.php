@@ -19,7 +19,6 @@ class PricingDeedModel
     private $pricingDeedDateDay;
     private $pricingDeedDescription;
     private $pricingDeedStatus;
-    private $pricingDeedConfirmStatus;
     private $pricingDeedCreateDate;
     private $pricingDeedCreatePerson;
     private $pricingDeedConfirmDate;
@@ -153,22 +152,6 @@ class PricingDeedModel
     public function setPricingDeedStatus($pricingDeedStatus): void
     {
         $this->pricingDeedStatus = $pricingDeedStatus;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getPricingDeedConfirmStatus()
-    {
-        return $this->pricingDeedConfirmStatus;
-    }
-
-    /**
-     * @param mixed $pricingDeedConfirmStatus
-     */
-    public function setPricingDeedConfirmStatus($pricingDeedConfirmStatus): void
-    {
-        $this->pricingDeedConfirmStatus = $pricingDeedConfirmStatus;
     }
 
     /**

@@ -43,6 +43,7 @@ class ProductModel
     private $productIsDisabled = false;
     private $productCurrentPlace;
     private $productOfferGroupId;
+    private $productPricingDeedItemId;
 
     /**
      * @return mixed
@@ -554,5 +555,21 @@ class ProductModel
     public function setProductOfferGroupId($productOfferGroupId): void
     {
         $this->productOfferGroupId = $productOfferGroupId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProductPricingDeedItemId()
+    {
+        return $this->productPricingDeedItemId;
+    }
+
+    /**
+     * @param mixed $productPricingDeedItemId
+     */
+    public function setProductPricingDeedItemId($productPricingDeedItemId): void
+    {
+        $this->productPricingDeedItemId = $productPricingDeedItemId;
     }
 }
