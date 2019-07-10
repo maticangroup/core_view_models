@@ -18,6 +18,8 @@ class ProductModel
     private $productSupplierName;
     private $productCurrentPrice;
     private $productDiscountPrice;
+    private $productNewCurrentPrice;
+    private $productNewDiscountPrice;
     private $productBasePrice;
     private $productTotalPrice;
     private $productSerial;
@@ -155,6 +157,38 @@ class ProductModel
     public function setProductDiscountPrice($productDiscountPrice): void
     {
         $this->productDiscountPrice = $productDiscountPrice;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProductNewCurrentPrice()
+    {
+        return $this->productNewCurrentPrice;
+    }
+
+    /**
+     * @param mixed $productNewCurrentPrice
+     */
+    public function setProductNewCurrentPrice($productNewCurrentPrice): void
+    {
+        $this->productNewCurrentPrice = $productNewCurrentPrice;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProductNewDiscountPrice()
+    {
+        return $this->productNewDiscountPrice;
+    }
+
+    /**
+     * @param mixed $productNewDiscountPrice
+     */
+    public function setProductNewDiscountPrice($productNewDiscountPrice): void
+    {
+        $this->productNewDiscountPrice = $productNewDiscountPrice;
     }
 
     /**
