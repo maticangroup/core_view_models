@@ -15,11 +15,12 @@ class OrderModel
     private $orderSerial;
     private $orderName;
     private $orderCreateDate;
+    private $orderCreatePerson;
     private $orderConfirmDate;
-    private $orderConfirmPersonName;
-    private $orderCreatorName;
-    private $orderCreatorAddress;
-    private $orderCreatorPhone;
+    private $orderConfirmPerson;
+    private $orderOwnerName;
+    private $orderOwnerAddress;
+    private $orderOwnerPhone;
     private $orderInvoiceSerial;
     private $orderInvoiceCreateDate;
     private $orderDescription;
@@ -96,6 +97,22 @@ class OrderModel
     /**
      * @return mixed
      */
+    public function getOrderCreatePerson()
+    {
+        return $this->orderCreatePerson;
+    }
+
+    /**
+     * @param mixed $orderCreatePerson
+     */
+    public function setOrderCreatePerson($orderCreatePerson): void
+    {
+        $this->orderCreatePerson = $orderCreatePerson;
+    }
+
+    /**
+     * @return mixed
+     */
     public function getOrderConfirmDate()
     {
         return $this->orderConfirmDate;
@@ -112,65 +129,65 @@ class OrderModel
     /**
      * @return mixed
      */
-    public function getOrderConfirmPersonName()
+    public function getOrderConfirmPerson()
     {
-        return $this->orderConfirmPersonName;
+        return $this->orderConfirmPerson;
     }
 
     /**
-     * @param mixed $orderConfirmPersonName
+     * @param mixed $orderConfirmPerson
      */
-    public function setOrderConfirmPersonName($orderConfirmPersonName): void
+    public function setOrderConfirmPerson($orderConfirmPerson): void
     {
-        $this->orderConfirmPersonName = $orderConfirmPersonName;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getOrderCreatorName()
-    {
-        return $this->orderCreatorName;
-    }
-
-    /**
-     * @param mixed $orderCreatorName
-     */
-    public function setOrderCreatorName($orderCreatorName): void
-    {
-        $this->orderCreatorName = $orderCreatorName;
+        $this->orderConfirmPerson = $orderConfirmPerson;
     }
 
     /**
      * @return mixed
      */
-    public function getOrderCreatorAddress()
+    public function getOrderOwnerName()
     {
-        return $this->orderCreatorAddress;
+        return $this->orderOwnerName;
     }
 
     /**
-     * @param mixed $orderCreatorAddress
+     * @param mixed $orderOwnerName
      */
-    public function setOrderCreatorAddress($orderCreatorAddress): void
+    public function setOrderOwnerName($orderOwnerName): void
     {
-        $this->orderCreatorAddress = $orderCreatorAddress;
+        $this->orderOwnerName = $orderOwnerName;
     }
 
     /**
      * @return mixed
      */
-    public function getOrderCreatorPhone()
+    public function getOrderOwnerAddress()
     {
-        return $this->orderCreatorPhone;
+        return $this->orderOwnerAddress;
     }
 
     /**
-     * @param mixed $orderCreatorPhone
+     * @param mixed $orderOwnerAddress
      */
-    public function setOrderCreatorPhone($orderCreatorPhone): void
+    public function setOrderOwnerAddress($orderOwnerAddress): void
     {
-        $this->orderCreatorPhone = $orderCreatorPhone;
+        $this->orderOwnerAddress = $orderOwnerAddress;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getOrderOwnerPhone()
+    {
+        return $this->orderOwnerPhone;
+    }
+
+    /**
+     * @param mixed $orderOwnerPhone
+     */
+    public function setOrderOwnerPhone($orderOwnerPhone): void
+    {
+        $this->orderOwnerPhone = $orderOwnerPhone;
     }
 
     /**
@@ -300,4 +317,5 @@ class OrderModel
     {
         $this->orderStatus = $orderStatus;
     }
+
 }
