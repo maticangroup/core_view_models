@@ -27,6 +27,7 @@ class PricingDeedModel
     private $pricingDeedProductsCount;
     private $pricingDeedOfferGroupId;
     private $pricingDeedShelveId;
+    private $pricingDeedImportDeedId;
 
     /**
      * @return mixed
@@ -282,5 +283,21 @@ class PricingDeedModel
     public function setPricingDeedShelveId($pricingDeedShelveId): void
     {
         $this->pricingDeedShelveId = $pricingDeedShelveId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPricingDeedImportDeedId()
+    {
+        return $this->pricingDeedImportDeedId;
+    }
+
+    /**
+     * @param mixed $pricingDeedImportDeedId
+     */
+    public function setPricingDeedImportDeedId($pricingDeedImportDeedId): void
+    {
+        $this->pricingDeedImportDeedId = $pricingDeedImportDeedId;
     }
 }
