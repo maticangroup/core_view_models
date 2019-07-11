@@ -48,6 +48,7 @@ class ProductModel
     private $productPricingDeedItemId;
     private $productOrderId;
     private $productOrderItemId;
+    private $productOrderItemCount;
 
     /**
      * @return mixed
@@ -640,4 +641,22 @@ class ProductModel
     {
         $this->productOrderItemId = $productOrderItemId;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getProductOrderItemCount()
+    {
+        return $this->productOrderItemCount;
+    }
+
+    /**
+     * @param mixed $productOrderItemCount
+     */
+    public function setProductOrderItemCount($productOrderItemCount): void
+    {
+        $this->productOrderItemCount = $productOrderItemCount;
+    }
+
+
 }
