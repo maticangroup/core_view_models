@@ -24,6 +24,7 @@ class ItemCategoryModel
     private $itemCategoryChildren;
     private $itemCategorySpecKeysIds;
     private $itemCategoryIsChecked;
+    private $itemCategoryDepth;
 
     /**
      * @return mixed
@@ -231,6 +232,22 @@ class ItemCategoryModel
     public function setItemCategoryIsChecked($itemCategoryIsChecked): void
     {
         $this->itemCategoryIsChecked = $itemCategoryIsChecked;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getItemCategoryDepth()
+    {
+        return $this->itemCategoryDepth;
+    }
+
+    /**
+     * @param mixed $itemCategoryDepth
+     */
+    public function setItemCategoryDepth($itemCategoryDepth): void
+    {
+        $this->itemCategoryDepth = $itemCategoryDepth;
     }
 
 }
