@@ -46,6 +46,8 @@ class ProductModel
     private $productCurrentPlace;
     private $productOfferGroupId;
     private $productPricingDeedItemId;
+    private $productOrderId;
+    private $productOrderItemId;
 
     /**
      * @return mixed
@@ -605,5 +607,37 @@ class ProductModel
     public function setProductPricingDeedItemId($productPricingDeedItemId): void
     {
         $this->productPricingDeedItemId = $productPricingDeedItemId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProductOrderId()
+    {
+        return $this->productOrderId;
+    }
+
+    /**
+     * @param mixed $productOrderId
+     */
+    public function setProductOrderId($productOrderId): void
+    {
+        $this->productOrderId = $productOrderId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProductOrderItemId()
+    {
+        return $this->productOrderItemId;
+    }
+
+    /**
+     * @param mixed $productOrderItemId
+     */
+    public function setProductOrderItemId($productOrderItemId): void
+    {
+        $this->productOrderItemId = $productOrderItemId;
     }
 }
