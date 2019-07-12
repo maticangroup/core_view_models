@@ -15,13 +15,17 @@ class DeliveryMethodModel
     private $deliveryMethodName;
     private $deliveryMethodSizeId;
     private $deliveryMethodSizeName;
-    private $deliveryMethodTypeid;
+    private $deliveryMethodTypeId;
     private $deliveryMethodTypeName;
     private $deliveryMethodTypeMachineName;
     private $deliveryMethodCost;
     private $deliveryMethodLogoUrl;
     private $deliveryMethodDescription;
     private $deliveryMethodReceiveMoney;
+    private $deliveryMethodPersons;
+    private $deliveryMethodWeekDays;
+    private $deliveryMethodContent;
+    private $deliveryMethodStatus;
 
     /**
      * @return mixed
@@ -90,17 +94,17 @@ class DeliveryMethodModel
     /**
      * @return mixed
      */
-    public function getDeliveryMethodTypeid()
+    public function getDeliveryMethodTypeId()
     {
-        return $this->deliveryMethodTypeid;
+        return $this->deliveryMethodTypeId;
     }
 
     /**
-     * @param mixed $deliveryMethodTypeid
+     * @param mixed $deliveryMethodTypeId
      */
-    public function setDeliveryMethodTypeid($deliveryMethodTypeid): void
+    public function setDeliveryMethodTypeId($deliveryMethodTypeId): void
     {
-        $this->deliveryMethodTypeid = $deliveryMethodTypeid;
+        $this->deliveryMethodTypeId = $deliveryMethodTypeId;
     }
 
     /**
@@ -197,6 +201,70 @@ class DeliveryMethodModel
     public function setDeliveryMethodReceiveMoney($deliveryMethodReceiveMoney): void
     {
         $this->deliveryMethodReceiveMoney = $deliveryMethodReceiveMoney;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDeliveryMethodPersons()
+    {
+        return $this->deliveryMethodPersons;
+    }
+
+    /**
+     * @param mixed $deliveryMethodPersons
+     */
+    public function setDeliveryMethodPersons($deliveryMethodPersons): void
+    {
+        $this->deliveryMethodPersons = $deliveryMethodPersons;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDeliveryMethodWeekDays()
+    {
+        return $this->deliveryMethodWeekDays;
+    }
+
+    /**
+     * @param mixed $deliveryMethodWeekDays
+     */
+    public function setDeliveryMethodWeekDays($deliveryMethodWeekDays): void
+    {
+        $this->deliveryMethodWeekDays = $deliveryMethodWeekDays;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDeliveryMethodContent()
+    {
+        return $this->deliveryMethodContent;
+    }
+
+    /**
+     * @param mixed $deliveryMethodContent
+     */
+    public function setDeliveryMethodContent($deliveryMethodContent): void
+    {
+        $this->deliveryMethodContent = $deliveryMethodContent;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDeliveryMethodStatus()
+    {
+        return $this->deliveryMethodStatus;
+    }
+
+    /**
+     * @param mixed $deliveryMethodStatus
+     */
+    public function setDeliveryMethodStatus($deliveryMethodStatus): void
+    {
+        $this->deliveryMethodStatus = $deliveryMethodStatus;
     }
 
 }

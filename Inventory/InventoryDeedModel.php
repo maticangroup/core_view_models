@@ -23,6 +23,7 @@ class InventoryDeedModel
     private $inventoryDeedFromInventoryId;
     private $inventoryDeedToInventoryId;
     private $inventoryDeedToInventoryName;
+    private $inventoryDeedToInventoryMachineName;
     private $inventoryDeedFromQueueId;
     private $inventoryDeedFromQueueName;
     private $inventoryDeedToQueueId;
@@ -228,6 +229,22 @@ class InventoryDeedModel
     public function setInventoryDeedToInventoryName($inventoryDeedToInventoryName): void
     {
         $this->inventoryDeedToInventoryName = $inventoryDeedToInventoryName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInventoryDeedToInventoryMachineName()
+    {
+        return $this->inventoryDeedToInventoryMachineName;
+    }
+
+    /**
+     * @param mixed $inventoryDeedToInventoryMachineName
+     */
+    public function setInventoryDeedToInventoryMachineName($inventoryDeedToInventoryMachineName): void
+    {
+        $this->inventoryDeedToInventoryMachineName = $inventoryDeedToInventoryMachineName;
     }
 
     /**

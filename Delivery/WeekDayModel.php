@@ -14,6 +14,69 @@ class WeekDayModel
     private $weekDayId;
     private $weekDayName;
     private $weekDayMachineName;
-    private $weekDayStatus;
     private $weekDayQueues;
+
+    /**
+     * @return mixed
+     */
+    public function getWeekDayId()
+    {
+        return $this->weekDayId;
+    }
+
+    /**
+     * @param mixed $weekDayId
+     */
+    public function setWeekDayId($weekDayId): void
+    {
+        $this->weekDayId = $weekDayId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getWeekDayName()
+    {
+        return $this->weekDayName;
+    }
+
+    /**
+     * @param mixed $weekDayName
+     */
+    public function setWeekDayName($weekDayName): void
+    {
+        $this->weekDayName = $weekDayName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getWeekDayMachineName()
+    {
+        return $this->weekDayMachineName;
+    }
+
+    /**
+     * @param mixed $weekDayMachineName
+     */
+    public function setWeekDayMachineName($weekDayMachineName): void
+    {
+        $this->weekDayMachineName = $weekDayMachineName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getWeekDayQueues()
+    {
+        return $this->weekDayQueues;
+    }
+
+    /**
+     * @param mixed $weekDayQueues
+     */
+    public function setWeekDayQueues($weekDayQueues): void
+    {
+        $this->weekDayQueues = $weekDayQueues;
+    }
 }
