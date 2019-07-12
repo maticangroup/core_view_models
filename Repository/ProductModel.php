@@ -49,6 +49,7 @@ class ProductModel
     private $productOrderId;
     private $productOrderItemId;
     private $productOrderItemCount;
+    private $productMaxQuantity;
 
     /**
      * @return mixed
@@ -656,6 +657,22 @@ class ProductModel
     public function setProductOrderItemCount($productOrderItemCount): void
     {
         $this->productOrderItemCount = $productOrderItemCount;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProductMaxQuantity()
+    {
+        return $this->productMaxQuantity;
+    }
+
+    /**
+     * @param mixed $productMaxQuantity
+     */
+    public function setProductMaxQuantity($productMaxQuantity): void
+    {
+        $this->productMaxQuantity = $productMaxQuantity;
     }
 
 
