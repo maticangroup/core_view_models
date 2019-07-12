@@ -19,6 +19,7 @@ class SizeModel
     private $sizeOrder;
     private $sizeStatus;
     private $itemCategoryId;
+    private $deliveryMethodId;
 
     /**
      * @return mixed
@@ -146,6 +147,22 @@ class SizeModel
     public function setItemCategoryId($itemCategoryId): void
     {
         $this->itemCategoryId = $itemCategoryId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDeliveryMethodId()
+    {
+        return $this->deliveryMethodId;
+    }
+
+    /**
+     * @param mixed $deliveryMethodId
+     */
+    public function setDeliveryMethodId($deliveryMethodId): void
+    {
+        $this->deliveryMethodId = $deliveryMethodId;
     }
 
 }

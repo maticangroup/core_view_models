@@ -17,6 +17,7 @@ class QueueModel
     private $queueCapacity;
     private $queueStatus;
     private $weekDayId;
+    private $deliveryMethodId;
 
     /**
      * @return mixed
@@ -112,5 +113,21 @@ class QueueModel
     public function setWeekDayId($weekDayId): void
     {
         $this->weekDayId = $weekDayId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDeliveryMethodId()
+    {
+        return $this->deliveryMethodId;
+    }
+
+    /**
+     * @param mixed $deliveryMethodId
+     */
+    public function setDeliveryMethodId($deliveryMethodId): void
+    {
+        $this->deliveryMethodId = $deliveryMethodId;
     }
 }

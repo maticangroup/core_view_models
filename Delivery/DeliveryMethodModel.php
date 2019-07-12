@@ -13,8 +13,7 @@ class DeliveryMethodModel
 {
     private $deliveryMethodId;
     private $deliveryMethodName;
-    private $deliveryMethodSizeId;
-    private $deliveryMethodSizeName;
+    private $deliveryMethodSizes;
     private $deliveryMethodTypeId;
     private $deliveryMethodTypeName;
     private $deliveryMethodTypeMachineName;
@@ -62,33 +61,17 @@ class DeliveryMethodModel
     /**
      * @return mixed
      */
-    public function getDeliveryMethodSizeId()
+    public function getDeliveryMethodSizes()
     {
-        return $this->deliveryMethodSizeId;
+        return $this->deliveryMethodSizes;
     }
 
     /**
-     * @param mixed $deliveryMethodSizeId
+     * @param mixed $deliveryMethodSizes
      */
-    public function setDeliveryMethodSizeId($deliveryMethodSizeId): void
+    public function setDeliveryMethodSizes($deliveryMethodSizes): void
     {
-        $this->deliveryMethodSizeId = $deliveryMethodSizeId;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getDeliveryMethodSizeName()
-    {
-        return $this->deliveryMethodSizeName;
-    }
-
-    /**
-     * @param mixed $deliveryMethodSizeName
-     */
-    public function setDeliveryMethodSizeName($deliveryMethodSizeName): void
-    {
-        $this->deliveryMethodSizeName = $deliveryMethodSizeName;
+        $this->deliveryMethodSizes = $deliveryMethodSizes;
     }
 
     /**
