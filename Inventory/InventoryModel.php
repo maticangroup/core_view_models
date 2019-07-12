@@ -23,6 +23,7 @@ class InventoryModel
     private $inventoryItemProducts;
     private $inventoryDeeds;
     private $inventoryStatus;
+    private $inventoryMachineName;
 
     /**
      * @return mixed
@@ -214,5 +215,21 @@ class InventoryModel
     public function setInventoryStatus($inventoryStatus): void
     {
         $this->inventoryStatus = $inventoryStatus;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInventoryMachineName()
+    {
+        return $this->inventoryMachineName;
+    }
+
+    /**
+     * @param mixed $inventoryMachineName
+     */
+    public function setInventoryMachineName($inventoryMachineName): void
+    {
+        $this->inventoryMachineName = $inventoryMachineName;
     }
 }
