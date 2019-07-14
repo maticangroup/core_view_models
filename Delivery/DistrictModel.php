@@ -19,6 +19,7 @@ class DistrictModel
     private $provinceName;
     private $countryId;
     private $countryName;
+    private $deliveryPersonId;
 
     /**
      * @return mixed
@@ -146,5 +147,21 @@ class DistrictModel
     public function setCountryName($countryName): void
     {
         $this->countryName = $countryName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDeliveryPersonId()
+    {
+        return $this->deliveryPersonId;
+    }
+
+    /**
+     * @param mixed $deliveryPersonId
+     */
+    public function setDeliveryPersonId($deliveryPersonId): void
+    {
+        $this->deliveryPersonId = $deliveryPersonId;
     }
 }
