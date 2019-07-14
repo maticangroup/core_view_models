@@ -17,6 +17,7 @@ class QueueModel
     private $queueCapacity;
     private $queueStatus;
     private $weekDayId;
+    private $dispatchesCount;
     private $deliveryMethodId;
 
     /**
@@ -113,6 +114,22 @@ class QueueModel
     public function setWeekDayId($weekDayId): void
     {
         $this->weekDayId = $weekDayId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDispatchesCount()
+    {
+        return $this->dispatchesCount;
+    }
+
+    /**
+     * @param mixed $dispatchesCount
+     */
+    public function setDispatchesCount($dispatchesCount): void
+    {
+        $this->dispatchesCount = $dispatchesCount;
     }
 
     /**
