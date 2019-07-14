@@ -25,6 +25,8 @@ class DeliveryMethodModel
     private $deliveryMethodWeekDays;
     private $deliveryMethodContent;
     private $deliveryMethodStatus;
+    private $deliveryMethodDeliveryPersonsCount;
+    private $deliveryMethodDispatchesCount;
 
     /**
      * @return mixed
@@ -248,6 +250,38 @@ class DeliveryMethodModel
     public function setDeliveryMethodStatus($deliveryMethodStatus): void
     {
         $this->deliveryMethodStatus = $deliveryMethodStatus;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDeliveryMethodDeliveryPersonsCount()
+    {
+        return $this->deliveryMethodDeliveryPersonsCount;
+    }
+
+    /**
+     * @param mixed $deliveryMethodDeliveryPersonsCount
+     */
+    public function setDeliveryMethodDeliveryPersonsCount($deliveryMethodDeliveryPersonsCount): void
+    {
+        $this->deliveryMethodDeliveryPersonsCount = $deliveryMethodDeliveryPersonsCount;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDeliveryMethodDispatchesCount()
+    {
+        return $this->deliveryMethodDispatchesCount;
+    }
+
+    /**
+     * @param mixed $deliveryMethodDispatchesCount
+     */
+    public function setDeliveryMethodDispatchesCount($deliveryMethodDispatchesCount): void
+    {
+        $this->deliveryMethodDispatchesCount = $deliveryMethodDispatchesCount;
     }
 
 }

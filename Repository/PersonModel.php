@@ -44,6 +44,7 @@ class PersonModel
 
     private $groups;
     private $companies;
+    private $locations;
 
     /**
      * @return mixed
@@ -251,6 +252,22 @@ class PersonModel
     public function setCompanies($companies): void
     {
         $this->companies = $companies;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLocations()
+    {
+        return $this->locations;
+    }
+
+    /**
+     * @param mixed $locations
+     */
+    public function setLocations($locations): void
+    {
+        $this->locations = $locations;
     }
 
 

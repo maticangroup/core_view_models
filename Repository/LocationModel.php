@@ -14,207 +14,361 @@ use Matican\Core\DataTypes\ZipCode;
 
 class LocationModel
 {
-    /**
-     * @var integer
-     */
-    private $countryId;
-    /**
-     * @var integer
-     */
-    private $provinceId;
-    /**
-     * @var integer
-     */
-    private $cityId;
-    /**
-     * @var integer
-     */
+    private $locationId;
     private $districtId;
-    /**
-     * @var string
-     */
+    private $districtName;
+    private $cityId;
+    private $cityName;
+    private $provinceId;
+    private $provinceName;
+    private $countryId;
+    private $countryName;
     private $postalCode;
-    /**
-     * @var string
-     */
     private $address;
-    /**
-     * @var string
-     */
-    private $geoPointLat;
-    /**
-     * @var string
-     */
-    private $geoPointLng;
-    /**
-     * @var integer
-     */
+    private $locationContactPersonId;
+    private $locationContactPersonFirstName;
+    private $locationContactPersonLastName;
+    private $locationContactPersonMobile;
+    private $locationLat;
+    private $locationLng;
     private $personId;
-    /**
-     * @var integer
-     */
-    private $contactPersonId;
+    private $companyId;
+    private $inventoryId;
+    private $shelveId;
 
     /**
-     * @return int
+     * @return mixed
      */
-    public function getCountryId(): int
+    public function getLocationId()
     {
-        return $this->countryId;
+        return $this->locationId;
     }
 
     /**
-     * @param int $countryId
+     * @param mixed $locationId
      */
-    public function setCountryId(int $countryId): void
+    public function setLocationId($locationId): void
     {
-        $this->countryId = $countryId;
+        $this->locationId = $locationId;
     }
 
     /**
-     * @return int
+     * @return mixed
      */
-    public function getProvinceId(): int
-    {
-        return $this->provinceId;
-    }
-
-    /**
-     * @param int $provinceId
-     */
-    public function setProvinceId(int $provinceId): void
-    {
-        $this->provinceId = $provinceId;
-    }
-
-    /**
-     * @return int
-     */
-    public function getCityId(): int
-    {
-        return $this->cityId;
-    }
-
-    /**
-     * @param int $cityId
-     */
-    public function setCityId(int $cityId): void
-    {
-        $this->cityId = $cityId;
-    }
-
-    /**
-     * @return int
-     */
-    public function getDistrictId(): int
+    public function getDistrictId()
     {
         return $this->districtId;
     }
 
     /**
-     * @param int $districtId
+     * @param mixed $districtId
      */
-    public function setDistrictId(int $districtId): void
+    public function setDistrictId($districtId): void
     {
         $this->districtId = $districtId;
     }
 
     /**
-     * @return string
+     * @return mixed
      */
-    public function getPostalCode(): string
+    public function getDistrictName()
+    {
+        return $this->districtName;
+    }
+
+    /**
+     * @param mixed $districtName
+     */
+    public function setDistrictName($districtName): void
+    {
+        $this->districtName = $districtName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCityId()
+    {
+        return $this->cityId;
+    }
+
+    /**
+     * @param mixed $cityId
+     */
+    public function setCityId($cityId): void
+    {
+        $this->cityId = $cityId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCityName()
+    {
+        return $this->cityName;
+    }
+
+    /**
+     * @param mixed $cityName
+     */
+    public function setCityName($cityName): void
+    {
+        $this->cityName = $cityName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProvinceId()
+    {
+        return $this->provinceId;
+    }
+
+    /**
+     * @param mixed $provinceId
+     */
+    public function setProvinceId($provinceId): void
+    {
+        $this->provinceId = $provinceId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProvinceName()
+    {
+        return $this->provinceName;
+    }
+
+    /**
+     * @param mixed $provinceName
+     */
+    public function setProvinceName($provinceName): void
+    {
+        $this->provinceName = $provinceName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCountryId()
+    {
+        return $this->countryId;
+    }
+
+    /**
+     * @param mixed $countryId
+     */
+    public function setCountryId($countryId): void
+    {
+        $this->countryId = $countryId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCountryName()
+    {
+        return $this->countryName;
+    }
+
+    /**
+     * @param mixed $countryName
+     */
+    public function setCountryName($countryName): void
+    {
+        $this->countryName = $countryName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPostalCode()
     {
         return $this->postalCode;
     }
 
     /**
-     * @param string $postalCode
+     * @param mixed $postalCode
      */
-    public function setPostalCode(string $postalCode): void
+    public function setPostalCode($postalCode): void
     {
         $this->postalCode = $postalCode;
     }
 
     /**
-     * @return string
+     * @return mixed
      */
-    public function getAddress(): string
+    public function getAddress()
     {
         return $this->address;
     }
 
     /**
-     * @param string $address
+     * @param mixed $address
      */
-    public function setAddress(string $address): void
+    public function setAddress($address): void
     {
         $this->address = $address;
     }
 
     /**
-     * @return string
+     * @return mixed
      */
-    public function getGeoPointLat(): string
+    public function getLocationContactPersonId()
     {
-        return $this->geoPointLat;
+        return $this->locationContactPersonId;
     }
 
     /**
-     * @param string $geoPointLat
+     * @param mixed $locationContactPersonId
      */
-    public function setGeoPointLat(string $geoPointLat): void
+    public function setLocationContactPersonId($locationContactPersonId): void
     {
-        $this->geoPointLat = $geoPointLat;
+        $this->locationContactPersonId = $locationContactPersonId;
     }
 
     /**
-     * @return string
+     * @return mixed
      */
-    public function getGeoPointLng(): string
+    public function getLocationContactPersonFirstName()
     {
-        return $this->geoPointLng;
+        return $this->locationContactPersonFirstName;
     }
 
     /**
-     * @param string $geoPointLng
+     * @param mixed $locationContactPersonFirstName
      */
-    public function setGeoPointLng(string $geoPointLng): void
+    public function setLocationContactPersonFirstName($locationContactPersonFirstName): void
     {
-        $this->geoPointLng = $geoPointLng;
+        $this->locationContactPersonFirstName = $locationContactPersonFirstName;
     }
 
     /**
-     * @return int
+     * @return mixed
      */
-    public function getPersonId(): int
+    public function getLocationContactPersonLastName()
+    {
+        return $this->locationContactPersonLastName;
+    }
+
+    /**
+     * @param mixed $locationContactPersonLastName
+     */
+    public function setLocationContactPersonLastName($locationContactPersonLastName): void
+    {
+        $this->locationContactPersonLastName = $locationContactPersonLastName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLocationContactPersonMobile()
+    {
+        return $this->locationContactPersonMobile;
+    }
+
+    /**
+     * @param mixed $locationContactPersonMobile
+     */
+    public function setLocationContactPersonMobile($locationContactPersonMobile): void
+    {
+        $this->locationContactPersonMobile = $locationContactPersonMobile;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLocationLat()
+    {
+        return $this->locationLat;
+    }
+
+    /**
+     * @param mixed $locationLat
+     */
+    public function setLocationLat($locationLat): void
+    {
+        $this->locationLat = $locationLat;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLocationLng()
+    {
+        return $this->locationLng;
+    }
+
+    /**
+     * @param mixed $locationLng
+     */
+    public function setLocationLng($locationLng): void
+    {
+        $this->locationLng = $locationLng;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPersonId()
     {
         return $this->personId;
     }
 
     /**
-     * @param int $personId
+     * @param mixed $personId
      */
-    public function setPersonId(int $personId): void
+    public function setPersonId($personId): void
     {
         $this->personId = $personId;
     }
 
     /**
-     * @return int
+     * @return mixed
      */
-    public function getContactPersonId(): int
+    public function getCompanyId()
     {
-        return $this->contactPersonId;
+        return $this->companyId;
     }
 
     /**
-     * @param int $contactPersonId
+     * @param mixed $companyId
      */
-    public function setContactPersonId(int $contactPersonId): void
+    public function setCompanyId($companyId): void
     {
-        $this->contactPersonId = $contactPersonId;
+        $this->companyId = $companyId;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getInventoryId()
+    {
+        return $this->inventoryId;
+    }
 
+    /**
+     * @param mixed $inventoryId
+     */
+    public function setInventoryId($inventoryId): void
+    {
+        $this->inventoryId = $inventoryId;
+    }
 
+    /**
+     * @return mixed
+     */
+    public function getShelveId()
+    {
+        return $this->shelveId;
+    }
+
+    /**
+     * @param mixed $shelveId
+     */
+    public function setShelveId($shelveId): void
+    {
+        $this->shelveId = $shelveId;
+    }
 }
