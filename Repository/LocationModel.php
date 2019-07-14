@@ -31,6 +31,7 @@ class LocationModel
     private $locationContactPersonMobile;
     private $locationLat;
     private $locationLng;
+    private $locationGeoPoints;
     private $personId;
     private $companyId;
     private $inventoryId;
@@ -370,5 +371,21 @@ class LocationModel
     public function setShelveId($shelveId): void
     {
         $this->shelveId = $shelveId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLocationGeoPoints()
+    {
+        return $this->locationGeoPoints;
+    }
+
+    /**
+     * @param mixed $locationGeoPoints
+     */
+    public function setLocationGeoPoints($locationGeoPoints): void
+    {
+        $this->locationGeoPoints = $locationGeoPoints;
     }
 }
