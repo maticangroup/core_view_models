@@ -15,6 +15,7 @@ class WeekDayModel
     private $weekDayName;
     private $weekDayMachineName;
     private $weekDayQueues;
+    private $weekDayDate;
 
     /**
      * @return mixed
@@ -78,5 +79,21 @@ class WeekDayModel
     public function setWeekDayQueues($weekDayQueues): void
     {
         $this->weekDayQueues = $weekDayQueues;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getWeekDayDate()
+    {
+        return $this->weekDayDate;
+    }
+
+    /**
+     * @param mixed $weekDayDate
+     */
+    public function setWeekDayDate($weekDayDate): void
+    {
+        $this->weekDayDate = $weekDayDate;
     }
 }
