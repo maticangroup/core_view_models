@@ -13,6 +13,7 @@ class DispatchModel
 {
     private $dispatchId;
     private $dispatchOrderId;
+    private $dispatchOrder;
     private $dispatchDeliveryPersonId;
     private $dispatchDeliveryPersonName;
     private $dispatchDeliveryMethodId;
@@ -58,6 +59,22 @@ class DispatchModel
     public function setDispatchOrderId($dispatchOrderId): void
     {
         $this->dispatchOrderId = $dispatchOrderId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDispatchOrder()
+    {
+        return $this->dispatchOrder;
+    }
+
+    /**
+     * @param mixed $dispatchOrder
+     */
+    public function setDispatchOrder($dispatchOrder): void
+    {
+        $this->dispatchOrder = $dispatchOrder;
     }
 
     /**
