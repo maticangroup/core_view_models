@@ -27,6 +27,7 @@ class DeliveryMethodModel
     private $deliveryMethodStatus;
     private $deliveryMethodDeliveryPersonsCount;
     private $deliveryMethodDispatchesCount;
+    private $dispatchId;
 
     /**
      * @return mixed
@@ -282,6 +283,22 @@ class DeliveryMethodModel
     public function setDeliveryMethodDispatchesCount($deliveryMethodDispatchesCount): void
     {
         $this->deliveryMethodDispatchesCount = $deliveryMethodDispatchesCount;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDispatchId()
+    {
+        return $this->dispatchId;
+    }
+
+    /**
+     * @param mixed $dispatchId
+     */
+    public function setDispatchId($dispatchId): void
+    {
+        $this->dispatchId = $dispatchId;
     }
 
 }

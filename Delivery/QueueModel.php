@@ -19,6 +19,7 @@ class QueueModel
     private $weekDayId;
     private $dispatchesCount;
     private $deliveryMethodId;
+    private $dispatchId;
 
     /**
      * @return mixed
@@ -146,5 +147,21 @@ class QueueModel
     public function setDeliveryMethodId($deliveryMethodId): void
     {
         $this->deliveryMethodId = $deliveryMethodId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDispatchId()
+    {
+        return $this->dispatchId;
+    }
+
+    /**
+     * @param mixed $dispatchId
+     */
+    public function setDispatchId($dispatchId): void
+    {
+        $this->dispatchId = $dispatchId;
     }
 }
