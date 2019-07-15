@@ -36,6 +36,7 @@ class LocationModel
     private $companyId;
     private $inventoryId;
     private $shelveId;
+    private $dispatchId;
 
     /**
      * @return mixed
@@ -387,5 +388,21 @@ class LocationModel
     public function setLocationGeoPoints($locationGeoPoints): void
     {
         $this->locationGeoPoints = $locationGeoPoints;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDispatchId()
+    {
+        return $this->dispatchId;
+    }
+
+    /**
+     * @param mixed $dispatchId
+     */
+    public function setDispatchId($dispatchId): void
+    {
+        $this->dispatchId = $dispatchId;
     }
 }
