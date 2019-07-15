@@ -29,6 +29,7 @@ class DispatchModel
     private $dispatchTotalPrice;
     private $dispatchDeliveryStatus;
     private $dispatchToLocationId;
+    private $dispatchDeliveryCost;
 
     /**
      * @return mixed
@@ -316,5 +317,21 @@ class DispatchModel
     public function setDispatchToLocationId($dispatchToLocationId): void
     {
         $this->dispatchToLocationId = $dispatchToLocationId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDispatchDeliveryCost()
+    {
+        return $this->dispatchDeliveryCost;
+    }
+
+    /**
+     * @param mixed $dispatchDeliveryCost
+     */
+    public function setDispatchDeliveryCost($dispatchDeliveryCost): void
+    {
+        $this->dispatchDeliveryCost = $dispatchDeliveryCost;
     }
 }
