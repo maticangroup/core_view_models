@@ -61,7 +61,9 @@ class AvailableQueuesModel
      */
     public function setTodayDateTime(): void
     {
-        $this->todayDateTime = new \DateTime('now');
+        $now = new \DateTime('now');
+        $date = $now->format('Y-n-d H:i');
+        $this->todayDateTime = $date;
     }
 
     /**

@@ -20,6 +20,7 @@ class QueueModel
     private $dispatchesCount;
     private $deliveryMethodId;
     private $dispatchId;
+    private $leftCount;
 
     /**
      * @return mixed
@@ -163,5 +164,21 @@ class QueueModel
     public function setDispatchId($dispatchId): void
     {
         $this->dispatchId = $dispatchId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLeftCount()
+    {
+        return $this->leftCount;
+    }
+
+    /**
+     * @param mixed $leftCount
+     */
+    public function setLeftCount($leftCount): void
+    {
+        $this->leftCount = $leftCount;
     }
 }
