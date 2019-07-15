@@ -18,6 +18,7 @@ class OrderModel
     private $orderCreatePerson;
     private $orderConfirmDate;
     private $orderConfirmPerson;
+    private $orderOwner;
     private $orderOwnerId;
     private $orderOwnerName;
     private $orderOwnerAddress;
@@ -141,6 +142,22 @@ class OrderModel
     public function setOrderConfirmPerson($orderConfirmPerson): void
     {
         $this->orderConfirmPerson = $orderConfirmPerson;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getOrderOwner()
+    {
+        return $this->orderOwner;
+    }
+
+    /**
+     * @param mixed $orderOwner
+     */
+    public function setOrderOwner($orderOwner): void
+    {
+        $this->orderOwner = $orderOwner;
     }
 
     /**
