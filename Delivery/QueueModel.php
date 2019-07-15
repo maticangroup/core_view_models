@@ -21,6 +21,7 @@ class QueueModel
     private $deliveryMethodId;
     private $dispatchId;
     private $leftCount;
+    private $queueDueDate;
 
     /**
      * @return mixed
@@ -180,5 +181,21 @@ class QueueModel
     public function setLeftCount($leftCount): void
     {
         $this->leftCount = $leftCount;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getQueueDueDate()
+    {
+        return $this->queueDueDate;
+    }
+
+    /**
+     * @param mixed $queueDueDate
+     */
+    public function setQueueDueDate($queueDueDate): void
+    {
+        $this->queueDueDate = $queueDueDate;
     }
 }
