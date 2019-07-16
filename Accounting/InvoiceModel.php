@@ -40,6 +40,9 @@ class InvoiceModel
     private $invoiceDescription;
     private $invoiceItems;
     private $invoiceSerial;
+    private $invoiceStatusName;
+    private $invoiceStatusMachineName;
+    private $invoiceStatusColor;
 
     /**
      * @return mixed
@@ -503,5 +506,53 @@ class InvoiceModel
     public function setInvoiceSerial($invoiceSerial): void
     {
         $this->invoiceSerial = $invoiceSerial;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoiceStatusName()
+    {
+        return $this->invoiceStatusName;
+    }
+
+    /**
+     * @param mixed $invoiceStatusName
+     */
+    public function setInvoiceStatusName($invoiceStatusName): void
+    {
+        $this->invoiceStatusName = $invoiceStatusName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoiceStatusMachineName()
+    {
+        return $this->invoiceStatusMachineName;
+    }
+
+    /**
+     * @param mixed $invoiceStatusMachineName
+     */
+    public function setInvoiceStatusMachineName($invoiceStatusMachineName): void
+    {
+        $this->invoiceStatusMachineName = $invoiceStatusMachineName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoiceStatusColor()
+    {
+        return $this->invoiceStatusColor;
+    }
+
+    /**
+     * @param mixed $invoiceStatusColor
+     */
+    public function setInvoiceStatusColor($invoiceStatusColor): void
+    {
+        $this->invoiceStatusColor = $invoiceStatusColor;
     }
 }
