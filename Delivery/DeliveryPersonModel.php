@@ -24,6 +24,7 @@ class DeliveryPersonModel
     private $deliveryPersonAllowedDistricts;
     private $personId;
     private $dispatchId;
+    private $dispatchPayments;
 
     /**
      * @return mixed
@@ -231,5 +232,21 @@ class DeliveryPersonModel
     public function setDispatchId($dispatchId): void
     {
         $this->dispatchId = $dispatchId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDispatchPayments()
+    {
+        return $this->dispatchPayments;
+    }
+
+    /**
+     * @param mixed $dispatchPayments
+     */
+    public function setDispatchPayments($dispatchPayments): void
+    {
+        $this->dispatchPayments = $dispatchPayments;
     }
 }
