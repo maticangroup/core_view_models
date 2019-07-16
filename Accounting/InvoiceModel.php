@@ -29,6 +29,10 @@ class InvoiceModel
     private $invoiceToPersonId;
     private $invoiceToPersonFirstName;
     private $invoiceToPersonLastName;
+    private $invoiceFromCompanyId;
+    private $invoiceFromCompanyName;
+    private $invoiceToCompanyId;
+    private $invoiceToCompanyName;
     private $invoiceDescription;
     private $invoiceItems;
 
@@ -350,5 +354,69 @@ class InvoiceModel
     public function setInvoiceItems($invoiceItems): void
     {
         $this->invoiceItems = $invoiceItems;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoiceFromCompanyId()
+    {
+        return $this->invoiceFromCompanyId;
+    }
+
+    /**
+     * @param mixed $invoiceFromCompanyId
+     */
+    public function setInvoiceFromCompanyId($invoiceFromCompanyId): void
+    {
+        $this->invoiceFromCompanyId = $invoiceFromCompanyId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoiceFromCompanyName()
+    {
+        return $this->invoiceFromCompanyName;
+    }
+
+    /**
+     * @param mixed $invoiceFromCompanyName
+     */
+    public function setInvoiceFromCompanyName($invoiceFromCompanyName): void
+    {
+        $this->invoiceFromCompanyName = $invoiceFromCompanyName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoiceToCompanyId()
+    {
+        return $this->invoiceToCompanyId;
+    }
+
+    /**
+     * @param mixed $invoiceToCompanyId
+     */
+    public function setInvoiceToCompanyId($invoiceToCompanyId): void
+    {
+        $this->invoiceToCompanyId = $invoiceToCompanyId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoiceToCompanyName()
+    {
+        return $this->invoiceToCompanyName;
+    }
+
+    /**
+     * @param mixed $invoiceToCompanyName
+     */
+    public function setInvoiceToCompanyName($invoiceToCompanyName): void
+    {
+        $this->invoiceToCompanyName = $invoiceToCompanyName;
     }
 }
