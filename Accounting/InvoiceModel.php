@@ -23,9 +23,12 @@ class InvoiceModel
     private $invoiceTypeId;
     private $invoiceTypeName;
     private $invoiceTypeMachineName;
-    private $invoiceOwnerId;
-    private $invoiceOwnerFirstName;
-    private $invoiceOwnerLastName;
+    private $invoiceFromPersonId;
+    private $invoiceFromPersonFirstName;
+    private $invoiceFromPersonLastName;
+    private $invoiceToPersonId;
+    private $invoiceToPersonFirstName;
+    private $invoiceToPersonLastName;
     private $invoiceDescription;
     private $invoiceItems;
 
@@ -224,49 +227,97 @@ class InvoiceModel
     /**
      * @return mixed
      */
-    public function getInvoiceOwnerId()
+    public function getInvoiceFromPersonId()
     {
-        return $this->invoiceOwnerId;
+        return $this->invoiceFromPersonId;
     }
 
     /**
-     * @param mixed $invoiceOwnerId
+     * @param mixed $invoiceFromPersonId
      */
-    public function setInvoiceOwnerId($invoiceOwnerId): void
+    public function setInvoiceFromPersonId($invoiceFromPersonId): void
     {
-        $this->invoiceOwnerId = $invoiceOwnerId;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getInvoiceOwnerFirstName()
-    {
-        return $this->invoiceOwnerFirstName;
-    }
-
-    /**
-     * @param mixed $invoiceOwnerFirstName
-     */
-    public function setInvoiceOwnerFirstName($invoiceOwnerFirstName): void
-    {
-        $this->invoiceOwnerFirstName = $invoiceOwnerFirstName;
+        $this->invoiceFromPersonId = $invoiceFromPersonId;
     }
 
     /**
      * @return mixed
      */
-    public function getInvoiceOwnerLastName()
+    public function getInvoiceFromPersonFirstName()
     {
-        return $this->invoiceOwnerLastName;
+        return $this->invoiceFromPersonFirstName;
     }
 
     /**
-     * @param mixed $invoiceOwnerLastName
+     * @param mixed $invoiceFromPersonFirstName
      */
-    public function setInvoiceOwnerLastName($invoiceOwnerLastName): void
+    public function setInvoiceFromPersonFirstName($invoiceFromPersonFirstName): void
     {
-        $this->invoiceOwnerLastName = $invoiceOwnerLastName;
+        $this->invoiceFromPersonFirstName = $invoiceFromPersonFirstName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoiceFromPersonLastName()
+    {
+        return $this->invoiceFromPersonLastName;
+    }
+
+    /**
+     * @param mixed $invoiceFromPersonLastName
+     */
+    public function setInvoiceFromPersonLastName($invoiceFromPersonLastName): void
+    {
+        $this->invoiceFromPersonLastName = $invoiceFromPersonLastName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoiceToPersonId()
+    {
+        return $this->invoiceToPersonId;
+    }
+
+    /**
+     * @param mixed $invoiceToPersonId
+     */
+    public function setInvoiceToPersonId($invoiceToPersonId): void
+    {
+        $this->invoiceToPersonId = $invoiceToPersonId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoiceToPersonFirstName()
+    {
+        return $this->invoiceToPersonFirstName;
+    }
+
+    /**
+     * @param mixed $invoiceToPersonFirstName
+     */
+    public function setInvoiceToPersonFirstName($invoiceToPersonFirstName): void
+    {
+        $this->invoiceToPersonFirstName = $invoiceToPersonFirstName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoiceToPersonLastName()
+    {
+        return $this->invoiceToPersonLastName;
+    }
+
+    /**
+     * @param mixed $invoiceToPersonLastName
+     */
+    public function setInvoiceToPersonLastName($invoiceToPersonLastName): void
+    {
+        $this->invoiceToPersonLastName = $invoiceToPersonLastName;
     }
 
     /**

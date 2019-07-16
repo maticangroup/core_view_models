@@ -15,7 +15,7 @@ class DispatchPaymentStatusModel
     private $dispatchPaymentStatusName;
     private $dispatchPaymentStatusMachineName;
     private $dispatchPaymentStatusColor;
-    private $dispatchPaymentId;
+    private $dispatchId;
 
     /**
      * @return mixed
@@ -84,16 +84,16 @@ class DispatchPaymentStatusModel
     /**
      * @return mixed
      */
-    public function getDispatchPaymentId()
+    public function getDispatchId()
     {
-        return $this->dispatchPaymentId;
+        return $this->dispatchId;
     }
 
     /**
-     * @param mixed $dispatchPaymentId
+     * @param mixed $dispatchId
      */
-    public function setDispatchPaymentId($dispatchPaymentId): void
+    public function setDispatchId($dispatchId): void
     {
-        $this->dispatchPaymentId = $dispatchPaymentId;
+        $this->dispatchId = $dispatchId;
     }
 }
