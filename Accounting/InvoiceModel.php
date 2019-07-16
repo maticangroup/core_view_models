@@ -43,6 +43,7 @@ class InvoiceModel
     private $invoiceStatusName;
     private $invoiceStatusMachineName;
     private $invoiceStatusColor;
+    private $invoicePaymentRequest;
 
     /**
      * @return mixed
@@ -554,5 +555,21 @@ class InvoiceModel
     public function setInvoiceStatusColor($invoiceStatusColor): void
     {
         $this->invoiceStatusColor = $invoiceStatusColor;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoicePaymentRequest()
+    {
+        return $this->invoicePaymentRequest;
+    }
+
+    /**
+     * @param mixed $invoicePaymentRequest
+     */
+    public function setInvoicePaymentRequest($invoicePaymentRequest): void
+    {
+        $this->invoicePaymentRequest = $invoicePaymentRequest;
     }
 }
