@@ -15,6 +15,7 @@ class DispatchPaymentModel
     private $dispatchPaymentName;
     private $dispatchPaymentAmount;
     private $dispatchPaymentStatus;
+    private $dispatchSerial;
     private $dispatchId;
     private $deliveryPersonId;
 
@@ -112,5 +113,21 @@ class DispatchPaymentModel
     public function setDeliveryPersonId($deliveryPersonId): void
     {
         $this->deliveryPersonId = $deliveryPersonId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDispatchSerial()
+    {
+        return $this->dispatchSerial;
+    }
+
+    /**
+     * @param mixed $dispatchSerial
+     */
+    public function setDispatchSerial($dispatchSerial): void
+    {
+        $this->dispatchSerial = $dispatchSerial;
     }
 }
