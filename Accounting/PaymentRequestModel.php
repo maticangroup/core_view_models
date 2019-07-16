@@ -18,6 +18,9 @@ class PaymentRequestModel
     private $paymentRequestClearedAmount;
     private $paymentRequestDescription;
     private $paymentRequestPayments;
+    private $paymentRequestTypeName;
+    private $paymentRequestTypeMachineName;
+    private $paymentRequestTypeColor;
     private $invoiceId;
     private $orderId;
 
@@ -163,5 +166,53 @@ class PaymentRequestModel
     public function setOrderId($orderId): void
     {
         $this->orderId = $orderId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPaymentRequestTypeName()
+    {
+        return $this->paymentRequestTypeName;
+    }
+
+    /**
+     * @param mixed $paymentRequestTypeName
+     */
+    public function setPaymentRequestTypeName($paymentRequestTypeName): void
+    {
+        $this->paymentRequestTypeName = $paymentRequestTypeName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPaymentRequestTypeMachineName()
+    {
+        return $this->paymentRequestTypeMachineName;
+    }
+
+    /**
+     * @param mixed $paymentRequestTypeMachineName
+     */
+    public function setPaymentRequestTypeMachineName($paymentRequestTypeMachineName): void
+    {
+        $this->paymentRequestTypeMachineName = $paymentRequestTypeMachineName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPaymentRequestTypeColor()
+    {
+        return $this->paymentRequestTypeColor;
+    }
+
+    /**
+     * @param mixed $paymentRequestTypeColor
+     */
+    public function setPaymentRequestTypeColor($paymentRequestTypeColor): void
+    {
+        $this->paymentRequestTypeColor = $paymentRequestTypeColor;
     }
 }
