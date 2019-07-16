@@ -26,15 +26,20 @@ class InvoiceModel
     private $invoiceFromPersonId;
     private $invoiceFromPersonFirstName;
     private $invoiceFromPersonLastName;
+    private $invoiceFromPersonPhone;
     private $invoiceToPersonId;
     private $invoiceToPersonFirstName;
     private $invoiceToPersonLastName;
+    private $invoiceToPersonPhone;
     private $invoiceFromCompanyId;
     private $invoiceFromCompanyName;
+    private $invoiceFromCompanyPhone;
     private $invoiceToCompanyId;
     private $invoiceToCompanyName;
+    private $invoiceToCompanyPhone;
     private $invoiceDescription;
     private $invoiceItems;
+    private $invoiceSerial;
 
     /**
      * @return mixed
@@ -418,5 +423,85 @@ class InvoiceModel
     public function setInvoiceToCompanyName($invoiceToCompanyName): void
     {
         $this->invoiceToCompanyName = $invoiceToCompanyName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoiceFromPersonPhone()
+    {
+        return $this->invoiceFromPersonPhone;
+    }
+
+    /**
+     * @param mixed $invoiceFromPersonPhone
+     */
+    public function setInvoiceFromPersonPhone($invoiceFromPersonPhone): void
+    {
+        $this->invoiceFromPersonPhone = $invoiceFromPersonPhone;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoiceToPersonPhone()
+    {
+        return $this->invoiceToPersonPhone;
+    }
+
+    /**
+     * @param mixed $invoiceToPersonPhone
+     */
+    public function setInvoiceToPersonPhone($invoiceToPersonPhone): void
+    {
+        $this->invoiceToPersonPhone = $invoiceToPersonPhone;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoiceFromCompanyPhone()
+    {
+        return $this->invoiceFromCompanyPhone;
+    }
+
+    /**
+     * @param mixed $invoiceFromCompanyPhone
+     */
+    public function setInvoiceFromCompanyPhone($invoiceFromCompanyPhone): void
+    {
+        $this->invoiceFromCompanyPhone = $invoiceFromCompanyPhone;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoiceToCompanyPhone()
+    {
+        return $this->invoiceToCompanyPhone;
+    }
+
+    /**
+     * @param mixed $invoiceToCompanyPhone
+     */
+    public function setInvoiceToCompanyPhone($invoiceToCompanyPhone): void
+    {
+        $this->invoiceToCompanyPhone = $invoiceToCompanyPhone;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoiceSerial()
+    {
+        return $this->invoiceSerial;
+    }
+
+    /**
+     * @param mixed $invoiceSerial
+     */
+    public function setInvoiceSerial($invoiceSerial): void
+    {
+        $this->invoiceSerial = $invoiceSerial;
     }
 }
