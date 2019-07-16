@@ -9,7 +9,7 @@
 namespace App\FormModels\Delivery;
 
 
-class DispatchPriceStatus
+class DispatchPriceStatusModel
 {
     private $dispatchPriceId;
     private $dispatchPriceName;
