@@ -18,10 +18,20 @@ class PaymentModel
     private $paymentAmount;
     private $paymentMethodId;
     private $paymentMethodName;
-    private $paymentFromBankAccountId;
-    private $paymentFromBankAccountName;
-    private $paymentToBankAccountId;
-    private $paymentToBankAccountName;
+    private $invoiceFromPersonId;
+    private $invoiceFromPersonFirstName;
+    private $invoiceFromPersonLastName;
+    private $invoiceFromPersonPhone;
+    private $invoiceToPersonId;
+    private $invoiceToPersonFirstName;
+    private $invoiceToPersonLastName;
+    private $invoiceToPersonPhone;
+    private $invoiceFromCompanyId;
+    private $invoiceFromCompanyName;
+    private $invoiceFromCompanyPhone;
+    private $invoiceToCompanyId;
+    private $invoiceToCompanyName;
+    private $invoiceToCompanyPhone;
     private $paymentFollowToken;
     private $paymentType;
     private $paymentStatus;
@@ -265,5 +275,229 @@ class PaymentModel
     public function setPaymentRequestId($paymentRequestId): void
     {
         $this->paymentRequestId = $paymentRequestId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoiceFromPersonId()
+    {
+        return $this->invoiceFromPersonId;
+    }
+
+    /**
+     * @param mixed $invoiceFromPersonId
+     */
+    public function setInvoiceFromPersonId($invoiceFromPersonId): void
+    {
+        $this->invoiceFromPersonId = $invoiceFromPersonId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoiceFromPersonFirstName()
+    {
+        return $this->invoiceFromPersonFirstName;
+    }
+
+    /**
+     * @param mixed $invoiceFromPersonFirstName
+     */
+    public function setInvoiceFromPersonFirstName($invoiceFromPersonFirstName): void
+    {
+        $this->invoiceFromPersonFirstName = $invoiceFromPersonFirstName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoiceFromPersonLastName()
+    {
+        return $this->invoiceFromPersonLastName;
+    }
+
+    /**
+     * @param mixed $invoiceFromPersonLastName
+     */
+    public function setInvoiceFromPersonLastName($invoiceFromPersonLastName): void
+    {
+        $this->invoiceFromPersonLastName = $invoiceFromPersonLastName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoiceFromPersonPhone()
+    {
+        return $this->invoiceFromPersonPhone;
+    }
+
+    /**
+     * @param mixed $invoiceFromPersonPhone
+     */
+    public function setInvoiceFromPersonPhone($invoiceFromPersonPhone): void
+    {
+        $this->invoiceFromPersonPhone = $invoiceFromPersonPhone;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoiceToPersonId()
+    {
+        return $this->invoiceToPersonId;
+    }
+
+    /**
+     * @param mixed $invoiceToPersonId
+     */
+    public function setInvoiceToPersonId($invoiceToPersonId): void
+    {
+        $this->invoiceToPersonId = $invoiceToPersonId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoiceToPersonFirstName()
+    {
+        return $this->invoiceToPersonFirstName;
+    }
+
+    /**
+     * @param mixed $invoiceToPersonFirstName
+     */
+    public function setInvoiceToPersonFirstName($invoiceToPersonFirstName): void
+    {
+        $this->invoiceToPersonFirstName = $invoiceToPersonFirstName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoiceToPersonLastName()
+    {
+        return $this->invoiceToPersonLastName;
+    }
+
+    /**
+     * @param mixed $invoiceToPersonLastName
+     */
+    public function setInvoiceToPersonLastName($invoiceToPersonLastName): void
+    {
+        $this->invoiceToPersonLastName = $invoiceToPersonLastName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoiceToPersonPhone()
+    {
+        return $this->invoiceToPersonPhone;
+    }
+
+    /**
+     * @param mixed $invoiceToPersonPhone
+     */
+    public function setInvoiceToPersonPhone($invoiceToPersonPhone): void
+    {
+        $this->invoiceToPersonPhone = $invoiceToPersonPhone;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoiceFromCompanyId()
+    {
+        return $this->invoiceFromCompanyId;
+    }
+
+    /**
+     * @param mixed $invoiceFromCompanyId
+     */
+    public function setInvoiceFromCompanyId($invoiceFromCompanyId): void
+    {
+        $this->invoiceFromCompanyId = $invoiceFromCompanyId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoiceFromCompanyName()
+    {
+        return $this->invoiceFromCompanyName;
+    }
+
+    /**
+     * @param mixed $invoiceFromCompanyName
+     */
+    public function setInvoiceFromCompanyName($invoiceFromCompanyName): void
+    {
+        $this->invoiceFromCompanyName = $invoiceFromCompanyName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoiceFromCompanyPhone()
+    {
+        return $this->invoiceFromCompanyPhone;
+    }
+
+    /**
+     * @param mixed $invoiceFromCompanyPhone
+     */
+    public function setInvoiceFromCompanyPhone($invoiceFromCompanyPhone): void
+    {
+        $this->invoiceFromCompanyPhone = $invoiceFromCompanyPhone;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoiceToCompanyId()
+    {
+        return $this->invoiceToCompanyId;
+    }
+
+    /**
+     * @param mixed $invoiceToCompanyId
+     */
+    public function setInvoiceToCompanyId($invoiceToCompanyId): void
+    {
+        $this->invoiceToCompanyId = $invoiceToCompanyId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoiceToCompanyName()
+    {
+        return $this->invoiceToCompanyName;
+    }
+
+    /**
+     * @param mixed $invoiceToCompanyName
+     */
+    public function setInvoiceToCompanyName($invoiceToCompanyName): void
+    {
+        $this->invoiceToCompanyName = $invoiceToCompanyName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoiceToCompanyPhone()
+    {
+        return $this->invoiceToCompanyPhone;
+    }
+
+    /**
+     * @param mixed $invoiceToCompanyPhone
+     */
+    public function setInvoiceToCompanyPhone($invoiceToCompanyPhone): void
+    {
+        $this->invoiceToCompanyPhone = $invoiceToCompanyPhone;
     }
 }
