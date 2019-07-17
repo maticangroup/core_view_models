@@ -21,6 +21,7 @@ class PaymentRequestModel
     private $paymentRequestTypeName;
     private $paymentRequestTypeMachineName;
     private $paymentRequestTypeColor;
+    private $paymentRequestStatus;
     private $invoiceId;
     private $orderId;
 
