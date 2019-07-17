@@ -15,7 +15,7 @@ class GiftCardGroupStatusModel
     private $giftCardGroupStatusName;
     private $giftCardGroupStatusMachineName;
     private $giftCardGroupStatusColor;
-    private $giftCardGroupId;
+    private $giftCardId;
 
     /**
      * @return mixed
@@ -84,16 +84,16 @@ class GiftCardGroupStatusModel
     /**
      * @return mixed
      */
-    public function getGiftCardGroupId()
+    public function getGiftCardId()
     {
-        return $this->giftCardGroupId;
+        return $this->giftCardId;
     }
 
     /**
-     * @param mixed $giftCardGroupId
+     * @param mixed $giftCardId
      */
-    public function setGiftCardGroupId($giftCardGroupId): void
+    public function setGiftCardId($giftCardId): void
     {
-        $this->giftCardGroupId = $giftCardGroupId;
+        $this->giftCardId = $giftCardId;
     }
 }

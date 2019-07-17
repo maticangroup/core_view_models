@@ -14,7 +14,9 @@ class GiftCardModel
     private $giftCardId;
     private $giftCardSerial;
     private $giftCardStatus;
-    private $giftCardUsedPerson;
+    private $giftCardUsedPersonId;
+    private $giftCardUsedPersonFirstName;
+    private $giftCardUsedPersonLastName;
     private $giftCardUsedDate;
     private $giftCardGroupId;
 
@@ -69,17 +71,49 @@ class GiftCardModel
     /**
      * @return mixed
      */
-    public function getGiftCardUsedPerson()
+    public function getGiftCardUsedPersonId()
     {
-        return $this->giftCardUsedPerson;
+        return $this->giftCardUsedPersonId;
     }
 
     /**
-     * @param mixed $giftCardUsedPerson
+     * @param mixed $giftCardUsedPersonId
      */
-    public function setGiftCardUsedPerson($giftCardUsedPerson): void
+    public function setGiftCardUsedPersonId($giftCardUsedPersonId): void
     {
-        $this->giftCardUsedPerson = $giftCardUsedPerson;
+        $this->giftCardUsedPersonId = $giftCardUsedPersonId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getGiftCardUsedPersonFirstName()
+    {
+        return $this->giftCardUsedPersonFirstName;
+    }
+
+    /**
+     * @param mixed $giftCardUsedPersonFirstName
+     */
+    public function setGiftCardUsedPersonFirstName($giftCardUsedPersonFirstName): void
+    {
+        $this->giftCardUsedPersonFirstName = $giftCardUsedPersonFirstName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getGiftCardUsedPersonLastName()
+    {
+        return $this->giftCardUsedPersonLastName;
+    }
+
+    /**
+     * @param mixed $giftCardUsedPersonLastName
+     */
+    public function setGiftCardUsedPersonLastName($giftCardUsedPersonLastName): void
+    {
+        $this->giftCardUsedPersonLastName = $giftCardUsedPersonLastName;
     }
 
     /**
