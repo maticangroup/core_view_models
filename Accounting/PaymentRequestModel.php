@@ -216,4 +216,20 @@ class PaymentRequestModel
     {
         $this->paymentRequestTypeColor = $paymentRequestTypeColor;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getPaymentRequestStatus()
+    {
+        return $this->paymentRequestStatus;
+    }
+
+    /**
+     * @param mixed $paymentRequestStatus
+     */
+    public function setPaymentRequestStatus($paymentRequestStatus): void
+    {
+        $this->paymentRequestStatus = $paymentRequestStatus;
+    }
 }
