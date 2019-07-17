@@ -18,6 +18,7 @@ class PaymentModel
     private $paymentAmount;
     private $paymentMethodId;
     private $paymentMethodName;
+    private $paymentMethodMachineName;
     private $invoiceFromPersonId;
     private $invoiceFromPersonFirstName;
     private $invoiceFromPersonLastName;
@@ -499,5 +500,21 @@ class PaymentModel
     public function setInvoiceToCompanyPhone($invoiceToCompanyPhone): void
     {
         $this->invoiceToCompanyPhone = $invoiceToCompanyPhone;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPaymentMethodMachineName()
+    {
+        return $this->paymentMethodMachineName;
+    }
+
+    /**
+     * @param mixed $paymentMethodMachineName
+     */
+    public function setPaymentMethodMachineName($paymentMethodMachineName): void
+    {
+        $this->paymentMethodMachineName = $paymentMethodMachineName;
     }
 }
