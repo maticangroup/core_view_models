@@ -27,8 +27,7 @@ class CouponGroupModel
     private $couponGroupConfirmPerson;
     private $couponGroupConfirmDate;
     private $orderId;
-    private $couponGroupPersons;
-    private $couponGroupUsedCoupons;
+    private $couponGroupPeople;
     private $couponGroupUseDate;
     private $couponGroupUsePerson;
     private $couponGroupStatus;
@@ -261,22 +260,6 @@ class CouponGroupModel
     /**
      * @return mixed
      */
-    public function getCouponGroupPersons()
-    {
-        return $this->couponGroupPersons;
-    }
-
-    /**
-     * @param mixed $couponGroupPersons
-     */
-    public function setCouponGroupPersons($couponGroupPersons): void
-    {
-        $this->couponGroupPersons = $couponGroupPersons;
-    }
-
-    /**
-     * @return mixed
-     */
     public function getCouponGroupUseDate()
     {
         return $this->couponGroupUseDate;
@@ -325,17 +308,17 @@ class CouponGroupModel
     /**
      * @return mixed
      */
-    public function getCouponGroupUsedCoupons()
+    public function getCouponGroupPeople()
     {
-        return $this->couponGroupUsedCoupons;
+        return $this->couponGroupPeople;
     }
 
     /**
-     * @param mixed $couponGroupUsedCoupons
+     * @param mixed $couponGroupPeople
      */
-    public function setCouponGroupUsedCoupons($couponGroupUsedCoupons): void
+    public function setCouponGroupPeople($couponGroupPeople): void
     {
-        $this->couponGroupUsedCoupons = $couponGroupUsedCoupons;
+        $this->couponGroupPeople = $couponGroupPeople;
     }
 
     /**
