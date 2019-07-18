@@ -27,11 +27,10 @@ class CouponGroupModel
     private $couponGroupConfirmPerson;
     private $couponGroupConfirmDate;
     private $orderId;
-    private $couponGroupPeople;
-    private $couponGroupUseDate;
-    private $couponGroupUsePerson;
+    private $couponGroupAllowedPeople;
     private $couponGroupStatus;
     private $couponGroupConfirmStatus;
+    private $couponGroupUsedPeople;
 
     /**
      * @return mixed
@@ -258,30 +257,6 @@ class CouponGroupModel
     }
 
     /**
-     * @return mixed
-     */
-    public function getCouponGroupUseDate()
-    {
-        return $this->couponGroupUseDate;
-    }
-
-    /**
-     * @param mixed $couponGroupUseDate
-     */
-    public function setCouponGroupUseDate($couponGroupUseDate): void
-    {
-        $this->couponGroupUseDate = $couponGroupUseDate;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getCouponGroupUsePerson()
-    {
-        return $this->couponGroupUsePerson;
-    }
-
-    /**
      * @param mixed $couponGroupUsePerson
      */
     public function setCouponGroupUsePerson($couponGroupUsePerson): void
@@ -308,17 +283,17 @@ class CouponGroupModel
     /**
      * @return mixed
      */
-    public function getCouponGroupPeople()
+    public function getCouponGroupAllowedPeople()
     {
-        return $this->couponGroupPeople;
+        return $this->couponGroupAllowedPeople;
     }
 
     /**
-     * @param mixed $couponGroupPeople
+     * @param mixed $couponGroupAllowedPeople
      */
-    public function setCouponGroupPeople($couponGroupPeople): void
+    public function setCouponGroupAllowedPeople($couponGroupAllowedPeople): void
     {
-        $this->couponGroupPeople = $couponGroupPeople;
+        $this->couponGroupAllowedPeople = $couponGroupAllowedPeople;
     }
 
     /**
@@ -367,6 +342,22 @@ class CouponGroupModel
     public function setCouponGroupConfirmDate($couponGroupConfirmDate): void
     {
         $this->couponGroupConfirmDate = $couponGroupConfirmDate;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCouponGroupUsedPeople()
+    {
+        return $this->couponGroupUsedPeople;
+    }
+
+    /**
+     * @param mixed $couponGroupUsedPeople
+     */
+    public function setCouponGroupUsedPeople($couponGroupUsedPeople): void
+    {
+        $this->couponGroupUsedPeople = $couponGroupUsedPeople;
     }
 
 }
