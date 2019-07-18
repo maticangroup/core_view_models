@@ -9,7 +9,7 @@
 namespace App\FormModels\Accounting;
 
 
-class GiftCardStatus
+class GiftCardStatusModel
 {
     private $giftCardStatusId;
     private $giftCardStatusName;
