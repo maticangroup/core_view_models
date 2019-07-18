@@ -18,7 +18,7 @@ class CouponGroupModel
     private $couponGroupDiscountType;
     private $couponGroupDiscountEffect;
     private $couponGroupMinimumInvoicePrice;
-    private $couponGroupType;
+    private $couponGroupIsPrivate;
     private $couponGroupUsageTimes;
     private $couponGroupLeftUsageTimes;
     private $couponGroupUsageDescription;
@@ -148,17 +148,17 @@ class CouponGroupModel
     /**
      * @return mixed
      */
-    public function getCouponGroupType()
+    public function getCouponGroupIsPrivate()
     {
-        return $this->couponGroupType;
+        return $this->couponGroupIsPrivate;
     }
 
     /**
-     * @param mixed $couponGroupType
+     * @param mixed $couponGroupIsPrivate
      */
-    public function setCouponGroupType($couponGroupType): void
+    public function setCouponGroupIsPrivate($couponGroupIsPrivate): void
     {
-        $this->couponGroupType = $couponGroupType;
+        $this->couponGroupIsPrivate = $couponGroupIsPrivate;
     }
 
     /**
