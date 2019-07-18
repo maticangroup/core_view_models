@@ -23,6 +23,7 @@ class GiftCardGroupModel
     private $giftCardGroupConfirmPerson;
     private $giftCardGroupConfirmDate;
     private $giftCardGroupStatus;
+    private $giftCardGroupAvailabilityStatus;
     private $giftCards;
 
     /**
@@ -231,6 +232,22 @@ class GiftCardGroupModel
     public function setGiftCards($giftCards): void
     {
         $this->giftCards = $giftCards;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getGiftCardGroupAvailabilityStatus()
+    {
+        return $this->giftCardGroupAvailabilityStatus;
+    }
+
+    /**
+     * @param mixed $giftCardGroupAvailabilityStatus
+     */
+    public function setGiftCardGroupAvailabilityStatus($giftCardGroupAvailabilityStatus): void
+    {
+        $this->giftCardGroupAvailabilityStatus = $giftCardGroupAvailabilityStatus;
     }
 
 }

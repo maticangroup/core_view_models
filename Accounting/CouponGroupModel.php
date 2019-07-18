@@ -24,11 +24,15 @@ class CouponGroupModel
     private $couponGroupUsageDescription;
     private $couponGroupCreatePerson;
     private $couponGroupCreateDate;
+    private $couponGroupConfirmPerson;
+    private $couponGroupConfirmDate;
     private $orderId;
     private $couponGroupPersons;
+    private $couponGroupUsedCoupons;
     private $couponGroupUseDate;
     private $couponGroupUsePerson;
     private $couponGroupStatus;
+    private $couponGroupConfirmStatus;
 
     /**
      * @return mixed
@@ -316,6 +320,70 @@ class CouponGroupModel
     public function setCouponGroupStatus($couponGroupStatus): void
     {
         $this->couponGroupStatus = $couponGroupStatus;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCouponGroupUsedCoupons()
+    {
+        return $this->couponGroupUsedCoupons;
+    }
+
+    /**
+     * @param mixed $couponGroupUsedCoupons
+     */
+    public function setCouponGroupUsedCoupons($couponGroupUsedCoupons): void
+    {
+        $this->couponGroupUsedCoupons = $couponGroupUsedCoupons;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCouponGroupConfirmStatus()
+    {
+        return $this->couponGroupConfirmStatus;
+    }
+
+    /**
+     * @param mixed $couponGroupConfirmStatus
+     */
+    public function setCouponGroupConfirmStatus($couponGroupConfirmStatus): void
+    {
+        $this->couponGroupConfirmStatus = $couponGroupConfirmStatus;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCouponGroupConfirmPerson()
+    {
+        return $this->couponGroupConfirmPerson;
+    }
+
+    /**
+     * @param mixed $couponGroupConfirmPerson
+     */
+    public function setCouponGroupConfirmPerson($couponGroupConfirmPerson): void
+    {
+        $this->couponGroupConfirmPerson = $couponGroupConfirmPerson;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCouponGroupConfirmDate()
+    {
+        return $this->couponGroupConfirmDate;
+    }
+
+    /**
+     * @param mixed $couponGroupConfirmDate
+     */
+    public function setCouponGroupConfirmDate($couponGroupConfirmDate): void
+    {
+        $this->couponGroupConfirmDate = $couponGroupConfirmDate;
     }
 
 }

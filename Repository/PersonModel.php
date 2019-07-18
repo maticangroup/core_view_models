@@ -45,6 +45,7 @@ class PersonModel
     private $groups;
     private $companies;
     private $locations;
+    private $couponGroupId;
 
     /**
      * @return mixed
@@ -268,6 +269,22 @@ class PersonModel
     public function setLocations($locations): void
     {
         $this->locations = $locations;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCouponGroupId()
+    {
+        return $this->couponGroupId;
+    }
+
+    /**
+     * @param mixed $couponGroupId
+     */
+    public function setCouponGroupId($couponGroupId): void
+    {
+        $this->couponGroupId = $couponGroupId;
     }
 
 
