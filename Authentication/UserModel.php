@@ -14,6 +14,8 @@ class UserModel
     private $userId;
     private $userMobile;
     private $userPassword;
+    private $userName;
+    private $userFamily;
     private $roleId;
 
     /**
@@ -78,5 +80,37 @@ class UserModel
     public function setRoleId($roleId): void
     {
         $this->roleId = $roleId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getUserName()
+    {
+        return $this->userName;
+    }
+
+    /**
+     * @param mixed $userName
+     */
+    public function setUserName($userName): void
+    {
+        $this->userName = $userName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getUserFamily()
+    {
+        return $this->userFamily;
+    }
+
+    /**
+     * @param mixed $userFamily
+     */
+    public function setUserFamily($userFamily): void
+    {
+        $this->userFamily = $userFamily;
     }
 }
