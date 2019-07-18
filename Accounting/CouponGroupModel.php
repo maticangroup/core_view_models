@@ -14,6 +14,7 @@ class CouponGroupModel
     private $couponGroupId;
     private $couponGroupName;
     private $couponGroupPrefix;
+    private $couponGroupSerial;
     private $couponGroupExpiryDate;
     private $couponGroupDiscountType;
     private $couponGroupDiscountEffect;
@@ -358,6 +359,22 @@ class CouponGroupModel
     public function setCouponGroupUsedPeople($couponGroupUsedPeople): void
     {
         $this->couponGroupUsedPeople = $couponGroupUsedPeople;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCouponGroupSerial()
+    {
+        return $this->couponGroupSerial;
+    }
+
+    /**
+     * @param mixed $couponGroupSerial
+     */
+    public function setCouponGroupSerial($couponGroupSerial): void
+    {
+        $this->couponGroupSerial = $couponGroupSerial;
     }
 
 }
