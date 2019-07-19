@@ -17,35 +17,30 @@ use Matican\Core\DataTypes\NationalCode;
 class PersonModel
 {
     private $id;
-
-
     private $humanName;
-
-
     private $humanFamily;
-
-
     private $email;
-
     private $national_code;
-
     private $mobile;
-
-
     private $birthDateYear = "";
-
     private $birthDateMonth = "";
-
     private $birthDateDay = "";
-
     private $mainAddressString = "";
-
     private $sendSMS = false;
-
     private $groups;
     private $companies;
     private $locations;
     private $couponGroupId;
+    private $customerGroupId;
+    private $smsLogs;
+    private $orders;
+    private $favoriteItems;
+    private $giftCards;
+    private $coupons;
+    private $payments;
+    private $invoices;
+    private $invitations;
+    private $comments;
 
     /**
      * @return mixed
@@ -287,5 +282,164 @@ class PersonModel
         $this->couponGroupId = $couponGroupId;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getCustomerGroupId()
+    {
+        return $this->customerGroupId;
+    }
+
+    /**
+     * @param mixed $customerGroupId
+     */
+    public function setCustomerGroupId($customerGroupId): void
+    {
+        $this->customerGroupId = $customerGroupId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSmsLogs()
+    {
+        return $this->smsLogs;
+    }
+
+    /**
+     * @param mixed $smsLogs
+     */
+    public function setSmsLogs($smsLogs): void
+    {
+        $this->smsLogs = $smsLogs;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getOrders()
+    {
+        return $this->orders;
+    }
+
+    /**
+     * @param mixed $orders
+     */
+    public function setOrders($orders): void
+    {
+        $this->orders = $orders;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getFavoriteItems()
+    {
+        return $this->favoriteItems;
+    }
+
+    /**
+     * @param mixed $favoriteItems
+     */
+    public function setFavoriteItems($favoriteItems): void
+    {
+        $this->favoriteItems = $favoriteItems;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getGiftCards()
+    {
+        return $this->giftCards;
+    }
+
+    /**
+     * @param mixed $giftCards
+     */
+    public function setGiftCards($giftCards): void
+    {
+        $this->giftCards = $giftCards;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCoupons()
+    {
+        return $this->coupons;
+    }
+
+    /**
+     * @param mixed $coupons
+     */
+    public function setCoupons($coupons): void
+    {
+        $this->coupons = $coupons;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPayments()
+    {
+        return $this->payments;
+    }
+
+    /**
+     * @param mixed $payments
+     */
+    public function setPayments($payments): void
+    {
+        $this->payments = $payments;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvoices()
+    {
+        return $this->invoices;
+    }
+
+    /**
+     * @param mixed $invoices
+     */
+    public function setInvoices($invoices): void
+    {
+        $this->invoices = $invoices;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInvitations()
+    {
+        return $this->invitations;
+    }
+
+    /**
+     * @param mixed $invitations
+     */
+    public function setInvitations($invitations): void
+    {
+        $this->invitations = $invitations;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getComments()
+    {
+        return $this->comments;
+    }
+
+    /**
+     * @param mixed $comments
+     */
+    public function setComments($comments): void
+    {
+        $this->comments = $comments;
+    }
 
 }
