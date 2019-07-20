@@ -17,6 +17,9 @@ class ClientModel
     private $clientSecretKey;
     private $clientRoleId;
     private $clientRoleName;
+    private $clientIP;
+    private $clientLastConnectionDate;
+    private $clientDomain;
 
     /**
      * @return mixed
@@ -112,5 +115,53 @@ class ClientModel
     public function setClientRoleName($clientRoleName): void
     {
         $this->clientRoleName = $clientRoleName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getClientIP()
+    {
+        return $this->clientIP;
+    }
+
+    /**
+     * @param mixed $clientIP
+     */
+    public function setClientIP($clientIP): void
+    {
+        $this->clientIP = $clientIP;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getClientLastConnectionDate()
+    {
+        return $this->clientLastConnectionDate;
+    }
+
+    /**
+     * @param mixed $clientLastConnectionDate
+     */
+    public function setClientLastConnectionDate($clientLastConnectionDate): void
+    {
+        $this->clientLastConnectionDate = $clientLastConnectionDate;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getClientDomain()
+    {
+        return $this->clientDomain;
+    }
+
+    /**
+     * @param mixed $clientDomain
+     */
+    public function setClientDomain($clientDomain): void
+    {
+        $this->clientDomain = $clientDomain;
     }
 }
