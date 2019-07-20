@@ -15,6 +15,9 @@ class SMSLogModel
     private $smsLogTitle;
     private $smsLogDescription;
     private $smsLogSendDate;
+    private $smsLogLength;
+    private $smsLogFrom;
+    private $smsLogTo;
     private $PersonId;
 
     /**
@@ -95,5 +98,53 @@ class SMSLogModel
     public function setPersonId($PersonId): void
     {
         $this->PersonId = $PersonId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSmsLogLength()
+    {
+        return $this->smsLogLength;
+    }
+
+    /**
+     * @param mixed $smsLogLength
+     */
+    public function setSmsLogLength($smsLogLength): void
+    {
+        $this->smsLogLength = $smsLogLength;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSmsLogFrom()
+    {
+        return $this->smsLogFrom;
+    }
+
+    /**
+     * @param mixed $smsLogFrom
+     */
+    public function setSmsLogFrom($smsLogFrom): void
+    {
+        $this->smsLogFrom = $smsLogFrom;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSmsLogTo()
+    {
+        return $this->smsLogTo;
+    }
+
+    /**
+     * @param mixed $smsLogTo
+     */
+    public function setSmsLogTo($smsLogTo): void
+    {
+        $this->smsLogTo = $smsLogTo;
     }
 }
