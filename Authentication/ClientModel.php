@@ -17,6 +17,7 @@ class ClientModel
     private $clientSecretKey;
     private $clientRoleId;
     private $clientRoleName;
+    private $clientRoleMachineName;
     private $clientIP;
     private $clientLastConnectionDate;
     private $clientDomain;
@@ -163,5 +164,21 @@ class ClientModel
     public function setClientDomain($clientDomain): void
     {
         $this->clientDomain = $clientDomain;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getClientRoleMachineName()
+    {
+        return $this->clientRoleMachineName;
+    }
+
+    /**
+     * @param mixed $clientRoleMachineName
+     */
+    public function setClientRoleMachineName($clientRoleMachineName): void
+    {
+        $this->clientRoleMachineName = $clientRoleMachineName;
     }
 }
