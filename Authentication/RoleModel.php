@@ -15,6 +15,7 @@ class RoleModel
     private $roleName;
     private $rolePermissions;
     private $rolePersonId;
+    private $userId;
 
     /**
      * @return mixed
@@ -78,5 +79,21 @@ class RoleModel
     public function setRolePersonId($rolePersonId): void
     {
         $this->rolePersonId = $rolePersonId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getUserId()
+    {
+        return $this->userId;
+    }
+
+    /**
+     * @param mixed $userId
+     */
+    public function setUserId($userId): void
+    {
+        $this->userId = $userId;
     }
 }
