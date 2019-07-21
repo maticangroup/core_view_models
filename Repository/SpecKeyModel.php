@@ -19,6 +19,7 @@ class SpecKeyModel
     private $specKeyDisplayOrder;
     private $specKeyIsSpecial = false;
     private $specKeyIsChecked;
+    private $specKeySuggestion;
 
     /**
      * @return mixed
@@ -146,6 +147,22 @@ class SpecKeyModel
     public function setSpecKeyIsChecked($specKeyIsChecked): void
     {
         $this->specKeyIsChecked = $specKeyIsChecked;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSpecKeySuggestion()
+    {
+        return $this->specKeySuggestion;
+    }
+
+    /**
+     * @param mixed $specKeySuggestion
+     */
+    public function setSpecKeySuggestion($specKeySuggestion): void
+    {
+        $this->specKeySuggestion = $specKeySuggestion;
     }
 
 }
