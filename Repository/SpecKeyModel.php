@@ -20,6 +20,8 @@ class SpecKeyModel
     private $specKeyIsSpecial = false;
     private $specKeyIsChecked;
     private $specKeySuggestion;
+    private $specKeyValues;
+    private $specKeySubmittedValues;
 
     /**
      * @return mixed
@@ -163,6 +165,38 @@ class SpecKeyModel
     public function setSpecKeySuggestion($specKeySuggestion): void
     {
         $this->specKeySuggestion = $specKeySuggestion;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSpecKeyValues()
+    {
+        return $this->specKeyValues;
+    }
+
+    /**
+     * @param mixed $specKeyValues
+     */
+    public function setSpecKeyValues($specKeyValues): void
+    {
+        $this->specKeyValues = $specKeyValues;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSpecKeySubmittedValues()
+    {
+        return $this->specKeySubmittedValues;
+    }
+
+    /**
+     * @param mixed $specKeySubmittedValues
+     */
+    public function setSpecKeySubmittedValues($specKeySubmittedValues): void
+    {
+        $this->specKeySubmittedValues = $specKeySubmittedValues;
     }
 
 }
