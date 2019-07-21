@@ -20,6 +20,7 @@ class UserModel
     private $userLoginDate;
     private $roleId;
     private $roleName;
+    private $authenticationStatus;
 
     /**
      * @return mixed
@@ -163,5 +164,21 @@ class UserModel
     public function setRoleName($roleName): void
     {
         $this->roleName = $roleName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getAuthenticationStatus()
+    {
+        return $this->authenticationStatus;
+    }
+
+    /**
+     * @param mixed $authenticationStatus
+     */
+    public function setAuthenticationStatus($authenticationStatus): void
+    {
+        $this->authenticationStatus = $authenticationStatus;
     }
 }
