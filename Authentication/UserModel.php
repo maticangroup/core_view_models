@@ -16,7 +16,10 @@ class UserModel
     private $userPassword;
     private $userName;
     private $userFamily;
+    private $userIsLogIn;
+    private $userLoginDate;
     private $roleId;
+    private $roleName;
 
     /**
      * @return mixed
@@ -112,5 +115,53 @@ class UserModel
     public function setUserFamily($userFamily): void
     {
         $this->userFamily = $userFamily;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getUserIsLogIn()
+    {
+        return $this->userIsLogIn;
+    }
+
+    /**
+     * @param mixed $userIsLogIn
+     */
+    public function setUserIsLogIn($userIsLogIn): void
+    {
+        $this->userIsLogIn = $userIsLogIn;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getUserLoginDate()
+    {
+        return $this->userLoginDate;
+    }
+
+    /**
+     * @param mixed $userLoginDate
+     */
+    public function setUserLoginDate($userLoginDate): void
+    {
+        $this->userLoginDate = $userLoginDate;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getRoleName()
+    {
+        return $this->roleName;
+    }
+
+    /**
+     * @param mixed $roleName
+     */
+    public function setRoleName($roleName): void
+    {
+        $this->roleName = $roleName;
     }
 }
