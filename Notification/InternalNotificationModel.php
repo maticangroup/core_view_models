@@ -18,6 +18,7 @@ class InternalNotificationModel
     private $internalNotificationToId;
     private $internalNotificationToName;
     private $internalNotificationStatus;
+    private $internalNotificationCount;
 
     /**
      * @return mixed
@@ -129,5 +130,21 @@ class InternalNotificationModel
     public function setInternalNotificationStatus($internalNotificationStatus): void
     {
         $this->internalNotificationStatus = $internalNotificationStatus;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInternalNotificationCount()
+    {
+        return $this->internalNotificationCount;
+    }
+
+    /**
+     * @param mixed $internalNotificationCount
+     */
+    public function setInternalNotificationCount($internalNotificationCount): void
+    {
+        $this->internalNotificationCount = $internalNotificationCount;
     }
 }

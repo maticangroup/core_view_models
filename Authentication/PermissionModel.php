@@ -17,6 +17,7 @@ class PermissionModel
     private $permissionServerName;
     private $permissionServerId;
     private $roleId;
+    private $permissionIsDisabled;
 
     /**
      * @return mixed
@@ -112,5 +113,21 @@ class PermissionModel
     public function setPermissionMachineName($permissionMachineName): void
     {
         $this->permissionMachineName = $permissionMachineName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPermissionIsDisabled()
+    {
+        return $this->permissionIsDisabled;
+    }
+
+    /**
+     * @param mixed $permissionIsDisabled
+     */
+    public function setPermissionIsDisabled($permissionIsDisabled): void
+    {
+        $this->permissionIsDisabled = $permissionIsDisabled;
     }
 }

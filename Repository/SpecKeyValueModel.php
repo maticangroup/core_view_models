@@ -14,6 +14,7 @@ class SpecKeyValueModel
     private $itemId;
     private $keyId;
     private $value;
+    private $keyValueId;
 
     /**
      * @return mixed
@@ -61,5 +62,21 @@ class SpecKeyValueModel
     public function setValue($value): void
     {
         $this->value = $value;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getKeyValueId()
+    {
+        return $this->keyValueId;
+    }
+
+    /**
+     * @param mixed $keyValueId
+     */
+    public function setKeyValueId($keyValueId): void
+    {
+        $this->keyValueId = $keyValueId;
     }
 }
