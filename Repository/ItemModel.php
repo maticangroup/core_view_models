@@ -30,6 +30,7 @@ class ItemModel
     private $itemCreatedDate;
     private $itemUpdatedDate;
     private $itemDeedId;
+    private $itemComments;
 
 
     /**
@@ -334,6 +335,22 @@ class ItemModel
     public function setItemDeedId($itemDeedId): void
     {
         $this->itemDeedId = $itemDeedId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getItemComments()
+    {
+        return $this->itemComments;
+    }
+
+    /**
+     * @param mixed $itemComments
+     */
+    public function setItemComments($itemComments): void
+    {
+        $this->itemComments = $itemComments;
     }
 
 }

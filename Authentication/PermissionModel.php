@@ -13,6 +13,7 @@ class PermissionModel
 {
     private $permissionId;
     private $permissionName;
+    private $permissionMachineName;
     private $permissionServerName;
     private $permissionServerId;
     private $roleId;
@@ -95,5 +96,21 @@ class PermissionModel
     public function setRoleId($roleId): void
     {
         $this->roleId = $roleId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPermissionMachineName()
+    {
+        return $this->permissionMachineName;
+    }
+
+    /**
+     * @param mixed $permissionMachineName
+     */
+    public function setPermissionMachineName($permissionMachineName): void
+    {
+        $this->permissionMachineName = $permissionMachineName;
     }
 }

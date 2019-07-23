@@ -19,10 +19,13 @@ class CommentModel
     private $commentCreatePersonLastName;
     private $commentParentId;
     private $itemId;
+    private $commentDate;
     private $commentStatus;
     private $commentReadType;
     private $commentType;
     private $commentPoints;
+    private $commentPointType;
+    private $itemCommentId;
 
     /**
      * @return mixed
@@ -214,5 +217,53 @@ class CommentModel
     public function setCommentPoints($commentPoints): void
     {
         $this->commentPoints = $commentPoints;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCommentDate()
+    {
+        return $this->commentDate;
+    }
+
+    /**
+     * @param mixed $commentDate
+     */
+    public function setCommentDate($commentDate): void
+    {
+        $this->commentDate = $commentDate;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getItemCommentId()
+    {
+        return $this->itemCommentId;
+    }
+
+    /**
+     * @param mixed $itemCommentId
+     */
+    public function setItemCommentId($itemCommentId): void
+    {
+        $this->itemCommentId = $itemCommentId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCommentPointType()
+    {
+        return $this->commentPointType;
+    }
+
+    /**
+     * @param mixed $commentPointType
+     */
+    public function setCommentPointType($commentPointType): void
+    {
+        $this->commentPointType = $commentPointType;
     }
 }

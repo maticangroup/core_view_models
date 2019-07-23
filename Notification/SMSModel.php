@@ -9,16 +9,17 @@
 namespace App\FormModels\Notification;
 
 
-class SMSLogModel
+class SMSModel
 {
     private $smsLogId;
-    private $smsLogTitle;
-    private $smsLogDescription;
+    private $smsLogSubject;
+    private $smsLogContent;
     private $smsLogSendDate;
     private $smsLogLength;
     private $smsLogFrom;
-    private $smsLogTo;
-    private $smsLogToPersonName;
+    private $smsLogToPersonPhone;
+    private $smsLogToPersonFirstName;
+    private $smsLogToPersonLastName;
     private $PersonId;
 
     /**
@@ -40,33 +41,33 @@ class SMSLogModel
     /**
      * @return mixed
      */
-    public function getSmsLogTitle()
+    public function getSmsLogSubject()
     {
-        return $this->smsLogTitle;
+        return $this->smsLogSubject;
     }
 
     /**
-     * @param mixed $smsLogTitle
+     * @param mixed $smsLogSubject
      */
-    public function setSmsLogTitle($smsLogTitle): void
+    public function setSmsLogSubject($smsLogSubject): void
     {
-        $this->smsLogTitle = $smsLogTitle;
+        $this->smsLogSubject = $smsLogSubject;
     }
 
     /**
      * @return mixed
      */
-    public function getSmsLogDescription()
+    public function getSmsLogContent()
     {
-        return $this->smsLogDescription;
+        return $this->smsLogContent;
     }
 
     /**
-     * @param mixed $smsLogDescription
+     * @param mixed $smsLogContent
      */
-    public function setSmsLogDescription($smsLogDescription): void
+    public function setSmsLogContent($smsLogContent): void
     {
-        $this->smsLogDescription = $smsLogDescription;
+        $this->smsLogContent = $smsLogContent;
     }
 
     /**
@@ -136,32 +137,48 @@ class SMSLogModel
     /**
      * @return mixed
      */
-    public function getSmsLogTo()
+    public function getSmsLogToPersonFirstName()
     {
-        return $this->smsLogTo;
+        return $this->smsLogToPersonFirstName;
     }
 
     /**
-     * @param mixed $smsLogTo
+     * @param mixed $smsLogToPersonFirstName
      */
-    public function setSmsLogTo($smsLogTo): void
+    public function setSmsLogToPersonFirstName($smsLogToPersonFirstName): void
     {
-        $this->smsLogTo = $smsLogTo;
+        $this->smsLogToPersonFirstName = $smsLogToPersonFirstName;
     }
 
     /**
      * @return mixed
      */
-    public function getSmsLogToPersonName()
+    public function getSmsLogToPersonLastName()
     {
-        return $this->smsLogToPersonName;
+        return $this->smsLogToPersonLastName;
     }
 
     /**
-     * @param mixed $smsLogToPersonName
+     * @param mixed $smsLogToPersonLastName
      */
-    public function setSmsLogToPersonName($smsLogToPersonName): void
+    public function setSmsLogToPersonLastName($smsLogToPersonLastName): void
     {
-        $this->smsLogToPersonName = $smsLogToPersonName;
+        $this->smsLogToPersonLastName = $smsLogToPersonLastName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSmsLogToPersonPhone()
+    {
+        return $this->smsLogToPersonPhone;
+    }
+
+    /**
+     * @param mixed $smsLogToPersonPhone
+     */
+    public function setSmsLogToPersonPhone($smsLogToPersonPhone): void
+    {
+        $this->smsLogToPersonPhone = $smsLogToPersonPhone;
     }
 }
