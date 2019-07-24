@@ -20,6 +20,7 @@ class InventoryModel
     private $inventoryMainPhone;
     private $inventoryPhones;
     private $inventoryLocation;
+    private $inventoryLocationContactPersonId;
     private $inventoryItemProducts;
     private $inventoryDeeds;
     private $inventoryStatus;
@@ -231,5 +232,21 @@ class InventoryModel
     public function setInventoryMachineName($inventoryMachineName): void
     {
         $this->inventoryMachineName = $inventoryMachineName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInventoryLocationContactPersonId()
+    {
+        return $this->inventoryLocationContactPersonId;
+    }
+
+    /**
+     * @param mixed $inventoryLocationContactPersonId
+     */
+    public function setInventoryLocationContactPersonId($inventoryLocationContactPersonId): void
+    {
+        $this->inventoryLocationContactPersonId = $inventoryLocationContactPersonId;
     }
 }

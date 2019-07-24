@@ -29,6 +29,9 @@ class LocationModel
     private $locationContactPersonFirstName;
     private $locationContactPersonLastName;
     private $locationContactPersonMobile;
+    private $locationExternalContactPersonFirstName;
+    private $locationExternalContactPersonLastName;
+    private $locationExternalContactPersonMobile;
     private $locationLat;
     private $locationLng;
     private $locationGeoPoints;
@@ -404,5 +407,53 @@ class LocationModel
     public function setDispatchId($dispatchId): void
     {
         $this->dispatchId = $dispatchId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLocationExternalContactPersonFirstName()
+    {
+        return $this->locationExternalContactPersonFirstName;
+    }
+
+    /**
+     * @param mixed $locationExternalContactPersonFirstName
+     */
+    public function setLocationExternalContactPersonFirstName($locationExternalContactPersonFirstName): void
+    {
+        $this->locationExternalContactPersonFirstName = $locationExternalContactPersonFirstName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLocationExternalContactPersonLastName()
+    {
+        return $this->locationExternalContactPersonLastName;
+    }
+
+    /**
+     * @param mixed $locationExternalContactPersonLastName
+     */
+    public function setLocationExternalContactPersonLastName($locationExternalContactPersonLastName): void
+    {
+        $this->locationExternalContactPersonLastName = $locationExternalContactPersonLastName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLocationExternalContactPersonMobile()
+    {
+        return $this->locationExternalContactPersonMobile;
+    }
+
+    /**
+     * @param mixed $locationExternalContactPersonMobile
+     */
+    public function setLocationExternalContactPersonMobile($locationExternalContactPersonMobile): void
+    {
+        $this->locationExternalContactPersonMobile = $locationExternalContactPersonMobile;
     }
 }

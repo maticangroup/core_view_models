@@ -20,6 +20,7 @@ class ShelveModel
     private $shelveMainPhone;
     private $shelvePhones;
     private $shelveLocation;
+    private $shelveLocationContactPersonId;
     private $shelveItemProducts;
     private $shelveDeeds;
     private $shelveStatus;
@@ -214,5 +215,21 @@ class ShelveModel
     public function setShelveStatus($shelveStatus): void
     {
         $this->shelveStatus = $shelveStatus;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getShelveLocationContactPersonId()
+    {
+        return $this->shelveLocationContactPersonId;
+    }
+
+    /**
+     * @param mixed $shelveLocationContactPersonId
+     */
+    public function setShelveLocationContactPersonId($shelveLocationContactPersonId): void
+    {
+        $this->shelveLocationContactPersonId = $shelveLocationContactPersonId;
     }
 }
