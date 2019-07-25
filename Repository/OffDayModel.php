@@ -12,6 +12,7 @@ namespace App\FormModels\Repository;
 class OffDayModel
 {
     private $offDayID;
+    private $offDayDate;
     private $offDayYear;
     private $offDayMonth;
     private $offDayDay;
@@ -129,5 +130,21 @@ class OffDayModel
     public function setOffDayCreateDate($offDayCreateDate): void
     {
         $this->offDayCreateDate = $offDayCreateDate;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getOffDayDate()
+    {
+        return $this->offDayDate;
+    }
+
+    /**
+     * @param mixed $offDayDate
+     */
+    public function setOffDayDate($offDayDate): void
+    {
+        $this->offDayDate = $offDayDate;
     }
 }
