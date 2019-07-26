@@ -14,6 +14,7 @@ class PricingDeedModel
     private $pricingDeedId;
     private $pricingDeedName;
     private $pricingDeedSerial;
+    private $pricingDeedExpiryDate;
     private $pricingDeedDateYear;
     private $pricingDeedDateMonth;
     private $pricingDeedDateDay;
@@ -299,5 +300,21 @@ class PricingDeedModel
     public function setPricingDeedImportDeedId($pricingDeedImportDeedId): void
     {
         $this->pricingDeedImportDeedId = $pricingDeedImportDeedId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPricingDeedExpiryDate()
+    {
+        return $this->pricingDeedExpiryDate;
+    }
+
+    /**
+     * @param mixed $pricingDeedExpiryDate
+     */
+    public function setPricingDeedExpiryDate($pricingDeedExpiryDate): void
+    {
+        $this->pricingDeedExpiryDate = $pricingDeedExpiryDate;
     }
 }

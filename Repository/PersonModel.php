@@ -22,6 +22,7 @@ class PersonModel
     private $email;
     private $national_code;
     private $mobile;
+    private $birthDate;
     private $birthDateYear = "";
     private $birthDateMonth = "";
     private $birthDateDay = "";
@@ -440,6 +441,22 @@ class PersonModel
     public function setComments($comments): void
     {
         $this->comments = $comments;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getBirthDate()
+    {
+        return $this->birthDate;
+    }
+
+    /**
+     * @param mixed $birthDate
+     */
+    public function setBirthDate($birthDate): void
+    {
+        $this->birthDate = $birthDate;
     }
 
 }
