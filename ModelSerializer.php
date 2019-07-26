@@ -30,4 +30,19 @@ class ModelSerializer
             return $classInstance;
         }
     }
+
+    public static function reverse($model, $toJson = false)
+    {
+        $className = get_class($model);
+        $reflection = new \ReflectionClass($className);
+        $classProperties = $reflection->getProperties();
+        $resultArray = [];
+        foreach ($classProperties as $classProperty) {
+            $getterName = "get" . ucfirst($classProperty->getName());
+            if (method_exists($model, $getterName)) {
+                $resultArray[$classProperty->getName()] = $model->{$getterName}();
+            }
+        }
+        return ($toJson) ? json_encode($resultArray) : $resultArray;
+    }
 }
