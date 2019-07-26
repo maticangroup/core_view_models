@@ -14,6 +14,8 @@ class BrandModel
     private $brandID;
     private $brandName;
     private $brandSuppliers;
+    private $brandImageUrl;
+
     private $brandImageSerial;
     private $brandImageAlt;
     private $brandImageSize;
@@ -114,5 +116,19 @@ class BrandModel
         $this->brandImageSize = $brandImageSize;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getBrandImageUrl()
+    {
+        return $this->brandImageUrl;
+    }
 
+    /**
+     * @param mixed $brandImageUrl
+     */
+    public function setBrandImageUrl($brandImageUrl): void
+    {
+        $this->brandImageUrl = $brandImageUrl;
+    }
 }
