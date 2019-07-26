@@ -14,8 +14,9 @@ class BrandModel
     private $brandID;
     private $brandName;
     private $brandSuppliers;
-    private $brandImageUrl;
+    private $brandImageSerial;
     private $brandImageAlt;
+    private $brandImageSize;
 
     /**
      * @return mixed
@@ -68,17 +69,17 @@ class BrandModel
     /**
      * @return mixed
      */
-    public function getBrandImageUrl()
+    public function getBrandImageSerial()
     {
-        return $this->brandImageUrl;
+        return $this->brandImageSerial;
     }
 
     /**
-     * @param mixed $brandImageUrl
+     * @param mixed $brandImageSerial
      */
-    public function setBrandImageUrl($brandImageUrl): void
+    public function setBrandImageSerial($brandImageSerial): void
     {
-        $this->brandImageUrl = $brandImageUrl;
+        $this->brandImageSerial = $brandImageSerial;
     }
 
     /**
@@ -95,6 +96,22 @@ class BrandModel
     public function setBrandImageAlt($brandImageAlt): void
     {
         $this->brandImageAlt = $brandImageAlt;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getBrandImageSize()
+    {
+        return $this->brandImageSize;
+    }
+
+    /**
+     * @param mixed $brandImageSize
+     */
+    public function setBrandImageSize($brandImageSize): void
+    {
+        $this->brandImageSize = $brandImageSize;
     }
 
 
