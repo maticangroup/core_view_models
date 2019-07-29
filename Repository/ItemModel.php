@@ -31,6 +31,23 @@ class ItemModel
     private $itemUpdatedDate;
     private $itemDeedId;
     private $itemComments;
+    private $selectedItemCategories;
+
+    /**
+     * @return mixed
+     */
+    public function getSelectedItemCategories()
+    {
+        return $this->selectedItemCategories;
+    }
+
+    /**
+     * @param mixed $selectedItemCategories
+     */
+    public function setSelectedItemCategories($selectedItemCategories): void
+    {
+        $this->selectedItemCategories = $selectedItemCategories;
+    }
 
 
     /**
