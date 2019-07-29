@@ -16,6 +16,26 @@ class ImageModel
     private $imageSize;
     private $url;
 
+
+
+    private $itemID;
+
+    /**
+     * @return mixed
+     */
+    public function getItemID()
+    {
+        return $this->itemID;
+    }
+
+    /**
+     * @param mixed $itemID
+     */
+    public function setItemID($itemID): void
+    {
+        $this->itemID = $itemID;
+    }
+
     /**
      * @return mixed
      */
