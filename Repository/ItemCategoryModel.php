@@ -25,6 +25,23 @@ class ItemCategoryModel
     private $itemCategorySpecKeysIds;
     private $itemCategoryIsChecked;
     private $itemCategoryDepth;
+    private $thumbnail;
+
+    /**
+     * @return mixed
+     */
+    public function getThumbnail()
+    {
+        return $this->thumbnail;
+    }
+
+    /**
+     * @param mixed $thumbnail
+     */
+    public function setThumbnail($thumbnail): void
+    {
+        $this->thumbnail = $thumbnail;
+    }
 
     /**
      * @return mixed

@@ -28,6 +28,25 @@ class DeliveryMethodModel
     private $deliveryMethodDeliveryPersonsCount;
     private $deliveryMethodDispatchesCount;
     private $dispatchId;
+    private $thumbnail;
+
+    /**
+     * @return mixed
+     */
+    public function getThumbnail()
+    {
+        return $this->thumbnail;
+    }
+
+    /**
+     * @param mixed $thumbnail
+     */
+    public function setThumbnail($thumbnail): void
+    {
+        $this->thumbnail = $thumbnail;
+    }
+
+
 
     /**
      * @return mixed
