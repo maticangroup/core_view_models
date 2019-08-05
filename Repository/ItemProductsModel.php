@@ -22,6 +22,26 @@ class ItemProductsModel
     private $itemProductsItemCategories;
     private $itemProductsInventoryId;
     private $itemProductsShelveId;
+    private $itemProductOfferGroups;
+
+
+
+    /**
+     * @return mixed
+     */
+    public function getItemProductOfferGroups()
+    {
+        return $this->itemProductOfferGroups;
+    }
+
+    /**
+     * @param mixed $itemProductOfferGroups
+     */
+    public function setItemProductOfferGroups($itemProductOfferGroups): void
+    {
+        $this->itemProductOfferGroups = $itemProductOfferGroups;
+    }
+
 
     /**
      * @return mixed
