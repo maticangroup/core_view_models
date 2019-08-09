@@ -2,6 +2,127 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cabd3fa9-91d9-4082-8592-1c1e059eb949" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/core_models.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/core_models.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Accounting/CouponGroupConfirmStatusModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Accounting/CouponGroupConfirmStatusModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Accounting/CouponGroupDiscountTypeModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Accounting/CouponGroupDiscountTypeModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Accounting/CouponGroupModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Accounting/CouponGroupModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Accounting/CouponGroupStatusModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Accounting/CouponGroupStatusModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Accounting/CouponGroupTypeModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Accounting/CouponGroupTypeModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Accounting/GiftCardGroupAvailabilityStatus.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Accounting/GiftCardGroupAvailabilityStatus.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Accounting/GiftCardGroupModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Accounting/GiftCardGroupModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Accounting/GiftCardGroupStatusModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Accounting/GiftCardGroupStatusModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Accounting/GiftCardModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Accounting/GiftCardModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Accounting/GiftCardStatusModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Accounting/GiftCardStatusModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Accounting/InvoiceGroupModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Accounting/InvoiceGroupModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Accounting/InvoiceItemModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Accounting/InvoiceItemModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Accounting/InvoiceModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Accounting/InvoiceModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Accounting/InvoiceTypeModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Accounting/InvoiceTypeModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Accounting/PaymentMethodModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Accounting/PaymentMethodModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Accounting/PaymentModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Accounting/PaymentModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Accounting/PaymentRequestModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Accounting/PaymentRequestModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Accounting/PaymentRequestStatusModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Accounting/PaymentRequestStatusModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Accounting/PaymentStatusModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Accounting/PaymentStatusModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Accounting/PaymentTypeModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Accounting/PaymentTypeModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Accounting/UsedCouponModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Accounting/UsedCouponModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Authentication/AuthenticationStatusModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Authentication/AuthenticationStatusModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Authentication/ClientModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Authentication/ClientModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Authentication/PermissionModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Authentication/PermissionModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Authentication/RoleModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Authentication/RoleModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Authentication/ServerPermissionModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Authentication/ServerPermissionModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Authentication/UserModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Authentication/UserModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/CRM/CustomerCouponModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/CRM/CustomerCouponModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/CRM/CustomerGroupModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/CRM/CustomerGroupModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/CRM/CustomerGroupStatusModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/CRM/CustomerGroupStatusModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/CRM/InvitationModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/CRM/InvitationModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/CRM/InvitationStatusModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/CRM/InvitationStatusModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Delivery/AvailableQueuesModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Delivery/AvailableQueuesModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Delivery/DeliveryMethodModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Delivery/DeliveryMethodModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Delivery/DeliveryMethodStatusModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Delivery/DeliveryMethodStatusModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Delivery/DeliveryMethodTypeModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Delivery/DeliveryMethodTypeModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Delivery/DeliveryPersonModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Delivery/DeliveryPersonModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Delivery/DeliveryPersonStatusModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Delivery/DeliveryPersonStatusModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Delivery/DispatchDeliveryStatusModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Delivery/DispatchDeliveryStatusModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Delivery/DispatchModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Delivery/DispatchModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Delivery/DispatchPaymentModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Delivery/DispatchPaymentModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Delivery/DispatchPaymentStatusModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Delivery/DispatchPaymentStatusModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Delivery/DispatchPriceStatusModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Delivery/DispatchPriceStatusModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Delivery/DispatchStatusModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Delivery/DispatchStatusModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Delivery/DistrictModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Delivery/DistrictModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Delivery/QueueModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Delivery/QueueModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Delivery/QueueStatusModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Delivery/QueueStatusModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Delivery/WeekDayModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Delivery/WeekDayModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Inventory/InventoryDeedModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Inventory/InventoryDeedModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Inventory/InventoryDeedStatusModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Inventory/InventoryDeedStatusModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Inventory/InventoryItemProductsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Inventory/InventoryItemProductsModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Inventory/InventoryModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Inventory/InventoryModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Inventory/InventoryProductsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Inventory/InventoryProductsModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Inventory/InventoryStatusModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Inventory/InventoryStatusModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Inventory/ShelveItemProductsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Inventory/ShelveItemProductsModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Inventory/ShelveModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Inventory/ShelveModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Inventory/ShelveProductsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Inventory/ShelveProductsModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Inventory/ShelveStatusModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Inventory/ShelveStatusModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Media/ImageModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Media/ImageModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ModelSerializer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/ModelSerializer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Notification/ClientMessageModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Notification/ClientMessageModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Notification/InternalNotificationModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Notification/InternalNotificationModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Notification/InternalNotificationStatusModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Notification/InternalNotificationStatusModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Notification/MailModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Notification/MailModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Notification/MailTemplateModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Notification/MailTemplateModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Notification/NewsletterModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Notification/NewsletterModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Notification/NewsletterStatusModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Notification/NewsletterStatusModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Notification/SMSModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Notification/SMSModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Notification/SMSTemplateModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Notification/SMSTemplateModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Notification/SubscriberModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Notification/SubscriberModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Notification/TokenModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Notification/TokenModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/BarcodeModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/BarcodeModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/BrandModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/BrandModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/BrandSupplierModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/BrandSupplierModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/BrandSuppliersModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/BrandSuppliersModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/CategorySpecKeyModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/CategorySpecKeyModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/CitiesModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/CitiesModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/CompanyAddEmployeeModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/CompanyAddEmployeeModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/CompanyModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/CompanyModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/CountriesModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/CountriesModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/DistrictsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/DistrictsModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/ForbiddenWordsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/ForbiddenWordsModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/GuaranteeDurationModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/GuaranteeDurationModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/GuaranteeDurationStatusModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/GuaranteeDurationStatusModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/GuaranteeModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/GuaranteeModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/GuaranteeProviderModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/GuaranteeProviderModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/GuaranteeProviderStatusModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/GuaranteeProviderStatusModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/GuaranteeStatusModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/GuaranteeStatusModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/ItemCategoriesModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/ItemCategoriesModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/ItemCategoryModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/ItemCategoryModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/ItemCategorySpecKeyModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/ItemCategorySpecKeyModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/ItemColorModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/ItemColorModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/ItemColorStatusModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/ItemColorStatusModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/ItemModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/ItemModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/ItemProductsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/ItemProductsModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/ItemStatusModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/ItemStatusModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/ItemTypeModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/ItemTypeModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/LocationModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/LocationModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/OffDayModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/OffDayModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/PersonModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/PersonModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/PhoneModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/PhoneModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/ProductModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/ProductModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/ProvinceModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/ProvinceModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/ProvincesModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/ProvincesModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/SizeModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/SizeModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/SizeStatusModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/SizeStatusModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/SpecGroupModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/SpecGroupModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/SpecKeyModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/SpecKeyModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/SpecKeyValueModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/SpecKeyValueModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/UpdateItemCategoryModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/UpdateItemCategoryModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Sale/OfferGroupModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Sale/OfferGroupModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Sale/OfferGroupStatusModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Sale/OfferGroupStatusModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Sale/OrderModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Sale/OrderModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Sale/OrderStatusModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Sale/OrderStatusModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Sale/PricingDeedModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Sale/PricingDeedModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Sale/PricingDeedStatusModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Sale/PricingDeedStatusModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Ticketing/CommentModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Ticketing/CommentModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Ticketing/CommentPointModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Ticketing/CommentPointModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Ticketing/ItemCommentsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Ticketing/ItemCommentsModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,29 +137,74 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Accounting/CouponGroupConfirmStatusModel.php">
+        <entry file="file://$PROJECT_DIR$/app/Models/Accounting/CouponGroupConfirmStatusModel.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="66">
-              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ModelSerializer.php">
+        <entry file="file://$PROJECT_DIR$/app/Models/Accounting/GiftCardGroupModel.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Models/Authentication/AuthenticationStatusModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Models/Delivery/AvailableQueuesModel.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Models/Inventory/InventoryDeedModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Models/CRM/CustomerCouponModel.php">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/ModelSerializer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+            <state relative-caret-position="264">
+              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>App\FormModels\</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Matican\Models\</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,6 +214,11 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/app/Accounting/CouponGroupConfirmStatusModel.php" />
+        <option value="$PROJECT_DIR$/app/Models/Accounting/CouponGroupConfirmStatusModel.php" />
+        <option value="$PROJECT_DIR$/app/Models/Authentication/AuthenticationStatusModel.php" />
+        <option value="$PROJECT_DIR$/app/Models/ModelSerializer.php" />
+        <option value="$PROJECT_DIR$/app/ModelSerializer.php" />
       </list>
     </option>
   </component>
@@ -69,6 +240,11 @@
               <item name="core_models" type="b2602c69:ProjectViewProjectNode" />
               <item name="core_models" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="core_models" type="b2602c69:ProjectViewProjectNode" />
+              <item name="core_models" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -80,6 +256,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/app/Models" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -103,12 +285,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565338585672</updated>
-      <workItem from="1565338586802" duration="1174000" />
+      <workItem from="1565338586802" duration="1957000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1174000" />
+    <option name="totallyTimeSpent" value="1957000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="27" width="1853" height="1053" extended-state="0" />
@@ -120,10 +302,10 @@
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32900432" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32900432" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -146,20 +328,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ModelSerializer.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Accounting/CouponGroupConfirmStatusModel.php">
+    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        <state relative-caret-position="264">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
+    <entry file="file://$PROJECT_DIR$/app/Models/CRM/CustomerCouponModel.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Accounting/CouponGroupConfirmStatusModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        <state relative-caret-position="66">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Accounting/GiftCardGroupModel.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Authentication/AuthenticationStatusModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Delivery/AvailableQueuesModel.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Inventory/InventoryDeedModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/ModelSerializer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>

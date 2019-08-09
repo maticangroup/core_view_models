@@ -6,7 +6,7 @@
  * Time: 16:53
  */
 
-namespace App\FormModels;
+namespace App;
 
 
 class ModelSerializer
