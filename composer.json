@@ -12,7 +12,8 @@
     }
   },
   "require": {
-    "ext-json": "*"
+    "ext-json": "*",
+    "symfony/filesystem": "^4.3"
   },
   "license": "MIT"
 }
