@@ -6,6 +6,11 @@
       "email": "maticangroup@gmail.com"
     }
   ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
   "require": {},
   "license": "MIT"
 }
