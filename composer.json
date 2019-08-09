@@ -1,10 +1,11 @@
 {
-    "name": "maticangroup/core_models",
-    "authors": [
-        {
-            "name": "Matican Matican",
-            "email": "maticangroup@gmail.com"
-        }
-    ],
-    "require": {}
+  "name": "maticangroup/core_models",
+  "authors": [
+    {
+      "name": "Matican Matican",
+      "email": "maticangroup@gmail.com"
+    }
+  ],
+  "require": {},
+  "license": "MIT"
 }
