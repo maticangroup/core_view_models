@@ -50,6 +50,23 @@ class ProductModel
     private $productOrderItemId;
     private $productOrderItemCount;
     private $productMaxQuantity;
+    private $productGuaranteePrice;
+
+    /**
+     * @return mixed
+     */
+    public function getProductGuaranteePrice()
+    {
+        return $this->productGuaranteePrice;
+    }
+
+    /**
+     * @param mixed $productGuaranteePrice
+     */
+    public function setProductGuaranteePrice($productGuaranteePrice): void
+    {
+        $this->productGuaranteePrice = $productGuaranteePrice;
+    }
 
     /**
      * @return mixed
