@@ -21,6 +21,41 @@ class ClientModel
     private $clientIP;
     private $clientLastConnectionDate;
     private $clientDomain;
+    private $authentication_terminal_url;
+    private $access_token;
+
+    /**
+     * @return mixed
+     */
+    public function getAuthenticationTerminalUrl()
+    {
+        return $this->authentication_terminal_url;
+    }
+
+    /**
+     * @param mixed $authentication_terminal_url
+     */
+    public function setAuthenticationTerminalUrl($authentication_terminal_url): void
+    {
+        $this->authentication_terminal_url = $authentication_terminal_url;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getAccessToken()
+    {
+        return $this->access_token;
+    }
+
+    /**
+     * @param mixed $access_token
+     */
+    public function setAccessToken($access_token): void
+    {
+        $this->access_token = $access_token;
+    }
+
 
     /**
      * @return mixed
