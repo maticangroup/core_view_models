@@ -51,6 +51,41 @@ class ProductModel
     private $productOrderItemCount;
     private $productMaxQuantity;
     private $productGuaranteePrice;
+    private $thumbnail;
+    private $itemName;
+
+    /**
+     * @return mixed
+     */
+    public function getThumbnail()
+    {
+        return $this->thumbnail;
+    }
+
+    /**
+     * @param mixed $thumbnail
+     */
+    public function setThumbnail($thumbnail): void
+    {
+        $this->thumbnail = $thumbnail;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getItemName()
+    {
+        return $this->itemName;
+    }
+
+    /**
+     * @param mixed $itemName
+     */
+    public function setItemName($itemName): void
+    {
+        $this->itemName = $itemName;
+    }
+
 
     /**
      * @return mixed
