@@ -32,6 +32,25 @@ class ItemModel
     private $itemDeedId;
     private $itemComments;
     private $selectedItemCategories;
+    private $personId;
+
+
+    /**
+     * @return mixed
+     */
+    public function getPersonId()
+    {
+        return $this->personId;
+    }
+
+    /**
+     * @param mixed $personId
+     */
+    public function setPersonId($personId): void
+    {
+        $this->personId = $personId;
+    }
+
 
     /**
      * @return mixed
