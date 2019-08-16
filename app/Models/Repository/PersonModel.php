@@ -42,6 +42,24 @@ class PersonModel
     private $invoices;
     private $invitations;
     private $comments;
+    private $cartProducts;
+
+
+    /**
+     * @return mixed
+     */
+    public function getCartProducts()
+    {
+        return $this->cartProducts;
+    }
+
+    /**
+     * @param mixed $cartProducts
+     */
+    public function setCartProducts($cartProducts): void
+    {
+        $this->cartProducts = $cartProducts;
+    }
 
     /**
      * @return mixed
