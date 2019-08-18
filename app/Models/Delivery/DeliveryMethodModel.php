@@ -29,6 +29,24 @@ class DeliveryMethodModel
     private $deliveryMethodDispatchesCount;
     private $dispatchId;
     private $thumbnail;
+    private $availableQueues;
+
+
+    /**
+     * @return mixed
+     */
+    public function getAvailableQueues()
+    {
+        return $this->availableQueues;
+    }
+
+    /**
+     * @param mixed $availableQueues
+     */
+    public function setAvailableQueues($availableQueues): void
+    {
+        $this->availableQueues = $availableQueues;
+    }
 
     /**
      * @return mixed
@@ -45,7 +63,6 @@ class DeliveryMethodModel
     {
         $this->thumbnail = $thumbnail;
     }
-
 
 
     /**

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cabd3fa9-91d9-4082-8592-1c1e059eb949" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Repository/ItemModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repository/ItemModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Delivery/DeliveryMethodModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Delivery/DeliveryMethodModel.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,11 +25,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Models/Repository/ItemModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+            <state relative-caret-position="286">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Models/Delivery/DeliveryMethodModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -48,15 +57,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="385">
               <caret line="97" column="7" lean-forward="true" selection-start-line="97" selection-start-column="7" selection-end-line="97" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/JsModels/Delivery/DispatchModel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="3129" selection-start-column="3129" selection-end-column="3129" />
             </state>
           </provider>
         </entry>
@@ -146,6 +146,7 @@
         <option value="$PROJECT_DIR$/app/Models/Repository/PersonModel.php" />
         <option value="$PROJECT_DIR$/app/Models/Repository/ProductModel.php" />
         <option value="$PROJECT_DIR$/app/Models/Repository/ItemModel.php" />
+        <option value="$PROJECT_DIR$/app/Models/Delivery/DeliveryMethodModel.php" />
       </list>
     </option>
   </component>
@@ -240,12 +241,12 @@
       <workItem from="1565338586802" duration="8449000" />
       <workItem from="1565505909284" duration="12990000" />
       <workItem from="1565675966472" duration="6916000" />
-      <workItem from="1565945595046" duration="5559000" />
+      <workItem from="1565945595046" duration="6266000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33914000" />
+    <option name="totallyTimeSpent" value="34621000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -443,8 +444,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Repository/ItemModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+        <state relative-caret-position="286">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Delivery/DeliveryMethodModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
         </state>
       </provider>
     </entry>
