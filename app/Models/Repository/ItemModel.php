@@ -33,7 +33,24 @@ class ItemModel
     private $itemComments;
     private $selectedItemCategories;
     private $personId;
+    private $sizeName;
 
+
+    /**
+     * @return mixed
+     */
+    public function getSizeName()
+    {
+        return $this->sizeName;
+    }
+
+    /**
+     * @param mixed $sizeName
+     */
+    public function setSizeName($sizeName): void
+    {
+        $this->sizeName = $sizeName;
+    }
 
     /**
      * @return mixed
