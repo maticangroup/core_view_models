@@ -53,6 +53,23 @@ class ProductModel
     private $productGuaranteePrice;
     private $thumbnail;
     private $itemName;
+    private $offerGroups;
+
+    /**
+     * @return mixed
+     */
+    public function getOfferGroups()
+    {
+        return $this->offerGroups;
+    }
+
+    /**
+     * @param mixed $offerGroups
+     */
+    public function setOfferGroups($offerGroups): void
+    {
+        $this->offerGroups = $offerGroups;
+    }
 
     /**
      * @return mixed
