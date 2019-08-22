@@ -16,6 +16,23 @@ class PaymentMethodModel
     private $paymentMethodMachineName;
     private $paymentId;
     private $paymentRequestId;
+    private $accessible_for_public;
+
+    /**
+     * @return mixed
+     */
+    public function getAccessibleForPublic()
+    {
+        return $this->accessible_for_public;
+    }
+
+    /**
+     * @param mixed $accessible_for_public
+     */
+    public function setAccessibleForPublic($accessible_for_public): void
+    {
+        $this->accessible_for_public = $accessible_for_public;
+    }
 
     /**
      * @return mixed
