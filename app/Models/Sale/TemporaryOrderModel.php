@@ -14,6 +14,23 @@ class TemporaryOrderModel
     private $temporaryOrderLocationID;
     private $temporaryOrderDeliveryMethodID;
     private $temporaryOrderDeliveryQueueID;
+    private $temporaryOrderInvoiceModel;
+
+    /**
+     * @return mixed
+     */
+    public function getTemporaryOrderInvoiceModel()
+    {
+        return $this->temporaryOrderInvoiceModel;
+    }
+
+    /**
+     * @param mixed $temporaryOrderInvoiceModel
+     */
+    public function setTemporaryOrderInvoiceModel($temporaryOrderInvoiceModel): void
+    {
+        $this->temporaryOrderInvoiceModel = $temporaryOrderInvoiceModel;
+    }
 
     /**
      * @return mixed
