@@ -1,0 +1,1 @@
+class ItemFilterModel{getFilters(){return this.filters;}setFilters($filters){this.filters=$filters;}getItems(){return this.items;}setItems($items){this.items=$items;}}
