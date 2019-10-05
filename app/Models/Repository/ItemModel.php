@@ -34,7 +34,58 @@ class ItemModel
     private $selectedItemCategories;
     private $personId;
     private $sizeName;
+    private $min_price;
+    private $max_price;
+    private $availability;
 
+    /**
+     * @return mixed
+     */
+    public function getAvailability()
+    {
+        return $this->availability;
+    }
+
+    /**
+     * @param mixed $availability
+     */
+    public function setAvailability($availability): void
+    {
+        $this->availability = $availability;
+    }
+
+
+    /**
+     * @return mixed
+     */
+    public function getMinPrice()
+    {
+        return $this->min_price;
+    }
+
+    /**
+     * @param mixed $min_price
+     */
+    public function setMinPrice($min_price): void
+    {
+        $this->min_price = $min_price;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getMaxPrice()
+    {
+        return $this->max_price;
+    }
+
+    /**
+     * @param mixed $max_price
+     */
+    public function setMaxPrice($max_price): void
+    {
+        $this->max_price = $max_price;
+    }
 
     /**
      * @return mixed
