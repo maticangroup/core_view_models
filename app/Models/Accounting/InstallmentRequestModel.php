@@ -11,6 +11,7 @@ namespace Matican\Models\Accounting;
 
 class InstallmentRequestModel
 {
+    private $requestID
     private $requestCreateDateTime;
     private $requesterFirstName;
     private $requesterLastName;
