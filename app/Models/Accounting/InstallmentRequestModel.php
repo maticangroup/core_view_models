@@ -12,8 +12,8 @@ namespace Matican\Models\Accounting;
 class InstallmentRequestModel
 {
     private $requestCreateDateTime;
-    private $requesterFirstname;
-    private $requesterLastname;
+    private $requesterFirstName;
+    private $requesterLastName;
     private $requesterPhone;
     private $requesterNationalCode;
     private $requestAmount;
@@ -38,33 +38,33 @@ class InstallmentRequestModel
     /**
      * @return mixed
      */
-    public function getRequesterFirstname()
+    public function getRequesterFirstName()
     {
-        return $this->requesterFirstname;
+        return $this->requesterFirstName;
     }
 
     /**
-     * @param mixed $requesterFirstname
+     * @param mixed $requesterFirstName
      */
-    public function setRequesterFirstname($requesterFirstname): void
+    public function setRequesterFirstName($requesterFirstName): void
     {
-        $this->requesterFirstname = $requesterFirstname;
+        $this->requesterFirstName = $requesterFirstName;
     }
 
     /**
      * @return mixed
      */
-    public function getRequesterLastname()
+    public function getRequesterLastName()
     {
-        return $this->requesterLastname;
+        return $this->requesterLastName;
     }
 
     /**
-     * @param mixed $requesterLastname
+     * @param mixed $requesterLastName
      */
-    public function setRequesterLastname($requesterLastname): void
+    public function setRequesterLastName($requesterLastName): void
     {
-        $this->requesterLastname = $requesterLastname;
+        $this->requesterLastName = $requesterLastName;
     }
 
     /**
