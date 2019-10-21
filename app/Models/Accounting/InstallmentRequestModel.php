@@ -11,7 +11,7 @@ namespace Matican\Models\Accounting;
 
 class InstallmentRequestModel
 {
-    private $requestID
+    private $requestID;
     private $requestCreateDateTime;
     private $requesterFirstName;
     private $requesterLastName;
@@ -19,6 +19,22 @@ class InstallmentRequestModel
     private $requesterNationalCode;
     private $requestAmount;
     private $requestStatus;
+
+    /**
+     * @return mixed
+     */
+    public function getRequestID()
+    {
+        return $this->requestID;
+    }
+
+    /**
+     * @param mixed $requestID
+     */
+    public function setRequestID($requestID): void
+    {
+        $this->requestID = $requestID;
+    }
 
     /**
      * @return mixed
