@@ -184,6 +184,10 @@ class ServerPermissions
     const accounting_invoice_finalize_invoice = 'accounting_invoice_finalize_invoice';
     const accounting_invoice_rethink_invoice = 'accounting_invoice_rethink_invoice';
     const accounting_invoice_get_all_invoice_groups = 'accounting_invoice_get_all_invoice_groups';
+    const accounting_installmentrequest_all = 'accounting_installmentrequest_all';
+    const accounting_installmentrequest_update_user_info = 'accounting_installmentrequest_update_user_info';
+    const accounting_installmentrequest_new = 'accounting_installmentrequest_new';
+    const accounting_installmentrequest_change_status = 'accounting_installmentrequest_change_status';
 
     const accounting_paymentrequest_all = 'accounting_paymentrequest_all';
     const accounting_paymentrequest_fetch = 'accounting_paymentrequest_fetch';
