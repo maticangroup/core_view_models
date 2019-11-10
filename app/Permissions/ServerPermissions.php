@@ -189,7 +189,7 @@ class ServerPermissions
     const accounting_installmentrequest_new = 'accounting_installmentrequest_new';
     const accounting_installmentrequest_change_status = 'accounting_installmentrequest_change_status';
     const accounting_installmentrequest_all_user_requests = 'accounting_installmentrequest_all_user_requests';
-
+    
     const accounting_paymentrequest_all = 'accounting_paymentrequest_all';
     const accounting_paymentrequest_fetch = 'accounting_paymentrequest_fetch';
     const accounting_paymentrequest_delete = 'accounting_paymentrequest_delete';
