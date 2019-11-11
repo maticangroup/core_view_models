@@ -44,6 +44,7 @@ class InstallmentRequestViewFormModel
     private $productPrice;
 
     private $requestStatus;
+    private $requestCreateDate;
 
     /**
      * @return mixed
@@ -539,6 +540,22 @@ class InstallmentRequestViewFormModel
     public function setRequestId($requestId): void
     {
         $this->requestId = $requestId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getRequestCreateDate()
+    {
+        return $this->requestCreateDate;
+    }
+
+    /**
+     * @param mixed $requestCreateDate
+     */
+    public function setRequestCreateDate($requestCreateDate): void
+    {
+        $this->requestCreateDate = $requestCreateDate;
     }
 
 
