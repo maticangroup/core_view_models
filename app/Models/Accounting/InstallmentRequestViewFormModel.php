@@ -11,7 +11,7 @@ namespace Matican\Models\Accounting;
 
 class InstallmentRequestViewFormModel
 {
-
+    public $requestId;
     private $genderStatus;
     private $nationalCode;
     private $firstName;
@@ -523,6 +523,22 @@ class InstallmentRequestViewFormModel
     public function setRequestStatus($requestStatus): void
     {
         $this->requestStatus = $requestStatus;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getRequestId()
+    {
+        return $this->requestId;
+    }
+
+    /**
+     * @param mixed $requestId
+     */
+    public function setRequestId($requestId): void
+    {
+        $this->requestId = $requestId;
     }
 
 
