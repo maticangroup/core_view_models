@@ -43,6 +43,8 @@ class InstallmentRequestViewFormModel
     private $productName;
     private $productPrice;
 
+    private $requestStatus;
+
     /**
      * @return mixed
      */
@@ -506,4 +508,22 @@ class InstallmentRequestViewFormModel
     {
         $this->productPrice = $productPrice;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getRequestStatus()
+    {
+        return $this->requestStatus;
+    }
+
+    /**
+     * @param mixed $requestStatus
+     */
+    public function setRequestStatus($requestStatus): void
+    {
+        $this->requestStatus = $requestStatus;
+    }
+
+
 }
