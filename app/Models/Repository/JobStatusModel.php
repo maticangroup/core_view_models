@@ -1,9 +1,15 @@
 <?php
 /**
  * Created by PhpStorm.
+ * <<<<<<< HEAD
  * User: hossein
  * Date: 10/11/19
  * Time: 17:37
+ * =======
+ * User: Amirhossein
+ * Date: 11/11/2019
+ * Time: 10:49 AM
+ * >>>>>>> 4bcee8ba9ec396e4f119d159c4e73db9957d4ec8
  */
 
 namespace Matican\Models\Repository;
@@ -11,8 +17,10 @@ namespace Matican\Models\Repository;
 
 class JobStatusModel
 {
+
+
     private $name;
-    private $machine_name;
+    private $machineName;
 
     /**
      * @return mixed
@@ -35,15 +43,15 @@ class JobStatusModel
      */
     public function getMachineName()
     {
-        return $this->machine_name;
+        return $this->machineName;
     }
 
     /**
-     * @param mixed $machine_name
+     * @param mixed $machineName
      */
-    public function setMachineName($machine_name): void
+    public function setMachineName($machineName): void
     {
-        $this->machine_name = $machine_name;
+        $this->machineName = $machineName;
     }
 
 
