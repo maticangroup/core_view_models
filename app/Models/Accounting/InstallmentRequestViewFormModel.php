@@ -11,6 +11,9 @@ namespace Matican\Models\Accounting;
 
 class InstallmentRequestViewFormModel
 {
+
+
+
     public $requestId;
     private $genderStatus;
     private $nationalCode;
