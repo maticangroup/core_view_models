@@ -1,0 +1,1 @@
+class CategoryFilterOptionsModel{getCategoryID(){return this.categoryID;}setCategoryID($categoryID){this.categoryID=$categoryID;}getOptions(){return this.options;}setOptions($options){this.options=$options;}}

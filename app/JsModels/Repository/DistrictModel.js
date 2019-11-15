@@ -1,0 +1,1 @@
+class DistrictModel{getCityId(){return this.cityId;}setCityId($cityId){this.cityId=$cityId;}getDistrictId(){return this.districtId;}setDistrictId($districtId){this.districtId=$districtId;}getDistrictName(){return this.districtName;}setDistrictName($districtName){this.districtName=$districtName;}}

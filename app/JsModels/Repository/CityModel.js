@@ -1,0 +1,1 @@
+class CityModel{getProvinceID(){return this.provinceID;}setProvinceID($provinceID){this.provinceID=$provinceID;}getCityName(){return this.cityName;}setCityName($cityName){this.cityName=$cityName;}getCityID(){return this.cityID;}setCityID($cityID){this.cityID=$cityID;}}

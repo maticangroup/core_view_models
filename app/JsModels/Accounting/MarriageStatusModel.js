@@ -1,0 +1,1 @@
+class MarriageStatusModel{getName(){return this.name;}setName($name){this.name=$name;}getMachineName(){return this.machineName;}setMachineName($machineName){this.machineName=$machineName;}}

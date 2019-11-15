@@ -15,6 +15,57 @@ class TemporaryOrderModel
     private $temporaryOrderDeliveryMethodID;
     private $temporaryOrderDeliveryQueueID;
     private $temporaryOrderInvoiceModel;
+    private $temporaryOrderDeliveryCost;
+    private $temporaryOrderOrderItems;
+    private $temporaryOrderOwnerUserToken;
+
+    /**
+     * @return mixed
+     */
+    public function getTemporaryOrderDeliveryCost()
+    {
+        return $this->temporaryOrderDeliveryCost;
+    }
+
+    /**
+     * @param mixed $temporaryOrderDeliveryCost
+     */
+    public function setTemporaryOrderDeliveryCost($temporaryOrderDeliveryCost): void
+    {
+        $this->temporaryOrderDeliveryCost = $temporaryOrderDeliveryCost;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTemporaryOrderOrderItems()
+    {
+        return $this->temporaryOrderOrderItems;
+    }
+
+    /**
+     * @param mixed $temporaryOrderOrderItems
+     */
+    public function setTemporaryOrderOrderItems($temporaryOrderOrderItems): void
+    {
+        $this->temporaryOrderOrderItems = $temporaryOrderOrderItems;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTemporaryOrderOwnerUserToken()
+    {
+        return $this->temporaryOrderOwnerUserToken;
+    }
+
+    /**
+     * @param mixed $temporaryOrderOwnerUserToken
+     */
+    public function setTemporaryOrderOwnerUserToken($temporaryOrderOwnerUserToken): void
+    {
+        $this->temporaryOrderOwnerUserToken = $temporaryOrderOwnerUserToken;
+    }
 
     /**
      * @return mixed
