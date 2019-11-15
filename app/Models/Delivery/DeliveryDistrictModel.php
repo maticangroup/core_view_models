@@ -9,7 +9,7 @@
 namespace Matican\Models\Delivery;
 
 
-class DistrictModel
+class DeliveryDistrictModel
 {
     private $districtId;
     private $districtName;

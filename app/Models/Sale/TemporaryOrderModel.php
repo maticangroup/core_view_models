@@ -18,6 +18,109 @@ class TemporaryOrderModel
     private $temporaryOrderDeliveryCost;
     private $temporaryOrderOrderItems;
     private $temporaryOrderOwnerUserToken;
+    private $temporaryOrderDeliveryPostalCode;
+    private $temporaryOrderDeliveryAddress;
+    private $temporaryOrderDeliveryReceiver;
+    private $temporaryOrderDeliveryReceiverPhone;
+    private $temporaryOrderDeliveryReceiverDeliveryMethodName;
+    private $temporaryOrderDelivery;
+    
+    /**
+     * @return mixed
+     */
+    public function getTemporaryOrderDeliveryPostalCode()
+    {
+        return $this->temporaryOrderDeliveryPostalCode;
+    }
+
+    /**
+     * @param mixed $temporaryOrderDeliveryPostalCode
+     */
+    public function setTemporaryOrderDeliveryPostalCode($temporaryOrderDeliveryPostalCode): void
+    {
+        $this->temporaryOrderDeliveryPostalCode = $temporaryOrderDeliveryPostalCode;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTemporaryOrderDeliveryAddress()
+    {
+        return $this->temporaryOrderDeliveryAddress;
+    }
+
+    /**
+     * @param mixed $temporaryOrderDeliveryAddress
+     */
+    public function setTemporaryOrderDeliveryAddress($temporaryOrderDeliveryAddress): void
+    {
+        $this->temporaryOrderDeliveryAddress = $temporaryOrderDeliveryAddress;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTemporaryOrderDeliveryReceiver()
+    {
+        return $this->temporaryOrderDeliveryReceiver;
+    }
+
+    /**
+     * @param mixed $temporaryOrderDeliveryReceiver
+     */
+    public function setTemporaryOrderDeliveryReceiver($temporaryOrderDeliveryReceiver): void
+    {
+        $this->temporaryOrderDeliveryReceiver = $temporaryOrderDeliveryReceiver;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTemporaryOrderDeliveryReceiverPhone()
+    {
+        return $this->temporaryOrderDeliveryReceiverPhone;
+    }
+
+    /**
+     * @param mixed $temporaryOrderDeliveryReceiverPhone
+     */
+    public function setTemporaryOrderDeliveryReceiverPhone($temporaryOrderDeliveryReceiverPhone): void
+    {
+        $this->temporaryOrderDeliveryReceiverPhone = $temporaryOrderDeliveryReceiverPhone;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTemporaryOrderDeliveryReceiverDeliveryMethodName()
+    {
+        return $this->temporaryOrderDeliveryReceiverDeliveryMethodName;
+    }
+
+    /**
+     * @param mixed $temporaryOrderDeliveryReceiverDeliveryMethodName
+     */
+    public function setTemporaryOrderDeliveryReceiverDeliveryMethodName($temporaryOrderDeliveryReceiverDeliveryMethodName): void
+    {
+        $this->temporaryOrderDeliveryReceiverDeliveryMethodName = $temporaryOrderDeliveryReceiverDeliveryMethodName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTemporaryOrderDelivery()
+    {
+        return $this->temporaryOrderDelivery;
+    }
+
+    /**
+     * @param mixed $temporaryOrderDelivery
+     */
+    public function setTemporaryOrderDelivery($temporaryOrderDelivery): void
+    {
+        $this->temporaryOrderDelivery = $temporaryOrderDelivery;
+    }
+
 
     /**
      * @return mixed
