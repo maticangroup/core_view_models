@@ -17,6 +17,24 @@ class TemporaryOrderItemModel
     private $temporaryOrderItemBrand;
     private $temporaryOrderItemDiscountPrice;
     private $temporaryOrderItemCurrentPrice;
+    private $temporaryOrderItemId;
+
+    /**
+     * @return mixed
+     */
+    public function getTemporaryOrderItemId()
+    {
+        return $this->temporaryOrderItemId;
+    }
+
+    /**
+     * @param mixed $temporaryOrderItemId
+     */
+    public function setTemporaryOrderItemId($temporaryOrderItemId): void
+    {
+        $this->temporaryOrderItemId = $temporaryOrderItemId;
+    }
+
 
     /**
      * @return mixed
