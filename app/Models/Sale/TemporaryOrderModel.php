@@ -24,7 +24,59 @@ class TemporaryOrderModel
     private $temporaryOrderDeliveryReceiverPhone;
     private $temporaryOrderDeliveryReceiverDeliveryMethodName;
     private $temporaryOrderDelivery;
-    
+    private $temporaryOrderDeliveryQueueDayName;
+    private $temporaryOrderDeliveryQueueDayDate;
+    private $temporaryOrderDeliveryQueueDayHour;
+
+    /**
+     * @return mixed
+     */
+    public function getTemporaryOrderDeliveryQueueDayName()
+    {
+        return $this->temporaryOrderDeliveryQueueDayName;
+    }
+
+    /**
+     * @param mixed $temporaryOrderDeliveryQueueDayName
+     */
+    public function setTemporaryOrderDeliveryQueueDayName($temporaryOrderDeliveryQueueDayName): void
+    {
+        $this->temporaryOrderDeliveryQueueDayName = $temporaryOrderDeliveryQueueDayName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTemporaryOrderDeliveryQueueDayDate()
+    {
+        return $this->temporaryOrderDeliveryQueueDayDate;
+    }
+
+    /**
+     * @param mixed $temporaryOrderDeliveryQueueDayDate
+     */
+    public function setTemporaryOrderDeliveryQueueDayDate($temporaryOrderDeliveryQueueDayDate): void
+    {
+        $this->temporaryOrderDeliveryQueueDayDate = $temporaryOrderDeliveryQueueDayDate;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTemporaryOrderDeliveryQueueDayHour()
+    {
+        return $this->temporaryOrderDeliveryQueueDayHour;
+    }
+
+    /**
+     * @param mixed $temporaryOrderDeliveryQueueDayHour
+     */
+    public function setTemporaryOrderDeliveryQueueDayHour($temporaryOrderDeliveryQueueDayHour): void
+    {
+        $this->temporaryOrderDeliveryQueueDayHour = $temporaryOrderDeliveryQueueDayHour;
+    }
+
+
     /**
      * @return mixed
      */
