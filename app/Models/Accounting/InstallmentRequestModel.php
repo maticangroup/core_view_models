@@ -19,6 +19,7 @@ class InstallmentRequestModel
     private $requesterNationalCode;
     private $requestAmount;
     private $requestStatus;
+    private $requestCategory;
 
     /**
      * @return mixed
@@ -148,5 +149,20 @@ class InstallmentRequestModel
         $this->requestStatus = $requestStatus;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getRequestCategory()
+    {
+        return $this->requestCategory;
+    }
+
+    /**
+     * @param mixed $requestCategory
+     */
+    public function setRequestCategory($requestCategory): void
+    {
+        $this->requestCategory = $requestCategory;
+    }
 
 }
