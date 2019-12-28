@@ -49,6 +49,7 @@ class InstallmentRequestViewFormModel
     private $requestCreateDate;
     private $requestCategory;
 
+
     /**
      * @return mixed
      */
