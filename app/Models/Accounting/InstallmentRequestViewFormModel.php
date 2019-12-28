@@ -13,7 +13,6 @@ class InstallmentRequestViewFormModel
 {
 
 
-
     public $requestId;
     private $genderStatus;
     private $nationalCode;
@@ -48,6 +47,7 @@ class InstallmentRequestViewFormModel
 
     private $requestStatus;
     private $requestCreateDate;
+    private $requestCategory;
 
     /**
      * @return mixed
@@ -561,5 +561,19 @@ class InstallmentRequestViewFormModel
         $this->requestCreateDate = $requestCreateDate;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getRequestCategory()
+    {
+        return $this->requestCategory;
+    }
 
+    /**
+     * @param mixed $requestCategory
+     */
+    public function setRequestCategory($requestCategory): void
+    {
+        $this->requestCategory = $requestCategory;
+    }
 }
