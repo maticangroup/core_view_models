@@ -55,6 +55,7 @@ class InstallmentRequestCategoryModel
         return $this->color;
     }
 
+
     /**
      * @param mixed $color
      */
