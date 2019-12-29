@@ -20,6 +20,23 @@ class InstallmentRequestFormModel
     private $branchName;
     private $productName;
     private $productPrice;
+    private $requestCategory;
+
+    /**
+     * @return mixed
+     */
+    public function getRequestCategory()
+    {
+        return $this->requestCategory;
+    }
+
+    /**
+     * @param mixed $requestCategory
+     */
+    public function setRequestCategory($requestCategory): void
+    {
+        $this->requestCategory = $requestCategory;
+    }
 
     /**
      * @return mixed
